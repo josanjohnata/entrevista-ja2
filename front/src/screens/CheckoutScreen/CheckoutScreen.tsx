@@ -20,10 +20,30 @@ import { getRegionConfig, detectCountry, detectCountrySync, getPlanPrice } from 
 interface FormErrors {
   name?: string;
   email?: string;
+  whatsapp?: string;
+  cpf?: string;
   password?: string;
   confirmPassword?: string;
   acceptedTerms?: string;
 }
+
+const formatPhone = (value: string): string => {
+  const digits = value.replace(/\D/g, '').slice(0, 11);
+  if (digits.length === 0) return '';
+  if (digits.length <= 2) return `(${digits}`;
+  if (digits.length <= 6) return `(${digits.slice(0, 2)}) ${digits.slice(2)}`;
+  if (digits.length <= 10) return `(${digits.slice(0, 2)}) ${digits.slice(2, 6)}-${digits.slice(6)}`;
+  return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
+};
+
+const formatCPF = (value: string): string => {
+  const digits = value.replace(/\D/g, '').slice(0, 11);
+  if (digits.length === 0) return '';
+  if (digits.length <= 3) return digits;
+  if (digits.length <= 6) return `${digits.slice(0, 3)}.${digits.slice(3)}`;
+  if (digits.length <= 9) return `${digits.slice(0, 3)}.${digits.slice(3, 6)}.${digits.slice(6)}`;
+  return `${digits.slice(0, 3)}.${digits.slice(3, 6)}.${digits.slice(6, 9)}-${digits.slice(9)}`;
+};
 
 export const CheckoutScreen: React.FC = () => {
   const { t } = useTranslation();
@@ -63,6 +83,8 @@ export const CheckoutScreen: React.FC = () => {
   const [formValues, setFormValues] = useState({
     name: '',
     email: prefilledEmail,
+    whatsapp: '',
+    cpf: '',
     password: '',
     confirmPassword: ''
   });
@@ -80,6 +102,18 @@ export const CheckoutScreen: React.FC = () => {
         if (!value.trim()) return t('checkout.emailRequired');
         if (!value.includes('@')) return t('checkout.emailInvalid');
         return '';
+      case 'whatsapp': {
+        const digits = value.replace(/\D/g, '');
+        if (digits.length === 0) return t('checkout.whatsappRequired');
+        if (digits.length < 10 || digits.length > 11) return t('checkout.whatsappInvalid');
+        return '';
+      }
+      case 'cpf': {
+        const digits = value.replace(/\D/g, '');
+        if (digits.length === 0) return t('checkout.cpfRequired');
+        if (digits.length !== 11) return t('checkout.cpfInvalid');
+        return '';
+      }
       case 'password':
         if (!value) return t('checkout.passwordRequired');
         if (value.length < 6) return t('checkout.passwordMinLength');
@@ -132,7 +166,7 @@ export const CheckoutScreen: React.FC = () => {
     event.preventDefault();
 
     const newErrors: FormErrors = {};
-    const fields = ['name', 'email', 'password', 'confirmPassword'] as const;
+    const fields = ['name', 'email', 'whatsapp', 'cpf', 'password', 'confirmPassword'] as const;
     
     fields.forEach(field => {
       const error = validateField(field, formValues[field]);
@@ -144,7 +178,7 @@ export const CheckoutScreen: React.FC = () => {
     }
 
     setErrors(newErrors);
-    setTouched({ name: true, email: true, password: true, confirmPassword: true, acceptedTerms: true });
+    setTouched({ name: true, email: true, whatsapp: true, cpf: true, password: true, confirmPassword: true, acceptedTerms: true });
 
     if (Object.keys(newErrors).length > 0) {
       return;
@@ -206,7 +240,8 @@ export const CheckoutScreen: React.FC = () => {
           // Sempre usar merge: true para evitar conflitos com a Cloud Function
           await setDoc(userDocRef, {
             nome: formValues.name,
-            cpf: null,
+            cpf: formValues.cpf.replace(/\D/g, '') || null,
+            whatsapp: formValues.whatsapp.replace(/\D/g, '') || null,
             lastSUB: null,
             userId: userCredential.user.uid,
             subscriptionStatus: 'pending',
@@ -340,6 +375,36 @@ export const CheckoutScreen: React.FC = () => {
                         hasError={touched.email && !!errors.email}
                       />
                       {touched.email && errors.email && <S.FieldErrorMessage>{errors.email}</S.FieldErrorMessage>}
+                    </S.InputGroup>
+                    <S.InputGroup>
+                      <label htmlFor="whatsapp">{t('checkout.whatsapp')}</label>
+                      <S.Input
+                        id="whatsapp"
+                        type="tel"
+                        placeholder={t('checkout.whatsappPlaceholder')}
+                        name="whatsapp"
+                        value={formValues.whatsapp}
+                        onChange={(e) => handleChange('whatsapp', formatPhone(e.target.value))}
+                        onBlur={() => handleBlur('whatsapp')}
+                        hasError={touched.whatsapp && !!errors.whatsapp}
+                      />
+                      {touched.whatsapp && errors.whatsapp && <S.FieldErrorMessage>{errors.whatsapp}</S.FieldErrorMessage>}
+                    </S.InputGroup>
+                    <S.InputGroup>
+                      <label htmlFor="cpf">{t('checkout.cpf')}</label>
+                      <S.Input
+                        id="cpf"
+                        type="text"
+                        inputMode="numeric"
+                        autoComplete="off"
+                        placeholder={t('checkout.cpfPlaceholder')}
+                        name="cpf"
+                        value={formValues.cpf}
+                        onChange={(e) => handleChange('cpf', formatCPF(e.target.value))}
+                        onBlur={() => handleBlur('cpf')}
+                        hasError={touched.cpf && !!errors.cpf}
+                      />
+                      {touched.cpf && errors.cpf && <S.FieldErrorMessage>{errors.cpf}</S.FieldErrorMessage>}
                     </S.InputGroup>
                     <S.InputGroup>
                       <label htmlFor="password">{t('checkout.password')}</label>
