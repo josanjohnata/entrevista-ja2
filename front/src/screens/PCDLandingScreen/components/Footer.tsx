@@ -45,7 +45,7 @@ export const Footer: React.FC = () => {
             Fox<span className="highlight">Apply</span>
           </span>
         </Logo>
-        <div>© {new Date().getFullYear()} FoxApply. Todos os direitos reservados.</div>
+        <div>© {new Date().getFullYear()} Entrevista Já. Todos os direitos reservados.</div>
       </FooterContent>
     </FooterWrapper>
   );

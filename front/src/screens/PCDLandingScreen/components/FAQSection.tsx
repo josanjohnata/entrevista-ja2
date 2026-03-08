@@ -84,12 +84,12 @@ const AnswerContent = styled(Text)`
 
 const faqs = [
   {
-    question: 'O FoxApply funciona com qualquer conta do LinkedIn?',
-    answer: 'Sim! O FoxApply funciona com qualquer conta do LinkedIn, gratuita ou Premium. A extensão utiliza o recurso Easy Apply do LinkedIn para enviar candidaturas.',
+    question: 'O Entrevista Já funciona com qualquer conta do LinkedIn?',
+    answer: 'Sim! O Entrevista Já funciona com qualquer conta do LinkedIn, gratuita ou Premium. A extensão utiliza o recurso Easy Apply do LinkedIn para enviar candidaturas.',
   },
   {
     question: 'É seguro usar automação no LinkedIn?',
-    answer: 'O FoxApply foi desenvolvido para simular o comportamento humano natural, respeitando os limites do LinkedIn. Usamos técnicas avançadas para garantir que sua conta permaneça segura.',
+    answer: 'O Entrevista Já foi desenvolvido para simular o comportamento humano natural, respeitando os limites do LinkedIn. Usamos técnicas avançadas para garantir que sua conta permaneça segura.',
   },
   {
     question: 'Serei cobrado durante o período de teste?',

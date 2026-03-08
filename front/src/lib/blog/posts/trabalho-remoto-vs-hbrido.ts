@@ -63,12 +63,12 @@ A escolha do modelo ideal depende de diversos fatores, incluindo sua personalida
 
 Ambos os modelos, **trabalho remoto** e **trabalho híbrido**, oferecem oportunidades e desafios. O importante é encontrar o que melhor se adapta às suas necessidades e objetivos de carreira, garantindo um bom **equilíbrio vida-trabalho** e o máximo de produtividade.
 
-**Quer encontrar oportunidades de trabalho remoto ou híbrido?** Acesse [foxapply.com](https://foxapply.com) e descubra vagas que se adequam ao seu estilo de trabalho!
+**Quer encontrar oportunidades de trabalho remoto ou híbrido?** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e descubra vagas que se adequam ao seu estilo de trabalho!
     `,
     coverImage: '/images/blog/trabalho-remoto-vs-hibrido-2026.jpg',
     date: '2026-02-10',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Trabalho Remoto', 'Trabalho Híbrido', 'Carreira', 'Home Office', '2026'],
@@ -134,12 +134,12 @@ The choice of the ideal model depends on various factors, including your persona
 
 Both models, **remote work** and **hybrid work**, offer opportunities and challenges. The important thing is to find what best adapts to your needs and career goals, ensuring a good **work-life balance** and maximum productivity.
 
-**Want to find remote or hybrid work opportunities?** Visit [foxapply.com](https://foxapply.com) and discover jobs that fit your work style!
+**Want to find remote or hybrid work opportunities?** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and discover jobs that fit your work style!
     `,
     coverImage: '/images/blog/trabalho-remoto-vs-hibrido-2026.jpg',
     date: '2026-02-10',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Remote Work', 'Hybrid Work', 'Career', 'Home Office', '2026'],
@@ -205,12 +205,12 @@ La elección del modelo ideal depende de diversos factores, incluyendo tu person
 
 Ambos modelos, **trabajo remoto** y **trabajo híbrido**, ofrecen oportunidades y desafíos. Lo importante es encontrar lo que mejor se adapta a tus necesidades y objetivos de carrera, garantizando un buen **equilibrio vida-trabajo** y la máxima productividad.
 
-**¿Quieres encontrar oportunidades de trabajo remoto o híbrido?** Visita [foxapply.com](https://foxapply.com) y descubre vacantes que se adecúan a tu estilo de trabajo!
+**¿Quieres encontrar oportunidades de trabajo remoto o híbrido?** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y descubre vacantes que se adecúan a tu estilo de trabajo!
     `,
     coverImage: '/images/blog/trabalho-remoto-vs-hibrido-2026.jpg',
     date: '2026-02-10',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Trabajo Remoto', 'Trabajo Híbrido', 'Carrera', 'Home Office', '2026'],

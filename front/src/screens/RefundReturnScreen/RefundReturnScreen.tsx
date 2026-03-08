@@ -144,8 +144,8 @@ export const RefundReturnScreen: React.FC = () => {
               <S.ContactInfo>
                 <S.Paragraph>
                   <strong>{t('refundReturn.section6.email')}</strong>{' '}
-                  <S.ContactLink href="mailto:suporte@foxapply.com">
-                    suporte@foxapply.com
+                  <S.ContactLink href="mailto:suporte@entrevistaja.com.br">
+                    suporte@entrevistaja.com.br
                   </S.ContactLink>
                 </S.Paragraph>
                 <S.Paragraph style={{ marginBottom: 0 }}>

@@ -4,7 +4,7 @@ import { Container } from '../../common/Container';
 
 export const FeaturesSection = styled.section`
   padding: 5rem 0;
-  background-color: ${theme.colors.neutral[100]};
+  background-color: #fafafa;
   @media (min-width: ${theme.breakpoints.md}) {
     padding: 6rem 0;
   }
@@ -49,13 +49,13 @@ export const FeatureItem = styled.li`
   display: flex;
   align-items: flex-start;
   font-size: 1rem;
-  color: #f2f2f2; // lightText - same color as input labels
-  
+  color: #404040;
+
   svg {
     flex-shrink: 0;
     margin-right: 0.75rem;
     margin-top: 0.25rem;
-    color: #22c55e; // green-500
+    color: #22c55e;
   }
 `;
 
@@ -64,6 +64,16 @@ export const ContainerFeature = styled(Container)`
   flex-direction: column;
   align-items: center;
   text-align: center;
+
+  h1 {
+    color: #171717;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    @media (min-width: ${theme.breakpoints.md}) {
+      font-size: 2.25rem;
+    }
+  }
 `;
 
 export const VideoContainer = styled.div`
@@ -95,7 +105,7 @@ export const Subtitle = styled.p`
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
-  color: ${theme.colors.text.secondary};
+  color: #404040;
   margin: 1.5rem auto 2rem;
   max-width: 800px;
   text-align: center;
@@ -107,14 +117,14 @@ export const Subtitle = styled.p`
 `;
 
 export const HighlightedText = styled.span`
-  color: #f97316;
+  color: #0a0a0a;
   font-weight: 600;
 `;
 
 export const Description = styled.p`
   font-size: 1rem;
   line-height: 1.6;
-  color: ${theme.colors.text.secondary};
+  color: #404040;
   text-align: left;
   margin-bottom: 2rem;
 
@@ -139,14 +149,14 @@ export const StepCard = styled.div`
   display: flex;
   gap: 1.25rem;
   padding: 1.5rem;
-  background-color: ${theme.colors.background.primary};
-  border: 1px solid ${theme.colors.border.light};
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: ${theme.borderRadius.lg};
-  box-shadow: ${theme.shadows.sm};
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   transition: box-shadow 0.3s ease, transform 0.2s ease;
 
   &:hover {
-    box-shadow: ${theme.shadows.md};
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
     transform: translateY(-2px);
   }
 
@@ -166,7 +176,7 @@ export const StepContent = styled.div`
 export const StepTitle = styled.h3`
   font-size: 1.125rem;
   font-weight: 600;
-  color: ${theme.colors.text.primary};
+  color: #171717;
   margin: 0;
 
   @media (min-width: ${theme.breakpoints.md}) {
@@ -177,7 +187,7 @@ export const StepTitle = styled.h3`
 export const StepFunctionality = styled.p`
   font-size: 0.9375rem;
   line-height: 1.6;
-  color: ${theme.colors.text.secondary};
+  color: #525252;
   margin: 0;
   font-weight: 500;
 

@@ -1119,7 +1119,7 @@ export const ProfileScreen: React.FC = () => {
             {/* First Access Banner (shown only when no referral panel) */}
             {isFirstAccess && (
               <S.FirstAccessBanner>
-                <h3>{t('profile.welcome', 'Bem-vindo ao FoxApply!')}</h3>
+                <h3>{t('profile.welcome', 'Bem-vindo ao Entrevista Já!')}</h3>
                 <p>{t('profile.welcomeDescription', 'Complete seu perfil profissional para começar.')}</p>
                 <S.FirstAccessActions>
                   <S.ActionBtn onClick={() => setShowLinkedInDialog(true)} disabled={isImporting}>

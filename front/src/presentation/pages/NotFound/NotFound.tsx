@@ -77,7 +77,7 @@ export const NotFoundPage: React.FC = () => {
         </S.Cta>
       </S.Content>
 
-      <S.Footer>FoxApply</S.Footer>
+      <S.Footer>Entrevista Já</S.Footer>
     </S.Container>
   );
 };

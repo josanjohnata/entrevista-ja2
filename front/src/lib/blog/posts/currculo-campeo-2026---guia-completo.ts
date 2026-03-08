@@ -59,9 +59,9 @@ Separe em hard skills (técnicas) e soft skills (comportamentais), utilizando as
 - **Revise:** Erros de português podem ser fatais. Peça para alguém revisar seu currículo.
 - **Formato PDF:** Salve seu currículo em PDF para garantir que a formatação seja mantida em qualquer dispositivo.
 
-## Como o FoxApply Pode Ajudar 🦊
+## Como o Entrevista Já Pode Ajudar 🦊
 
-Com o **FoxApply**, você pode:
+Com o **Entrevista Já**, você pode:
 
 1. **Analisar seu currículo** automaticamente contra a descrição da vaga
 2. **Identificar palavras-chave faltando** que são essenciais para o ATS
@@ -72,12 +72,12 @@ Com o **FoxApply**, você pode:
 
 Com estas dicas, você estará no caminho certo para criar um **currículo campeão** que abrirá portas para as melhores oportunidades em 2026. Lembre-se, seu currículo é seu cartão de visitas no mundo profissional; invista tempo e esforço para que ele represente o seu melhor.
 
-**Quer otimizar seu currículo agora?** Acesse [foxapply.com](https://foxapply.com) e comece seu teste grátis de 7 dias!
+**Quer otimizar seu currículo agora?** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e comece seu teste grátis de 7 dias!
     `,
     coverImage: '/images/blog/curriculo-campeao-2026.jpg',
     date: '2026-02-06',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Currículo', 'ATS', 'Carreira', 'Dicas', '2026'],
@@ -139,9 +139,9 @@ Separate into hard skills (technical) and soft skills (behavioral), using keywor
 - **Proofread:** Spelling errors can be fatal. Have someone review your resume.
 - **PDF format:** Save your resume as PDF to ensure formatting is maintained on any device.
 
-## How FoxApply Can Help 🦊
+## How Entrevista Já Can Help 🦊
 
-With **FoxApply**, you can:
+With **Entrevista Já**, you can:
 
 1. **Analyze your resume** automatically against the job description
 2. **Identify missing keywords** that are essential for ATS
@@ -152,12 +152,12 @@ With **FoxApply**, you can:
 
 With these tips, you'll be on the right track to create a **winning resume** that will open doors to the best opportunities in 2026. Remember, your resume is your business card in the professional world; invest time and effort to make it represent your best.
 
-**Want to optimize your resume now?** Visit [foxapply.com](https://foxapply.com) and start your free 7-day trial!
+**Want to optimize your resume now?** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and start your free 7-day trial!
     `,
     coverImage: '/images/blog/curriculo-campeao-2026.jpg',
     date: '2026-02-06',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Resume', 'ATS', 'Career', 'Tips', '2026'],
@@ -219,9 +219,9 @@ Separa en hard skills (técnicas) y soft skills (comportamentales), utilizando l
 - **Revisa:** Los errores ortográficos pueden ser fatales. Pide a alguien que revise tu currículum.
 - **Formato PDF:** Guarda tu currículum en PDF para garantizar que el formato se mantenga en cualquier dispositivo.
 
-## Cómo FoxApply Puede Ayudar 🦊
+## Cómo Entrevista Já Puede Ayudar 🦊
 
-Con **FoxApply**, puedes:
+Con **Entrevista Já**, puedes:
 
 1. **Analizar tu currículum** automáticamente contra la descripción del puesto
 2. **Identificar palabras clave faltantes** que son esenciales para el ATS
@@ -232,12 +232,12 @@ Con **FoxApply**, puedes:
 
 Con estos consejos, estarás en el camino correcto para crear un **currículum ganador** que abrirá puertas a las mejores oportunidades en 2026. Recuerda, tu currículum es tu tarjeta de presentación en el mundo profesional; invierte tiempo y esfuerzo para que represente lo mejor de ti.
 
-**¿Quieres optimizar tu currículum ahora?** Visita [foxapply.com](https://foxapply.com) y comienza tu prueba gratis de 7 días!
+**¿Quieres optimizar tu currículum ahora?** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y comienza tu prueba gratis de 7 días!
     `,
     coverImage: '/images/blog/curriculo-campeao-2026.jpg',
     date: '2026-02-06',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Currículum', 'ATS', 'Carrera', 'Consejos', '2026'],

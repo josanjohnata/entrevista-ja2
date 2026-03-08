@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BlogCard } from './components/BlogCard';
 import { BlogPostMetadata, fetchAllPosts } from '../../lib/blog';
-import { Navbar } from '../FoxApplyLandingScreen/components/Navbar';
-import { Footer } from '../FoxApplyLandingScreen/components/Footer';
-import * as LandingStyles from '../FoxApplyLandingScreen/styles';
+import { Navbar } from '../../components/sections/Navbar';
+import { Footer } from '../../components/sections/Footer';
+import * as LandingStyles from '../landing/styles';
 import * as S from './styles';
 import logoImage from '../../assets/logo.png';
 
@@ -37,18 +37,16 @@ export const BlogScreen: React.FC = () => {
   }, [i18n.language]);
   
   return (
-    <>
-      <LandingStyles.LandingGlobalStyles />
-      <LandingStyles.PageWrapper>
-        <Navbar hideSectionLinks hideActionButtons />
+    <LandingStyles.PageWrapper>
+      <Navbar />
         <S.BlogSection>
           <S.ContentWrapper>
             <S.Header>
               <S.IconWrapper>
-                <img src={logoImage} alt="FoxApply" />
+                <img src={logoImage} alt="Entrevista Já" />
               </S.IconWrapper>
               <S.Title>
-                Blog <span className="highlight">FoxApply</span>
+                Blog <span className="highlight">Entrevista Já</span>
               </S.Title>
               <S.Subtitle>
                 {t('blog.subtitle', 'Dicas, estratégias e insights para turbinar sua carreira e conseguir a vaga dos sonhos')}
@@ -73,8 +71,7 @@ export const BlogScreen: React.FC = () => {
             )}
           </S.ContentWrapper>
         </S.BlogSection>
-        <Footer />
-      </LandingStyles.PageWrapper>
-    </>
+      <Footer />
+    </LandingStyles.PageWrapper>
   );
 };

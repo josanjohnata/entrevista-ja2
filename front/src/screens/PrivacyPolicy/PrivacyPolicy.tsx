@@ -159,14 +159,14 @@ export const PrivacyPolicyScreen: React.FC = () => {
               <S.ContactInfo>
                 <S.Paragraph>
                   <strong>{t('privacyPolicy.section7.email')}</strong>{' '}
-                  <S.ContactLink href="mailto:privacidade@foxapply.com">
-                    privacidade@foxapply.com
+                  <S.ContactLink href="mailto:privacidade@entrevistaja.com.br">
+                    privacidade@entrevistaja.com.br
                   </S.ContactLink>
                 </S.Paragraph>
                 <S.Paragraph style={{ marginBottom: 0 }}>
                   <strong>{t('privacyPolicy.section7.website')}</strong>{' '}
-                  <S.ContactLink href="https://foxapply.com" target="_blank" rel="noopener noreferrer">
-                    www.foxapply.com
+                  <S.ContactLink href="https://entrevistaja.com.br" target="_blank" rel="noopener noreferrer">
+                    www.entrevistaja.com.br
                   </S.ContactLink>
                 </S.Paragraph>
               </S.ContactInfo>

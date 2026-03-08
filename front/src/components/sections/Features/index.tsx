@@ -7,10 +7,10 @@ export const Features: React.FC = () => {
 
   const renderSubtitle = () => {
     const subtitleText = t('landing.features.subtitle');
-    const parts = subtitleText.split(/(FoxApply)/gi);
+    const parts = subtitleText.split(/(Entrevista Já)/gi);
     
     return parts.map((part, index) => {
-      if (part.toLowerCase() === 'foxapply') {
+      if (part === 'Entrevista Já') {
         return <S.HighlightedText key={index}>{part}</S.HighlightedText>;
       }
       return <span key={index}>{part}</span>;
@@ -24,43 +24,16 @@ export const Features: React.FC = () => {
         <S.Subtitle>
           {renderSubtitle()}
         </S.Subtitle>
-        <S.Description>
-          {t('landing.features.description')}
-        </S.Description>
         
-        <S.StepsContainer>
-          <S.StepCard>
-            <S.StepContent>
-              <S.StepTitle>{t('landing.features.step3.title')}</S.StepTitle>
-              <S.StepFunctionality>{t('landing.features.step3.functionality')}</S.StepFunctionality>
-              <S.StepBenefit>{t('landing.features.step3.benefit')}</S.StepBenefit>
-            </S.StepContent>
-          </S.StepCard>
-
-          <S.StepCard>
-            <S.StepContent>
-              <S.StepTitle>{t('landing.features.step1.title')}</S.StepTitle>
-              <S.StepFunctionality>{t('landing.features.step1.functionality')}</S.StepFunctionality>
-              <S.StepBenefit>{t('landing.features.step1.benefit')}</S.StepBenefit>
-            </S.StepContent>
-          </S.StepCard>
-
-          <S.StepCard>
-            <S.StepContent>
-              <S.StepTitle>{t('landing.features.step4.title')}</S.StepTitle>
-              <S.StepFunctionality>{t('landing.features.step4.functionality')}</S.StepFunctionality>
-              <S.StepBenefit>{t('landing.features.step4.benefit')}</S.StepBenefit>
-            </S.StepContent>
-          </S.StepCard>
-
-          <S.StepCard>
-            <S.StepContent>
-              <S.StepTitle>{t('landing.features.step2.title')}</S.StepTitle>
-              <S.StepFunctionality>{t('landing.features.step2.functionality')}</S.StepFunctionality>
-              <S.StepBenefit>{t('landing.features.step2.benefit')}</S.StepBenefit>
-            </S.StepContent>
-          </S.StepCard>
-        </S.StepsContainer>
+        <S.VideoContainer>
+          <iframe 
+            src="https://player.vimeo.com/video/1148295137?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;autoplay=1&amp;muted=0&amp;loop=1"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+            title="EntrevistaJa"
+            allowFullScreen
+          />
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </S.VideoContainer>
       </S.ContainerFeature>
     </S.FeaturesSection>
   );

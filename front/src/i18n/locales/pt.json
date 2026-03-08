@@ -1,57 +1,37 @@
 {
   "seo": {
-    "title": "FoxApply - Candidaturas Automáticas no LinkedIn",
+    "title": "Entrevista Já - Candidaturas Automáticas no LinkedIn",
     "description": "Otimize seu currículo para ATS e aplique automaticamente em vagas do LinkedIn. Aumente suas chances de receber entrevistas com inteligência artificial.",
     "keywords": "candidatura automática, LinkedIn, emprego, currículo, ATS, inteligência artificial, vagas, carreira, recrutamento, entrevista"
   },
   "landing": {
     "hero": {
-      "title": "Candidaturas automáticas no LinkedIn que funcionam",
-      "subtitle": "Aplique em centenas de vagas com um clique. Otimizamos seu currículo para ATS e aumentamos suas chances de entrevista.",
-      "socialProof": "candidatos já usam a FoxApply",
-      "emailPlaceholder": "Seu melhor e-mail",
-      "startNow": "Começar agora",
-      "freeTrial": "Teste grátis. Cancele quando quiser.",
+      "title": "Consiga sua Entrevista, Mais Rápido.",
+      "subtitle": "Nossa plataforma filtra as vagas ideais do LinkedIn e analisa seu currículo com IA, mostrando exatamente o que ajustar para triplicar suas chances de ser chamado.",
+      "socialProof": "candidatos já usam a plataforma",
+      "emailPlaceholder": "Endereço de e-mail",
+      "startNow": "Assine Agora",
+      "freeTrial": "Comece seu teste agora. Cancele quando quiser.",
       "invalidEmail": "Digite um e-mail válido."
     },
     "navbar": {
-      "howItWorks": "Como funciona",
+      "howItWorks": "Funcionamento",
+      "price": "Preço",
       "contact": "Contato",
       "signUp": "Cadastre-se",
-      "login": "Entrar"
+      "login": "Login"
     },
     "footer": {
-      "copyright": "© {{year}} FoxApply. Todos os direitos reservados."
+      "copyright": "© {{year}} Entrevista Já. Todos os direitos reservados."
     },
     "finalCTA": {
       "title": "Pronto para acelerar suas candidaturas?",
-      "description": "Junte-se a milhares de profissionais que já usam a FoxApply.",
+      "description": "Junte-se a milhares de profissionais que já usam o Entrevista Já.",
       "button": "Começar agora"
     },
     "features": {
-      "title": "Como funciona",
-      "subtitle": "Em poucos passos você começa a receber mais entrevistas",
-      "description": "A extensão FoxApply aplica automaticamente nas vagas do LinkedIn com seus dados e currículo otimizado para ATS.",
-      "step1": {
-        "title": "Instale a extensão",
-        "functionality": "Um clique no Chrome",
-        "benefit": "Pronto em segundos"
-      },
-      "step2": {
-        "title": "Conecte seu LinkedIn",
-        "functionality": "Login seguro",
-        "benefit": "Dados preenchidos automaticamente"
-      },
-      "step3": {
-        "title": "Ative o modo automático",
-        "functionality": "Nas vagas que quiser",
-        "benefit": "Aplique em massa"
-      },
-      "step4": {
-        "title": "Acompanhe os resultados",
-        "functionality": "Dashboard em tempo real",
-        "benefit": "Mais entrevistas"
-      }
+      "title": "Como Funciona?",
+      "subtitle": "Em poucos passos você começa a receber mais entrevistas com o Entrevista Já"
     },
     "extension": {
       "title": "Extensão para LinkedIn",
@@ -181,7 +161,7 @@
     "linkedinChampion": "LinkedIn Champion",
     "recommendedJobs": "Vagas Recomendadas",
     "blog": "Blog",
-    "logo": "FoxApply",
+    "logo": "Entrevista Já",
     "plans": "Planos",
     "contact": "Contato",
     "jobs": "Vagas",
@@ -304,7 +284,7 @@
     "confirmPassword": "Confirmar Senha",
     "createAccount": "Criar conta",
     "chosenPlan": "Transforme Sua Carreira Agora",
-    "planName": "FoxApply",
+    "planName": "Entrevista Já",
     "fullPrice": "à vista",
     "acceptTerms": "Li e concordo com os",
     "termsAndPrivacy": "termos e política",
@@ -341,9 +321,9 @@
   "checkoutPCD": {
     "title": "Checkout - Pessoas com Deficiência",
     "monthly": "Plano Mensal",
-    "monthlyDescription": "Acesso mensal completo à plataforma FoxApply",
+    "monthlyDescription": "Acesso mensal completo à plataforma Entrevista Já",
     "monthlyPlan": "Plano Mensal",
-    "monthlyPlanDescription": "Acesso mensal completo à plataforma FoxApply com 30 dias grátis",
+    "monthlyPlanDescription": "Acesso mensal completo à plataforma Entrevista Já com 30 dias grátis",
     "createAccount": "Criar conta",
     "chosenPlan": "Transforme Sua Carreira Agora",
     "freeTrialBadge": "30 dias grátis",
@@ -370,7 +350,7 @@
       "freeTrial": "30 dias grátis - Sem compromisso"
     },
     "features": {
-      "title": "Por que escolher o FoxApply?",
+      "title": "Por que escolher o Entrevista Já?",
       "freeTrial": {
         "title": "30 Dias Grátis",
         "description": "Teste todas as funcionalidades sem compromisso durante 30 dias completos."
@@ -418,7 +398,7 @@
     },
     "cta": {
       "title": "Pronto para Transformar Sua Carreira?",
-      "description": "Junte-se a milhares de profissionais que já estão acelerando suas carreiras com o FoxApply.",
+      "description": "Junte-se a milhares de profissionais que já estão acelerando suas carreiras com o Entrevista Já.",
       "button": "Começar Agora - 30 Dias Grátis"
     }
   },
@@ -666,7 +646,7 @@
   "privacyPolicy": {
     "title": "Política de Privacidade",
     "lastUpdated": "Última atualização: Dezembro de 2024",
-    "intro": "A FoxApply está comprometida em proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações quando você utiliza nossa plataforma e serviços.",
+    "intro": "O Entrevista Já está comprometido em proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações quando você utiliza nossa plataforma e serviços.",
     "section1": {
       "title": "1. Informações que Coletamos",
       "description": "Coletamos informações que você nos fornece diretamente, incluindo:",
@@ -726,7 +706,7 @@
   "refundReturn": {
     "title": "Política de Reembolso e Devolução",
     "lastUpdated": "Última atualização: Janeiro de 2025",
-    "intro": "A FoxApply está comprometida em garantir sua satisfação. Esta política detalha nossos procedimentos de reembolso e devolução para garantir transparência e clareza em todas as transações.",
+    "intro": "O Entrevista Já está comprometido em garantir sua satisfação. Esta política detalha nossos procedimentos de reembolso e devolução para garantir transparência e clareza em todas as transações.",
     "section1": {
       "title": "1. Política de Reembolso",
       "description": "Oferecemos reembolso total para assinaturas canceladas dentro do prazo estabelecido. Nossa política de reembolso inclui:",
@@ -800,12 +780,12 @@
   "plans": {
     "title": "Escolha o plano ideal",
     "titleSpan": "para você",
-    "subtitle": "Desbloqueie todo o potencial do FoxApply e conquiste a vaga dos seus sonhos",
+    "subtitle": "Desbloqueie todo o potencial do Entrevista Já e conquiste a vaga dos seus sonhos",
     "back": "Voltar",
     "popularBadge": "✨ Melhor Preço",
     "monthly": "Acesso Premium Mensal",
     "monthlyPlan": "Plano Mensal",
-    "monthlyPlanDescription": "Acesso mensal completo à plataforma FoxApply",
+    "monthlyPlanDescription": "Acesso mensal completo à plataforma Entrevista Já",
     "annual": "Acesso Premium Anual",
     "annualDescription": "Melhor custo-benefício com 50% de desconto",
     "quarterly": "Acesso Premium Trimestral",
@@ -901,7 +881,7 @@
   },
   "foxApplyLanding": {
     "navbar": {
-      "logo": "FoxApply",
+      "logo": "Entrevista Já",
       "howItWorks": "Como Funciona",
       "features": "Recursos",
       "linkedinChampion": "LinkedIn Champion",
@@ -921,7 +901,7 @@
       "noChargeBeforeTest": "Não cobramos nada antes do teste",
       "cancelAnytime": "cancele quando quise. sem pergunta, sem drama.",
       "applyingNow": "Enquanto você lê isso",
-      "applicationsSentToday": "candidatos já usaram o FoxApply hoje\ne enviaram candidaturas automáticas.",
+      "applicationsSentToday": "candidatos já usaram o Entrevista Já hoje\ne enviaram candidaturas automáticas.",
       "jobsPerMonth": "Vagas/mês",
       "faster": "Mais rápido",
       "atsRate": "Taxa ATS"
@@ -1004,7 +984,7 @@
         "highlight2": "Mas sem passar no filtro invisível, ninguém te vê."
       },
       "subtitle": "Em 2026, 98% das grandes empresas usam ATS, e a maioria rejeita currículos por falta de palavras-chave exatas, formato errado ou incompatibilidade simples.",
-      "subtitle2": "Enquanto outros perdem horas tentando “adivinhar” o que o ATS quer, o FoxApply resolve isso em segundos, sem você mexer um dedo:",
+      "subtitle2": "Enquanto outros perdem horas tentando “adivinhar” o que o ATS quer, o Entrevista Já resolve isso em segundos, sem você mexer um dedo:",
       "subtitle3": "O robô trabalha por você 24/7… enquanto você se prepara para as entrevistas que vão chegar.",
       "feature1": {
         "title": "Otimização ATS automática",
@@ -1034,7 +1014,7 @@
     },
     "targetAudience": {
       "badge": "Para Você",
-      "title": "O FoxApply é para {professionals} que querem mais",
+      "title": "O Entrevista Já é para {professionals} que querem mais",
       "professionals": "profissionais",
       "audience1": {
         "highlight": "Ideal para quem está começando",
@@ -1061,12 +1041,12 @@
       "badge": "Histórias Reais",
       "title": "De zero retorno por meses a {receiving}",
       "receiving": "8 entrevistas em 2 semanas",
-      "subtitle": "Veja como devs juniores como você estão virando o jogo com o FoxApply."
+      "subtitle": "Veja como devs juniores como você estão virando o jogo com o Entrevista Já."
     },
     "success": {
       "title": "Agora, imagine acordar, olhar para o seu celular e já ter:",
       "invites": "",
-      "description": "Isso não é sonho. É exatamente o que {highlight} estão vivendo agora com o FoxApply.",
+      "description": "Isso não é sonho. É exatamente o que {highlight} estão vivendo agora com o Entrevista Já.",
       "descriptionHighlight": "centenas de devs juniores, plenos em transição e quem quer gringa remota",
       "benefit1": "3 novos convites para entrevista na caixa de entrada",
       "benefit2": "Ter aplicado para 50–100 vagas reais enquanto tomava café",
@@ -1143,7 +1123,7 @@
     "footer": {
       "privacy": "Política de Privacidade",
       "officialSite": "Site Oficial",
-      "copyright": "© 2026 FoxApply. Todos os direitos reservados."
+      "copyright": "© 2026 Entrevista Já. Todos os direitos reservados."
     }
   },
   "recommendedJobs": {

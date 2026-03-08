@@ -12,7 +12,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks: NavItem[] = [
     { href: '#funcionamento', label: t('landing.navbar.howItWorks') },
-    { href: '#contato', label: t('landing.navbar.contact') },
+    { href: '/plans', label: t('landing.navbar.price') },
   ];
 
   return (
@@ -22,9 +22,10 @@ export const Navbar: React.FC = () => {
 
         <S.DesktopNav>
           {navLinks.map((link) => (
-            <S.NavLink key={link.label} href={link.href}>{link.label}</S.NavLink>
+            <S.NavLink key={link.label} as={link.href.startsWith('/') ? Link : 'a'} to={link.href.startsWith('/') ? link.href : undefined} href={link.href.startsWith('/') ? undefined : link.href}>
+              {link.label}
+            </S.NavLink>
           ))}
-          <S.NavLink as={Link} to="/checkout">{t('landing.navbar.signUp')}</S.NavLink>
           <S.LoginButton as={Link} to="/login">{t('landing.navbar.login')}</S.LoginButton>
         </S.DesktopNav>
 
@@ -39,14 +40,17 @@ export const Navbar: React.FC = () => {
         </S.MobileMenuButton>
         <Logo />
         {navLinks.map((link) => (
-          <S.NavLink key={link.label} href={link.href} onClick={() => setIsMobileMenuOpen(false)}>
+          <S.NavLink
+            key={link.label}
+            as={link.href.startsWith('/') ? Link : 'a'}
+            to={link.href.startsWith('/') ? link.href : undefined}
+            href={link.href.startsWith('/') ? undefined : link.href}
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
             {link.label}
           </S.NavLink>
         ))}
-        <S.NavLink as={Link} to="/checkout" onClick={() => setIsMobileMenuOpen(false)}>
-          {t('landing.navbar.signUp')}
-        </S.NavLink>
-        <S.LoginButton as={Link} to="/login">{t('landing.navbar.login')}</S.LoginButton>
+        <S.LoginButton as={Link} to="/login" onClick={() => setIsMobileMenuOpen(false)}>{t('landing.navbar.login')}</S.LoginButton>
       </S.MobileSheet>
     </S.Header>
   );

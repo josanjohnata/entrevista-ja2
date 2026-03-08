@@ -114,7 +114,7 @@ export const HowItWorksSection: React.FC = () => {
           </div>
           <div>
             <Title>
-              Como a FoxApply <span className="text-gradient">Funciona</span>
+              Como o Entrevista Já <span className="text-gradient">Funciona</span>
             </Title>
             <Subtitle>
               Em 4 passos simples, você transforma sua busca por emprego

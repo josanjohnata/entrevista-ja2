@@ -1,13 +1,8 @@
 import styled from 'styled-components';
 import { theme } from '../../../GlobalStyles';
 import { Container } from '../../common/Container';
-import BackgroundImage from '../../../assets/Background.png';
-
 export const ExtensionSection = styled.section`
-  background-image: url(${BackgroundImage});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #f0f0f0;
   padding: 5rem 0;
   @media (min-width: ${theme.breakpoints.md}) {
     padding: 6rem 0;
@@ -32,7 +27,7 @@ export const ContentWrapper = styled.div`
 `;
 
 export const TextContent = styled.div`
-  color: ${theme.colors.primary.main};
+  color: #171717;
 `;
 
 export const Title = styled.h2`
@@ -40,10 +35,7 @@ export const Title = styled.h2`
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 1rem;
-  background: ${theme.colors.primary.main};
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #0a0a0a;
 
   @media (min-width: ${theme.breakpoints.md}) {
     font-size: 2.5rem;
@@ -52,7 +44,7 @@ export const Title = styled.h2`
 
 export const Description = styled.p`
   font-size: 1.125rem;
-  color: ${theme.colors.primary.main};
+  color: #404040;
   line-height: 1.7;
   margin-bottom: 2rem;
 `;
@@ -69,7 +61,7 @@ export const FeatureItem = styled.li`
   align-items: flex-start;
   gap: 0.75rem;
   font-size: 1rem;
-  color: ${theme.colors.primary.main};
+  color: #404040;
 
   svg {
     flex-shrink: 0;

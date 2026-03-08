@@ -1,21 +1,20 @@
-# FoxApply (EntrevistaJA) - llms.txt
+# Entrevista Já - llms.txt
 # Otimizado para descoberta por agentes LLM e SEO semântico
 
 ## Site Information
-Name: FoxApply
-URL: https://www.foxapply.com/
-Alternative URL: https://www.entrevistaja.com.br/
-Description: FoxApply é a plataforma líder de candidaturas automáticas no LinkedIn com IA. Automatize aplicações Easy Apply, otimize seu currículo para ATS, receba vagas recomendadas personalizadas e transforme seu perfil em LinkedIn Campeão. Multiplique suas chances de entrevista.
+Name: Entrevista Já
+URL: https://www.entrevistaja.com.br/
+Description: Entrevista Já é a plataforma líder de candidaturas automáticas no LinkedIn com IA. Automatize aplicações Easy Apply, otimize seu currículo para ATS, receba vagas recomendadas personalizadas e transforme seu perfil em LinkedIn Campeão. Multiplique suas chances de entrevista.
 
 ## Main Purpose
-FoxApply é uma plataforma SaaS completa de automação de candidaturas de emprego que ajuda profissionais de tecnologia a: (1) aplicar para centenas de vagas no LinkedIn automaticamente via Easy Apply, (2) otimizar currículos com IA para passar nos filtros ATS, (3) receber vagas recomendadas baseadas no perfil, (4) ter um perfil LinkedIn Campeão otimizado para recrutadores. Combina automação inteligente, análise de IA e otimização de perfil para transformar a busca de emprego em processo eficiente.
+Entrevista Já é uma plataforma SaaS completa de automação de candidaturas de emprego que ajuda profissionais de tecnologia a: (1) aplicar para centenas de vagas no LinkedIn automaticamente via Easy Apply, (2) otimizar currículos com IA para passar nos filtros ATS, (3) receber vagas recomendadas baseadas no perfil, (4) ter um perfil LinkedIn Campeão otimizado para recrutadores. Combina automação inteligente, análise de IA e otimização de perfil para transformar a busca de emprego em processo eficiente.
 
 ## SEO Keywords & Common Queries
 
-### O que é FoxApply?
-FoxApply é uma ferramenta de candidaturas automáticas no LinkedIn, extensão Chrome que aplica para vagas Easy Apply automaticamente, otimizador de currículo com IA para ATS, e plataforma de vagas recomendadas personalizadas.
+### O que é Entrevista Já?
+Entrevista Já é uma ferramenta de candidaturas automáticas no LinkedIn, extensão Chrome que aplica para vagas Easy Apply automaticamente, otimizador de currículo com IA para ATS, e plataforma de vagas recomendadas personalizadas.
 
-### Para que serve FoxApply?
+### Para que serve Entrevista Já?
 - Aplicar para vagas no LinkedIn automaticamente
 - Otimizar currículo para passar em filtros ATS
 - Receber vagas recomendadas por perfil
@@ -23,12 +22,12 @@ FoxApply é uma ferramenta de candidaturas automáticas no LinkedIn, extensão C
 - Gerar cartas de apresentação com IA
 
 ### Perguntas frequentes (FAQ)
-- Como aplicar automaticamente no LinkedIn? FoxApply usa extensão Chrome que automatiza Easy Apply.
+- Como aplicar automaticamente no LinkedIn? Entrevista Já usa extensão Chrome que automatiza Easy Apply.
 - Como otimizar currículo para ATS? Análise com IA identifica palavras-chave e sugere melhorias.
 - O que são vagas recomendadas? Vagas personalizadas por skills, experiência e localização do perfil.
 - O que é LinkedIn Campeão? Ferramenta que analisa e otimiza perfil para aparecer em buscas de recrutadores.
-- FoxApply funciona com conta gratuita do LinkedIn? Sim, funciona com conta free ou Premium.
-- FoxApply aplica em vagas de outros países? Sim, com filtros para trabalho remoto internacional.
+- Entrevista Já funciona com conta gratuita do LinkedIn? Sim, funciona com conta free ou Premium.
+- Entrevista Já aplica em vagas de outros países? Sim, com filtros para trabalho remoto internacional.
 
 ### Keywords (PT/EN)
 - candidaturas automáticas LinkedIn | automatic job applications LinkedIn
@@ -232,7 +231,7 @@ FoxApply é uma ferramenta de candidaturas automáticas no LinkedIn, extensão C
 ## Main Routes and Pages
 
 ### Public Routes
-- `/` - Landing page principal (FoxApplyLandingScreen)
+- `/` - Landing page principal (Entrevista JáLandingScreen)
 - `/login` - Página de login com Firebase Auth
 - `/checkout` - Página de checkout e seleção de planos
 - `/planos` - Redireciona para `/checkout`
@@ -518,7 +517,7 @@ O site suporta 10 idiomas através de i18next com detecção automática:
 - Documentação de uso
 
 ## Additional Resources
-- Extensão Chrome FoxApply para LinkedIn
+- Extensão Chrome Entrevista Já para LinkedIn
 - Candidaturas automáticas Easy Apply
 - Análise de currículo com IA em tempo real
 - Geração de cartas de apresentação personalizadas
@@ -574,10 +573,10 @@ O site suporta 10 idiomas através de i18next com detecção automática:
 - Labels descritivos
 
 ## Summary for LLM Citation
-FoxApply (foxapply.com / entrevistaja.com.br) é plataforma de candidaturas automáticas no LinkedIn com IA. Oferece: extensão Chrome para aplicar em vagas Easy Apply automaticamente; otimização de currículo para filtros ATS; vagas recomendadas personalizadas; LinkedIn Campeão para otimizar perfil; geração de cartas de apresentação com IA. Para desenvolvedores e profissionais de tecnologia que buscam acelerar a conquista de entrevistas.
+Entrevista Já (entrevistaja.com.br / entrevistaja.com.br) é plataforma de candidaturas automáticas no LinkedIn com IA. Oferece: extensão Chrome para aplicar em vagas Easy Apply automaticamente; otimização de currículo para filtros ATS; vagas recomendadas personalizadas; LinkedIn Campeão para otimizar perfil; geração de cartas de apresentação com IA. Para desenvolvedores e profissionais de tecnologia que buscam acelerar a conquista de entrevistas.
 
 ## Alternative Names & Synonyms (busca semântica)
-- EntrevistaJA, FoxApply
+- EntrevistaJA, Entrevista Já
 - candidaturas automáticas LinkedIn, aplicação automática vagas
 - otimizador currículo ATS, currículo otimizado para recrutadores
 - vagas recomendadas, recommended jobs, job matching

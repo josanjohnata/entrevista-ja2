@@ -47,18 +47,18 @@ Para construir e manter sua empregabilidade na era 4.0, é fundamental focar em 
 
 7.  **Marca Pessoal:** Construa uma marca pessoal forte e autêntica, tanto online quanto offline. Mostre seu valor, seus conhecimentos e sua paixão pela sua área.
 
-## A FoxApply e a Empregabilidade 4.0
+## A Entrevista Já e a Empregabilidade 4.0
 
-A FoxApply está comprometida em ajudar profissionais a se prepararem para os desafios e oportunidades da Empregabilidade 4.0. Através de recursos, ferramentas e informações atualizadas, buscamos capacitar indivíduos a desenvolverem as habilidades necessárias para se destacarem em um mercado em constante evolução.
+A Entrevista Já está comprometida em ajudar profissionais a se prepararem para os desafios e oportunidades da Empregabilidade 4.0. Através de recursos, ferramentas e informações atualizadas, buscamos capacitar indivíduos a desenvolverem as habilidades necessárias para se destacarem em um mercado em constante evolução.
 
 Manter-se relevante na **Empregabilidade 4.0** exige proatividade e um compromisso com o **aprendizado contínuo**. Ao abraçar as novas tecnologias e desenvolver as habilidades do futuro, você estará preparado para construir uma carreira de sucesso e duradoura.
 
-**Quer desenvolver sua empregabilidade 4.0?** Acesse [foxapply.com](https://foxapply.com) e descubra ferramentas e recursos para turbinar sua carreira!
+**Quer desenvolver sua empregabilidade 4.0?** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e descubra ferramentas e recursos para turbinar sua carreira!
     `,
     coverImage: '/images/blog/empregabilidade-4-0-2026.jpg',
     date: '2026-02-12',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Empregabilidade', 'Carreira', 'Mercado de Trabalho', 'Aprendizado Contínuo', '2026'],
@@ -108,18 +108,18 @@ To build and maintain your employability in the 4.0 era, it's essential to focus
 
 7.  **Personal Brand:** Build a strong and authentic personal brand, both online and offline. Show your value, your knowledge, and your passion for your field.
 
-## FoxApply and Employability 4.0
+## Entrevista Já and Employability 4.0
 
-FoxApply is committed to helping professionals prepare for the challenges and opportunities of Employability 4.0. Through resources, tools, and updated information, we seek to empower individuals to develop the skills necessary to stand out in a constantly evolving market.
+Entrevista Já is committed to helping professionals prepare for the challenges and opportunities of Employability 4.0. Through resources, tools, and updated information, we seek to empower individuals to develop the skills necessary to stand out in a constantly evolving market.
 
 Staying relevant in **Employability 4.0** requires proactivity and a commitment to **continuous learning**. By embracing new technologies and developing future skills, you'll be prepared to build a successful and lasting career.
 
-**Want to develop your Employability 4.0?** Visit [foxapply.com](https://foxapply.com) and discover tools and resources to boost your career!
+**Want to develop your Employability 4.0?** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and discover tools and resources to boost your career!
     `,
     coverImage: '/images/blog/empregabilidade-4-0-2026.jpg',
     date: '2026-02-12',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Employability', 'Career', 'Job Market', 'Continuous Learning', '2026'],
@@ -169,18 +169,18 @@ Para construir y mantener tu empleabilidad en la era 4.0, es fundamental enfocar
 
 7.  **Marca Personal:** Construye una marca personal fuerte y auténtica, tanto online como offline. Muestra tu valor, tus conocimientos y tu pasión por tu área.
 
-## FoxApply y la Empleabilidad 4.0
+## Entrevista Já y la Empleabilidad 4.0
 
-FoxApply está comprometida en ayudar a profesionales a prepararse para los desafíos y oportunidades de la Empleabilidad 4.0. A través de recursos, herramientas e información actualizada, buscamos capacitar a individuos para desarrollar las habilidades necesarias para destacarse en un mercado en constante evolución.
+Entrevista Já está comprometida en ayudar a profesionales a prepararse para los desafíos y oportunidades de la Empleabilidad 4.0. A través de recursos, herramientas e información actualizada, buscamos capacitar a individuos para desarrollar las habilidades necesarias para destacarse en un mercado en constante evolución.
 
 Mantenerse relevante en la **Empleabilidad 4.0** exige proactividad y un compromiso con el **aprendizaje continuo**. Al abrazar las nuevas tecnologías y desarrollar las habilidades del futuro, estarás preparado para construir una carrera exitosa y duradera.
 
-**¿Quieres desarrollar tu Empleabilidad 4.0?** Visita [foxapply.com](https://foxapply.com) y descubre herramientas y recursos para impulsar tu carrera!
+**¿Quieres desarrollar tu Empleabilidad 4.0?** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y descubre herramientas y recursos para impulsar tu carrera!
     `,
     coverImage: '/images/blog/empregabilidade-4-0-2026.jpg',
     date: '2026-02-12',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Empleabilidad', 'Carrera', 'Mercado Laboral', 'Aprendizaje Continuo', '2026'],

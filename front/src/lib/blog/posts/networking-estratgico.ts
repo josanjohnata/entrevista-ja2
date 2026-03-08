@@ -48,12 +48,12 @@ Em um mercado de trabalho dinâmico, muitas das melhores oportunidades não são
 
 Construir um **networking estratégico** leva tempo e dedicação, mas os benefícios a longo prazo são inestimáveis. Invista em seus relacionamentos profissionais e veja como sua **rede de contatos** pode se tornar um poderoso motor para o seu sucesso.
 
-**Quer otimizar seu LinkedIn para networking?** Acesse [foxapply.com](https://foxapply.com) e use o LinkedIn Champion para melhorar seu perfil!
+**Quer otimizar seu LinkedIn para networking?** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e use o LinkedIn Champion para melhorar seu perfil!
     `,
     coverImage: '/images/blog/networking-estrategico-2026.jpg',
     date: '2026-02-09',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Networking', 'Carreira', 'LinkedIn', 'Rede de Contatos', 'Oportunidades'],
@@ -104,12 +104,12 @@ In a dynamic job market, many of the best opportunities are not publicly adverti
 
 Building **strategic networking** takes time and dedication, but the long-term benefits are invaluable. Invest in your professional relationships and see how your **contact network** can become a powerful engine for your success.
 
-**Want to optimize your LinkedIn for networking?** Visit [foxapply.com](https://foxapply.com) and use LinkedIn Champion to improve your profile!
+**Want to optimize your LinkedIn for networking?** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and use LinkedIn Champion to improve your profile!
     `,
     coverImage: '/images/blog/networking-estrategico-2026.jpg',
     date: '2026-02-09',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Networking', 'Career', 'LinkedIn', 'Contact Network', 'Opportunities'],
@@ -160,12 +160,12 @@ En un mercado laboral dinámico, muchas de las mejores oportunidades no se divul
 
 Construir un **networking estratégico** lleva tiempo y dedicación, pero los beneficios a largo plazo son invaluables. Invierte en tus relaciones profesionales y verás cómo tu **red de contactos** puede convertirse en un poderoso motor para tu éxito.
 
-**¿Quieres optimizar tu LinkedIn para networking?** Visita [foxapply.com](https://foxapply.com) y usa LinkedIn Champion para mejorar tu perfil!
+**¿Quieres optimizar tu LinkedIn para networking?** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y usa LinkedIn Champion para mejorar tu perfil!
     `,
     coverImage: '/images/blog/networking-estrategico-2026.jpg',
     date: '2026-02-09',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Networking', 'Carrera', 'LinkedIn', 'Red de Contactos', 'Oportunidades'],

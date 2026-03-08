@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import { theme } from '../../../GlobalStyles';
 
 export const FooterWrapper = styled.footer`
-  border-top: 1px solid ${theme.colors.border.light};
+  border-top: 1px solid #e5e5e5;
   padding: 2rem 0;
+  background-color: #fafafa;
 `;
 
 export const FooterContent = styled.div`
@@ -16,7 +17,7 @@ export const FooterContent = styled.div`
   
   p {
     font-size: 0.875rem;
-    color: ${theme.colors.text.secondary};
+    color: #525252;
   }
 
   @media (min-width: ${theme.breakpoints.md}) {
@@ -39,12 +40,12 @@ export const SocialLink = styled.a`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: ${theme.colors.neutral[100]};
-  color: ${theme.colors.text.secondary};
+  background: #e5e5e5;
+  color: #525252;
   transition: all 0.2s ease;
 
   &:hover {
-    background: ${theme.colors.primary.main};
+    background: #0a0a0a;
     color: #fff;
     transform: translateY(-2px);
   }

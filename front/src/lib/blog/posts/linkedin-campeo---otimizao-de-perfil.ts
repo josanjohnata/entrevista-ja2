@@ -59,9 +59,9 @@ Compartilhe artigos, participe de grupos e interaja com publicações relevantes
 - **Conexões:** Conecte-se com pessoas da sua área, recrutadores e influenciadores. Uma rede ampla aumenta sua visibilidade.
 - **Modo "Open to Work":** Se você estiver buscando ativamente um novo emprego, ative a opção "Open to Work" para sinalizar aos recrutadores.
 
-## Como o FoxApply Pode Ajudar 🦊
+## Como o Entrevista Já Pode Ajudar 🦊
 
-Com o **LinkedIn Champion** do FoxApply, você pode:
+Com o **LinkedIn Champion** do Entrevista Já, você pode:
 
 1. **Analisar seu perfil** automaticamente e receber dicas personalizadas
 2. **Identificar pontos de melhoria** para aumentar sua visibilidade
@@ -72,12 +72,12 @@ Com o **LinkedIn Champion** do FoxApply, você pode:
 
 Ao seguir estas orientações, você transformará seu perfil em um verdadeiro **LinkedIn campeão**, aumentando suas chances de ser encontrado e conquistar as melhores oportunidades de carreira.
 
-**Quer analisar seu perfil agora?** Acesse [foxapply.com](https://foxapply.com) e experimente o LinkedIn Champion!
+**Quer analisar seu perfil agora?** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e experimente o LinkedIn Champion!
     `,
     coverImage: '/images/blog/linkedin-campeao-2026.jpg',
     date: '2026-02-05',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['LinkedIn', 'Recrutadores', 'Carreira', 'Perfil', 'Dicas'],
@@ -139,9 +139,9 @@ Share articles, join groups, and interact with relevant posts. This demonstrates
 - **Connections:** Connect with people in your field, recruiters, and influencers. A broad network increases your visibility.
 - **"Open to Work" Mode:** If you're actively looking for a new job, enable the "Open to Work" option to signal recruiters.
 
-## How FoxApply Can Help 🦊
+## How Entrevista Já Can Help 🦊
 
-With FoxApply's **LinkedIn Champion**, you can:
+With Entrevista Já's **LinkedIn Champion**, you can:
 
 1. **Analyze your profile** automatically and receive personalized tips
 2. **Identify improvement points** to increase your visibility
@@ -152,12 +152,12 @@ With FoxApply's **LinkedIn Champion**, you can:
 
 By following these guidelines, you'll transform your profile into a true **LinkedIn champion**, increasing your chances of being found and landing the best career opportunities.
 
-**Want to analyze your profile now?** Visit [foxapply.com](https://foxapply.com) and try LinkedIn Champion!
+**Want to analyze your profile now?** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and try LinkedIn Champion!
     `,
     coverImage: '/images/blog/linkedin-campeao-2026.jpg',
     date: '2026-02-05',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['LinkedIn', 'Recruiters', 'Career', 'Profile', 'Tips'],
@@ -219,9 +219,9 @@ Comparte artículos, participa en grupos e interactúa con publicaciones relevan
 - **Conexiones:** Conéctate con personas de tu área, reclutadores e influenciadores. Una red amplia aumenta tu visibilidad.
 - **Modo "Open to Work":** Si estás buscando activamente un nuevo empleo, activa la opción "Open to Work" para señalar a los reclutadores.
 
-## Cómo FoxApply Puede Ayudar 🦊
+## Cómo Entrevista Já Puede Ayudar 🦊
 
-Con el **LinkedIn Champion** de FoxApply, puedes:
+Con el **LinkedIn Champion** de Entrevista Já, puedes:
 
 1. **Analizar tu perfil** automáticamente y recibir consejos personalizados
 2. **Identificar puntos de mejora** para aumentar tu visibilidad
@@ -232,12 +232,12 @@ Con el **LinkedIn Champion** de FoxApply, puedes:
 
 Siguiendo estas orientaciones, transformarás tu perfil en un verdadero **LinkedIn campeón**, aumentando tus posibilidades de ser encontrado y conquistar las mejores oportunidades de carrera.
 
-**¿Quieres analizar tu perfil ahora?** Visita [foxapply.com](https://foxapply.com) y prueba LinkedIn Champion!
+**¿Quieres analizar tu perfil ahora?** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y prueba LinkedIn Champion!
     `,
     coverImage: '/images/blog/linkedin-campeao-2026.jpg',
     date: '2026-02-05',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['LinkedIn', 'Reclutadores', 'Carrera', 'Perfil', 'Consejos'],

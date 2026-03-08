@@ -258,7 +258,7 @@ export const Navbar: React.FC<NavbarProps> = ({ hideSectionLinks = false, hideAc
           <Logo to="/">
             <img 
               src="/images/fox-mascot.png" 
-              alt="FoxApply"
+              alt="Entrevista Já"
             />
             <span>
               Fox<span className="highlight">Apply</span>

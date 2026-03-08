@@ -8,7 +8,7 @@ import { useAuth } from '../../../contexts/AuthContext';
 import { detectRegion } from '../../../utils/regionDetector';
 import type { Region } from '../../../utils/regionDetector';
 
-const POPUP_SHOWN_KEY = 'foxapply_coupon_popup_shown';
+const POPUP_SHOWN_KEY = 'entrevistaja_coupon_popup_shown';
 
 function getCouponCode(region: Region): string {
   return region === 'BR' ? 'PROMO10' : 'PROMO2';

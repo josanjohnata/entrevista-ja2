@@ -43,7 +43,7 @@ export const StripeCheckout: React.FC<StripeCheckoutProps> = ({
           amount: planPrice.price,
           currency: regionConfig.currency.toLowerCase() as 'brl' | 'eur' | 'usd',
           customerName: customerName || undefined,
-          productName: planType === 'lifetime' ? `${t('plans.lifetime')} - FoxApply` : planType === 'quarterly' ? `${t('plans.quarterly')} - FoxApply` : `${t('plans.monthlyPlan')} - FoxApply`,
+          productName: planType === 'lifetime' ? `${t('plans.lifetime')} - Entrevista Já` : planType === 'quarterly' ? `${t('plans.quarterly')} - Entrevista Já` : `${t('plans.monthlyPlan')} - Entrevista Já`,
           productDescription: planType === 'lifetime' ? t('plans.lifetimeDescription') : planType === 'quarterly' ? t('plans.quarterlyDescription') : t('plans.monthlyPlanDescription'),
           metadata: {
             userId,

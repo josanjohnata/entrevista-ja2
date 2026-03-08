@@ -3,7 +3,7 @@ import { theme } from '../../GlobalStyles';
 
 const { colors } = theme;
 
-// Cyber Neon Tech color scheme from foxapply-landing
+// Color scheme (Entrevista Já landing)
 const neonOrange = '#ff6b35'; // oklch(0.72 0.19 45)
 const neonCyan = '#00d4ff'; // oklch(0.82 0.15 195)
 const darkBg = '#0a0a0f'; // oklch(0.08 0.01 260)

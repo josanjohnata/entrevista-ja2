@@ -60,9 +60,9 @@ Independentemente do motivo, o planejamento é fundamental para o sucesso.
 - **Destaque habilidades transferíveis:** Adapte seu currículo e perfil do LinkedIn para a nova área, enfatizando as competências que são relevantes para ela.
 - **Crie um resumo focado:** No resumo profissional, deixe claro seu objetivo de **mudar de área** e o que você busca.
 
-## Como o FoxApply Pode Ajudar na Sua Transição 🦊
+## Como o Entrevista Já Pode Ajudar na Sua Transição 🦊
 
-Com o **FoxApply**, você pode:
+Com o **Entrevista Já**, você pode:
 
 1. **Otimizar seu currículo** para a nova área com análise de ATS
 2. **Identificar palavras-chave** essenciais para o novo mercado
@@ -73,12 +73,12 @@ Com o **FoxApply**, você pode:
 
 Uma **transição de carreira** bem-sucedida exige coragem, planejamento e dedicação. Ao seguir este guia, você estará mais preparado para embarcar em uma nova jornada profissional com confiança e segurança.
 
-**Pronto para começar sua transição?** Acesse [foxapply.com](https://foxapply.com) e otimize seu currículo para a nova área!
+**Pronto para começar sua transição?** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e otimize seu currículo para a nova área!
     `,
     coverImage: '/images/blog/transicao-carreira-2026.jpg',
     date: '2026-02-04',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Transição de Carreira', 'Carreira', 'Desenvolvimento', 'Planejamento', 'Dicas'],
@@ -141,9 +141,9 @@ Regardless of the reason, planning is essential for success.
 - **Highlight transferable skills:** Adapt your resume and LinkedIn profile for the new area, emphasizing the competencies that are relevant to it.
 - **Create a focused summary:** In your professional summary, make clear your goal of **changing fields** and what you're looking for.
 
-## How FoxApply Can Help Your Transition 🦊
+## How Entrevista Já Can Help Your Transition 🦊
 
-With **FoxApply**, you can:
+With **Entrevista Já**, you can:
 
 1. **Optimize your resume** for the new field with ATS analysis
 2. **Identify essential keywords** for the new market
@@ -154,12 +154,12 @@ With **FoxApply**, you can:
 
 A successful **career transition** requires courage, planning, and dedication. By following this guide, you'll be better prepared to embark on a new professional journey with confidence and security.
 
-**Ready to start your transition?** Visit [foxapply.com](https://foxapply.com) and optimize your resume for the new field!
+**Ready to start your transition?** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and optimize your resume for the new field!
     `,
     coverImage: '/images/blog/transicao-carreira-2026.jpg',
     date: '2026-02-04',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Career Transition', 'Career', 'Development', 'Planning', 'Tips'],
@@ -222,9 +222,9 @@ Independientemente del motivo, la planificación es fundamental para el éxito.
 - **Destaca habilidades transferibles:** Adapta tu currículum y perfil de LinkedIn para la nueva área, enfatizando las competencias que son relevantes para ella.
 - **Crea un resumen enfocado:** En el resumen profesional, deja claro tu objetivo de **cambiar de área** y lo que buscas.
 
-## Cómo FoxApply Puede Ayudar en tu Transición 🦊
+## Cómo Entrevista Já Puede Ayudar en tu Transición 🦊
 
-Con **FoxApply**, puedes:
+Con **Entrevista Já**, puedes:
 
 1. **Optimizar tu currículum** para la nueva área con análisis de ATS
 2. **Identificar palabras clave** esenciales para el nuevo mercado
@@ -235,12 +235,12 @@ Con **FoxApply**, puedes:
 
 Una **transición de carrera** exitosa requiere coraje, planificación y dedicación. Siguiendo esta guía, estarás mejor preparado para embarcarte en un nuevo viaje profesional con confianza y seguridad.
 
-**¿Listo para comenzar tu transición?** Visita [foxapply.com](https://foxapply.com) y optimiza tu currículum para la nueva área!
+**¿Listo para comenzar tu transición?** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y optimiza tu currículum para la nueva área!
     `,
     coverImage: '/images/blog/transicao-carreira-2026.jpg',
     date: '2026-02-04',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Transición de Carrera', 'Carrera', 'Desarrollo', 'Planificación', 'Consejos'],

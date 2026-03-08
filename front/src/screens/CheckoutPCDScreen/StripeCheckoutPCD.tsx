@@ -39,7 +39,7 @@ export const StripeCheckoutPCD: React.FC<StripeCheckoutPCDProps> = ({
           amount: regionConfig.price,
           currency: regionConfig.currency.toLowerCase() as 'brl' | 'eur' | 'usd',
           customerName: customerName || undefined,
-          productName: `${t('checkoutPCD.monthlyPlan')} - FoxApply`,
+          productName: `${t('checkoutPCD.monthlyPlan')} - Entrevista Já`,
           productDescription: t('checkoutPCD.monthlyPlanDescription'),
           metadata: {
             userId,

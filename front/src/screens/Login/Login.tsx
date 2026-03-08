@@ -1,15 +1,14 @@
 import { useState, type FC, type FormEvent, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import * as S from "./styles";
-import { FiEye, FiEyeOff, FiX, FiCheckCircle } from 'react-icons/fi';
+import { FiEye, FiEyeOff, FiX, FiCheckCircle, FiArrowLeft } from 'react-icons/fi';
 import { AlertTriangle } from 'lucide-react';
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAuthForm } from "../../hooks/useAuthForm";
 import { useAuth } from "../../contexts/AuthContext";
 import { auth } from "../../lib/firebase";
 import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { sendPasswordResetEmail, signOut, setPersistence, browserLocalPersistence, browserSessionPersistence } from "firebase/auth";
-import { SimpleHeader } from "../../components/SimpleHeader";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../lib/firebase";
 import { createCheckoutSessionPCD } from "../../lib/stripe";
@@ -72,7 +71,7 @@ export const LoginScreen: FC = () => {
                 amount: regionConfig.price,
                 currency: regionConfig.currency.toLowerCase() as 'brl' | 'eur' | 'usd',
                 customerName: userData.nome || auth.currentUser.displayName || undefined,
-                productName: `${t('checkoutPCD.monthlyPlan')} - FoxApply`,
+                productName: `${t('checkoutPCD.monthlyPlan')} - Entrevista Já`,
                 productDescription: t('checkoutPCD.monthlyPlanDescription'),
                 metadata: {
                   userId: auth.currentUser.uid,
@@ -247,21 +246,25 @@ export const LoginScreen: FC = () => {
 
   if (authLoading) {
     return (
-      <>
-        <SimpleHeader />
-        <S.PageWrapper>
-          <S.LoadingContainer>
-            {t('login.checkingAuth')}
-          </S.LoadingContainer>
-        </S.PageWrapper>
-      </>
+      <S.PageWrapper>
+        <S.BackButton onClick={() => navigate('/')}>
+          <FiArrowLeft size={18} />
+          {t('plans.back')}
+        </S.BackButton>
+        <S.LoadingContainer>
+          {t('login.checkingAuth')}
+        </S.LoadingContainer>
+      </S.PageWrapper>
     );
   }
 
   return (
     <>
-      <SimpleHeader />
-      <S.PageWrapper>
+    <S.PageWrapper>
+      <S.BackButton onClick={() => navigate('/')}>
+        <FiArrowLeft size={18} />
+        {t('plans.back')}
+      </S.BackButton>
         <S.MainTitle>{t('login.title')}</S.MainTitle>
 
         <S.ContentGrid>
@@ -377,10 +380,10 @@ export const LoginScreen: FC = () => {
             </S.LoginForm>
           </S.Column>
         </S.ContentGrid>
-      </S.PageWrapper>
+    </S.PageWrapper>
 
-      {showForgotModal && (
-        <S.ModalOverlay onClick={closeForgotModal}>
+    {showForgotModal && (
+      <S.ModalOverlay onClick={closeForgotModal}>
           <S.ModalContent onClick={(e) => e.stopPropagation()}>
             <S.ModalHeader>
               <S.ModalTitle>{t('login.resetPassword')}</S.ModalTitle>

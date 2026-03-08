@@ -4,9 +4,9 @@ import { useTranslation } from 'react-i18next';
 import { Calendar, Clock, ArrowLeft, Tag as TagIcon, User } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import { BlogPost, fetchPostBySlug, formatDate } from '../../lib/blog';
-import { Navbar } from '../FoxApplyLandingScreen/components/Navbar';
-import { Footer } from '../FoxApplyLandingScreen/components/Footer';
-import * as LandingStyles from '../FoxApplyLandingScreen/styles';
+import { Navbar } from '../../components/sections/Navbar';
+import { Footer } from '../../components/sections/Footer';
+import * as LandingStyles from '../landing/styles';
 import * as S from './styles';
 
 export const BlogPostScreen: React.FC = () => {
@@ -51,10 +51,8 @@ export const BlogPostScreen: React.FC = () => {
   };
   
   return (
-    <>
-      <LandingStyles.LandingGlobalStyles />
-      <LandingStyles.PageWrapper>
-        <Navbar hideSectionLinks hideActionButtons />
+    <LandingStyles.PageWrapper>
+      <Navbar />
         <S.BlogSection>
           <S.PostContentWrapper>
             {loading ? (
@@ -120,8 +118,7 @@ export const BlogPostScreen: React.FC = () => {
             )}
           </S.PostContentWrapper>
         </S.BlogSection>
-        <Footer />
-      </LandingStyles.PageWrapper>
-    </>
+      <Footer />
+    </LandingStyles.PageWrapper>
   );
 };

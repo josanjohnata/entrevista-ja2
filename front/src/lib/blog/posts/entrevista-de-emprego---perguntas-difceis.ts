@@ -57,12 +57,12 @@ Seja honesto, mas evite falar mal de antigos empregadores ou colegas. Foque em a
 
 Com preparação e confiança, você estará pronto para enfrentar as **perguntas de entrevista** mais desafiadoras e deixar uma impressão duradoura. Lembre-se, cada entrevista é uma oportunidade de aprendizado e crescimento.
 
-**Quer se preparar melhor para entrevistas?** Acesse [foxapply.com](https://foxapply.com) e otimize seu currículo para passar na triagem inicial!
+**Quer se preparar melhor para entrevistas?** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e otimize seu currículo para passar na triagem inicial!
     `,
     coverImage: '/images/blog/entrevista-emprego-perguntas-dificeis-2026.jpg',
     date: '2026-02-11',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Entrevista', 'Carreira', 'Dicas', 'Processo Seletivo', 'Preparação'],
@@ -122,12 +122,12 @@ Be honest, but avoid speaking ill of former employers or colleagues. Focus on po
 
 With preparation and confidence, you'll be ready to face the most challenging **interview questions** and leave a lasting impression. Remember, each interview is an opportunity for learning and growth.
 
-**Want to better prepare for interviews?** Visit [foxapply.com](https://foxapply.com) and optimize your resume to pass the initial screening!
+**Want to better prepare for interviews?** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and optimize your resume to pass the initial screening!
     `,
     coverImage: '/images/blog/entrevista-emprego-perguntas-dificeis-2026.jpg',
     date: '2026-02-11',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Interview', 'Career', 'Tips', 'Selection Process', 'Preparation'],
@@ -187,12 +187,12 @@ Sé honesto, pero evita hablar mal de antiguos empleadores o colegas. Enfócate 
 
 Con preparación y confianza, estarás listo para enfrentar las **preguntas de entrevista** más desafiantes y dejar una impresión duradera. Recuerda, cada entrevista es una oportunidad de aprendizaje y crecimiento.
 
-**¿Quieres prepararte mejor para entrevistas?** Visita [foxapply.com](https://foxapply.com) y optimiza tu currículum para pasar la selección inicial!
+**¿Quieres prepararte mejor para entrevistas?** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y optimiza tu currículum para pasar la selección inicial!
     `,
     coverImage: '/images/blog/entrevista-emprego-perguntas-dificeis-2026.jpg',
     date: '2026-02-11',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Entrevista', 'Carrera', 'Consejos', 'Proceso Selectivo', 'Preparación'],

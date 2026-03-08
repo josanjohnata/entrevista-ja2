@@ -59,9 +59,9 @@ Ao contrário das hard skills, as soft skills são desenvolvidas através da pr�
 - **Cursos e Workshops:** Treinamentos focados em comunicação e liderança
 - **Observação:** Observe como pessoas com soft skills desenvolvidas agem
 
-## Como o FoxApply Destaca Suas Soft Skills 🦊
+## Como o Entrevista Já Destaca Suas Soft Skills 🦊
 
-Com o **FoxApply**, você pode:
+Com o **Entrevista Já**, você pode:
 
 1. **Otimizar seu currículo** para destacar suas soft skills
 2. **Identificar palavras-chave** comportamentais valorizadas
@@ -72,12 +72,12 @@ Com o **FoxApply**, você pode:
 
 Investir no desenvolvimento de suas **soft skills** é investir em sua carreira a longo prazo. Elas são o que realmente diferencia um profissional em 2026!
 
-**Destaque suas soft skills!** Acesse [foxapply.com](https://foxapply.com) e otimize seu currículo hoje!
+**Destaque suas soft skills!** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e otimize seu currículo hoje!
     `,
     coverImage: '/images/blog/soft-skills-2026.jpg',
     date: '2026-02-02',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Soft Skills', 'Carreira', 'Habilidades', 'Desenvolvimento', '2026'],
@@ -139,9 +139,9 @@ Unlike hard skills, soft skills are developed through practice and experience:
 - **Courses and Workshops:** Training focused on communication and leadership
 - **Observation:** Observe how people with developed soft skills act
 
-## How FoxApply Highlights Your Soft Skills 🦊
+## How Entrevista Já Highlights Your Soft Skills 🦊
 
-With **FoxApply**, you can:
+With **Entrevista Já**, you can:
 
 1. **Optimize your resume** to highlight your soft skills
 2. **Identify valued behavioral keywords**
@@ -152,12 +152,12 @@ With **FoxApply**, you can:
 
 Investing in developing your **soft skills** is investing in your long-term career. They're what truly differentiates a professional in 2026!
 
-**Highlight your soft skills!** Visit [foxapply.com](https://foxapply.com) and optimize your resume today!
+**Highlight your soft skills!** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and optimize your resume today!
     `,
     coverImage: '/images/blog/soft-skills-2026.jpg',
     date: '2026-02-02',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Soft Skills', 'Career', 'Skills', 'Development', '2026'],
@@ -219,9 +219,9 @@ A diferencia de las hard skills, las soft skills se desarrollan a través de la 
 - **Cursos y Talleres:** Capacitaciones enfocadas en comunicación y liderazgo
 - **Observación:** Observa cómo actúan las personas con soft skills desarrolladas
 
-## Cómo FoxApply Destaca tus Soft Skills 🦊
+## Cómo Entrevista Já Destaca tus Soft Skills 🦊
 
-Con **FoxApply**, puedes:
+Con **Entrevista Já**, puedes:
 
 1. **Optimizar tu currículum** para destacar tus soft skills
 2. **Identificar palabras clave** comportamentales valoradas
@@ -232,12 +232,12 @@ Con **FoxApply**, puedes:
 
 Invertir en el desarrollo de tus **soft skills** es invertir en tu carrera a largo plazo. ¡Son lo que realmente diferencia a un profesional en 2026!
 
-**¡Destaca tus soft skills!** Visita [foxapply.com](https://foxapply.com) y optimiza tu currículum hoy!
+**¡Destaca tus soft skills!** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y optimiza tu currículum hoy!
     `,
     coverImage: '/images/blog/soft-skills-2026.jpg',
     date: '2026-02-02',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Soft Skills', 'Carrera', 'Habilidades', 'Desarrollo', '2026'],

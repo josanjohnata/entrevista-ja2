@@ -1,17 +1,12 @@
 import styled from 'styled-components';
 import { theme } from '../../../GlobalStyles';
-import BackgroundImage from '../../../assets/Background.png';
 
 export const Header = styled.header`
-  background-image: url(${BackgroundImage});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #f5f5f5;
   top: 0;
   z-index: 50;
   width: 100%;
-  background-color: transparent;
-  backdrop-filter: blur(4px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
 `;
 
 export const NavContainer = styled.div`
@@ -36,11 +31,12 @@ export const DesktopNav = styled.nav`
 export const NavLink = styled.a`
   font-size: 0.875rem;
   font-weight: 500;
-  color: ${theme.colors.text.secondary};
+  color: #171717;
   transition: color 0.3s ease;
+  text-decoration: none;
 
   &:hover {
-    color: ${theme.colors.primary.main};
+    color: #0a0a0a;
   }
 `;
 
@@ -49,6 +45,7 @@ export const MobileMenuButton = styled.button`
   background: none;
   border: none;
   cursor: pointer;
+  color: #171717;
 
   @media (min-width: ${theme.breakpoints.md}) {
     display: none;
@@ -61,16 +58,18 @@ export const LoginButton = styled.button`
   justify-content: center;
   padding: 0.75rem 1.5rem;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 500;
   border-radius: 0.5rem;
   cursor: pointer;
-  border: 1px solid ${theme.colors.primary.main};
-  transition: opacity 0.3s ease;
-  background-color: rgba(255, 255, 255, 0.95);
-  color: ${theme.colors.text.secondary};
+  border: 1px solid #d4d4d4;
+  transition: all 0.2s ease;
+  background-color: #fff;
+  color: #171717;
+  text-decoration: none;
 
   &:hover {
-    opacity: 0.9;
+    border-color: #a3a3a3;
+    background-color: #fafafa;
   }
 `;
 
@@ -83,10 +82,11 @@ export const MobileSheet = styled.div<{ $isOpen: boolean }>`
   max-height: 90vh;
   width: 80%;
   max-width: 300px;
-  background-color: white;
+  background-color: #fafafa;
   z-index: 100;
   box-shadow: -10px 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 0 0 0 1rem;
+  color: #171717;
   transform: translateX(${({ $isOpen }) => ($isOpen ? '0' : '100%')});
   transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
   visibility: ${({ $isOpen }) => ($isOpen ? 'visible' : 'hidden')};

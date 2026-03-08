@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { theme } from '../GlobalStyles';
 import { Link } from 'react-router-dom';
-import logoImage from '../assets/logo.png';
 
 const LogoLink = styled.a`
   display: flex;
@@ -11,20 +10,13 @@ const LogoLink = styled.a`
   text-decoration: none;
   font-size: 1.25rem;
   font-weight: 700;
-  color: ${theme.colors.primary.main};
-`;
-
-const LogoImage = styled.img`
-  height: 2rem;
-  width: auto;
-  object-fit: contain;
+  color: inherit;
 `;
 
 export const Logo: React.FC = () => {
   return (
-    <LogoLink as={Link} to="/cv-automation">
-      <LogoImage src={logoImage} alt="Logo" />
-      <span>FoxApply</span>
+    <LogoLink as={Link} to="/">
+      Entrevista Já
     </LogoLink>
   );
 };

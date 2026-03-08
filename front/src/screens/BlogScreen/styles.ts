@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import * as LandingStyles from '../FoxApplyLandingScreen/styles';
+import * as LandingStyles from '../landing/styles';
 
 // ========================================
 // Blog Section (Main Container)
@@ -23,7 +23,7 @@ export const BlogSection = styled.section`
 export const LoadingState = styled.div`
   text-align: center;
   padding: 4rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   
   p {
     font-size: 1.125rem;
@@ -37,13 +37,13 @@ export const EmptyState = styled.div`
   h3 {
     font-size: 1.75rem;
     margin-bottom: 0.75rem;
-    color: var(--text-primary);
+    color: var(--text-main);
     font-family: var(--font-display);
   }
   
   p {
     font-size: 1.125rem;
-    color: var(--text-secondary);
+    color: var(--text-muted);
   }
 `;
 
@@ -53,13 +53,13 @@ export const ErrorState = styled.div`
   
   h2 {
     font-size: 2rem;
-    color: var(--text-primary);
+    color: var(--text-main);
     margin-bottom: 1rem;
     font-family: var(--font-display);
   }
   
   p {
-    color: var(--text-secondary);
+    color: var(--text-muted);
     margin-bottom: 2rem;
     font-size: 1.125rem;
   }
@@ -85,11 +85,10 @@ export const IconWrapper = styled.div`
   width: 6rem;
   height: 6rem;
   border-radius: 1.5rem;
-  background: linear-gradient(135deg, var(--neon-orange), var(--neon-cyan));
+  background: linear-gradient(135deg, var(--fox-primary), var(--fox-secondary));
   margin-bottom: 1.5rem;
   padding: 1rem;
-  box-shadow: 0 0 30px oklch(0.72 0.19 45 / 0.4),
-              0 0 60px oklch(0.72 0.19 45 / 0.2);
+  box-shadow: 0 0 30px var(--fox-glow);
   
   img {
     width: 100%;
@@ -103,7 +102,7 @@ export const Title = styled(LandingStyles.Heading1)`
   margin-bottom: 1rem;
   
   .highlight {
-    background: linear-gradient(135deg, var(--neon-orange), var(--neon-cyan));
+    background: linear-gradient(135deg, var(--fox-primary), var(--fox-secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -151,10 +150,10 @@ export const BackButton = styled.button`
   align-items: center;
   gap: 0.5rem;
   padding: 0.75rem 1.25rem;
-  background: var(--card-bg);
-  border: 1px solid var(--border-color);
+  background: var(--surface-1);
+  border: 1px solid var(--border-light);
   border-radius: 0.5rem;
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-size: 0.9375rem;
   font-weight: 500;
   cursor: pointer;
@@ -162,8 +161,8 @@ export const BackButton = styled.button`
   margin-bottom: 2.5rem;
   
   &:hover {
-    border-color: var(--neon-orange);
-    color: var(--neon-orange);
+    border-color: var(--fox-primary);
+    color: var(--fox-primary);
     transform: translateX(-4px);
   }
   
@@ -181,7 +180,7 @@ export const CoverImage = styled.div<{ $image?: string }>`
   background: ${({ $image }) => 
     $image 
       ? `url(${$image}) center/cover` 
-      : 'linear-gradient(135deg, var(--neon-orange), var(--neon-cyan))'
+      : 'linear-gradient(135deg, var(--fox-primary), var(--fox-secondary))'
   };
   position: relative;
   overflow: hidden;
@@ -190,7 +189,7 @@ export const CoverImage = styled.div<{ $image?: string }>`
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, oklch(0.08 0.01 260 / 0.5), transparent 50%);
+    background: linear-gradient(to top, rgba(3, 3, 3, 0.5), transparent 50%);
   }
   
   @media (max-width: 768px) {
@@ -219,9 +218,9 @@ export const Meta = styled.div`
   gap: 1.5rem;
   align-items: center;
   font-size: 0.9375rem;
-  color: var(--text-tertiary);
+  color: var(--text-muted);
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-light);
 `;
 
 export const MetaItem = styled.div`
@@ -232,7 +231,7 @@ export const MetaItem = styled.div`
   svg {
     width: 1.125rem;
     height: 1.125rem;
-    color: var(--neon-orange);
+    color: var(--fox-primary);
   }
 `;
 
@@ -248,8 +247,8 @@ export const Tag = styled.span`
   align-items: center;
   gap: 0.25rem;
   padding: 0.375rem 0.875rem;
-  background: var(--neon-orange);
-  color: var(--dark-bg);
+  background: var(--fox-primary);
+  color: var(--bg-body);
   border-radius: 9999px;
   font-size: 0.8125rem;
   font-weight: 600;
@@ -263,12 +262,12 @@ export const Tag = styled.span`
 `;
 
 export const PostContent = styled.article`
-  color: var(--text-secondary);
+  color: var(--text-muted);
   line-height: 1.8;
   font-size: 1.125rem;
   
   h1, h2, h3, h4, h5, h6 {
-    color: var(--text-primary);
+    color: var(--text-main);
     font-weight: 700;
     font-family: var(--font-display);
     margin: 2.5rem 0 1rem;
@@ -285,13 +284,13 @@ export const PostContent = styled.article`
   }
   
   a {
-    color: var(--neon-orange);
+    color: var(--fox-primary);
     text-decoration: underline;
     text-underline-offset: 3px;
     transition: color 0.3s ease;
     
     &:hover {
-      color: var(--neon-cyan);
+      color: var(--fox-secondary);
     }
   }
   
@@ -305,37 +304,37 @@ export const PostContent = styled.article`
   }
   
   code {
-    background: var(--card-bg);
+    background: var(--surface-1);
     padding: 0.125rem 0.5rem;
     border-radius: 0.25rem;
-    font-family: var(--font-code);
+    font-family: var(--font-body);
     font-size: 0.875em;
-    color: var(--neon-cyan);
-    border: 1px solid var(--border-color);
+    color: var(--fox-primary);
+    border: 1px solid var(--border-light);
   }
   
   pre {
-    background: var(--card-bg);
+    background: var(--surface-1);
     padding: 1.25rem;
     border-radius: 0.75rem;
     overflow-x: auto;
     margin-bottom: 1.5rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-light);
     
     code {
       background: none;
       padding: 0;
-      color: var(--text-secondary);
+      color: var(--text-muted);
       border: none;
     }
   }
   
   blockquote {
-    border-left: 4px solid var(--neon-orange);
+    border-left: 4px solid var(--fox-primary);
     padding-left: 1.5rem;
     margin: 2rem 0;
     font-style: italic;
-    color: var(--text-tertiary);
+    color: var(--text-muted);
     font-size: 1.25rem;
     
     p {
@@ -352,12 +351,12 @@ export const PostContent = styled.article`
   
   hr {
     border: none;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--border-light);
     margin: 3rem 0;
   }
   
   strong {
-    color: var(--text-primary);
+    color: var(--text-main);
     font-weight: 600;
   }
 `;

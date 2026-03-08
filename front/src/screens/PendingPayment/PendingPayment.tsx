@@ -57,7 +57,7 @@ export const PendingPaymentScreen: React.FC<PendingPaymentProps> = ({ type: prop
         amount: regionConfig.price,
         currency: regionConfig.currency.toLowerCase() as 'brl' | 'eur' | 'usd',
         customerName: userName || undefined,
-        productName: `${t('plans.monthlyPlan')} - FoxApply`,
+        productName: `${t('plans.monthlyPlan')} - Entrevista Já`,
         productDescription: t('plans.monthlyPlanDescription'),
         metadata: {
           userId: currentUser.uid,

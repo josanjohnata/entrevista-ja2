@@ -317,7 +317,7 @@ export const CheckoutPCDScreen: React.FC = () => {
           amount: regionConfig.price,
           currency: regionConfig.currency.toLowerCase() as 'brl' | 'eur' | 'usd',
           customerName: formValues.name,
-          productName: `${t('checkoutPCD.monthlyPlan')} - FoxApply`,
+          productName: `${t('checkoutPCD.monthlyPlan')} - Entrevista Já`,
           productDescription: t('checkoutPCD.monthlyPlanDescription'),
           metadata: {
             userId: userCredential.user.uid,

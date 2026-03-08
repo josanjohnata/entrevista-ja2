@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
         <Logo>
           <img 
             src="/images/fox-mascot.png" 
-            alt="FoxApply"
+            alt="Entrevista Já"
             onError={(e) => {
               console.error('Erro ao carregar imagem:', e.currentTarget.src);
             }}
@@ -102,13 +102,13 @@ export const Footer: React.FC = () => {
         </Logo>
         
         <SocialLinks>
-          <SocialLink href="mailto:support@foxapply.com" aria-label="Email">
+          <SocialLink href="mailto:support@entrevistaja.com.br" aria-label="Email">
             <FiMail size={20} />
           </SocialLink>
-          <SocialLink href="https://linkedin.com/company/foxapply" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <SocialLink href="https://linkedin.com/company/entrevista-ja" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
             <FiLinkedin size={20} />
           </SocialLink>
-          <SocialLink href="https://instagram.com/foxapply" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <SocialLink href="https://instagram.com/entrevista_ja" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <FiInstagram size={20} />
           </SocialLink>
         </SocialLinks>

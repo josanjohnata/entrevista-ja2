@@ -105,14 +105,14 @@ const testimonials = [
     initials: 'RS',
     name: 'Ricardo Santos',
     role: 'Dev Frontend • PCD',
-    quote: 'Estava há 8 meses sem receber retorno. Com o FoxApply, apliquei para mais de 200 vagas e recebi 6 convites para entrevistas em 2 semanas!',
+    quote: 'Estava há 8 meses sem receber retorno. Com o Entrevista Já, apliquei para mais de 200 vagas e recebi 6 convites para entrevistas em 2 semanas!',
     result: '6 entrevistas em 2 semanas',
   },
   {
     initials: 'ML',
     name: 'Maria Lima',
     role: 'Analista de Dados • PCD',
-    quote: 'O programa de inclusão da FoxApply mudou minha vida. Em 1 mês, recebi 4 propostas de emprego. Hoje estou empregada na empresa dos meus sonhos.',
+    quote: 'O programa de inclusão da Entrevista Já mudou minha vida. Em 1 mês, recebi 4 propostas de emprego. Hoje estou empregada na empresa dos meus sonhos.',
     result: '4 propostas em 1 mês',
   },
   {
@@ -126,7 +126,7 @@ const testimonials = [
     initials: 'AP',
     name: 'Ana Paula',
     role: 'QA Engineer • PCD',
-    quote: 'Nunca imaginei que conseguiria tantas oportunidades. O FoxApply aplicou para vagas que eu nem sabia que existiam. Recebi 8 convites!',
+    quote: 'Nunca imaginei que conseguiria tantas oportunidades. O Entrevista Já aplicou para vagas que eu nem sabia que existiam. Recebi 8 convites!',
     result: '8 entrevistas em 1 mês',
   },
 ];

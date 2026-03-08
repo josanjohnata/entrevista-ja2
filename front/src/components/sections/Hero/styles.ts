@@ -1,12 +1,8 @@
 import styled from 'styled-components';
 import { theme } from '../../../GlobalStyles';
-import BackgroundImage from '../../../assets/Background.png';
 
 export const HeroSection = styled.section`
-  background-image: url(${BackgroundImage});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: #f5f5f5;
   padding: 5rem 0;
   @media (min-width: ${theme.breakpoints.md}) {
     padding: 8rem 0;
@@ -24,6 +20,7 @@ export const HeroContent = styled.div`
 export const Title = styled.h1`
   font-size: 2rem;
   letter-spacing: -0.02em;
+  color: #0a0a0a;
   @media (min-width: ${theme.breakpoints.md}) {
     font-size: 3rem;
   }
@@ -33,7 +30,7 @@ export const Subtitle = styled.p`
   margin-top: 1.5rem;
   max-width: 800px;
   font-size: 1.125rem;
-  color: ${theme.colors.text.secondary};
+  color: #404040;
 `;
 
 export const FormContainer = styled.div`
@@ -60,10 +57,49 @@ export const FormContainer = styled.div`
   }
 `;
 
+export const EmailInput = styled.input`
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  color: #171717;
+  transition: border-color 0.2s ease;
+
+  &::placeholder {
+    color: #737373;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: #0a0a0a;
+  }
+`;
+
+export const CTAButton = styled.button`
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: #0a0a0a;
+  color: #fff;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+`;
+
 export const FinePrint = styled.p`
   margin-top: 0.75rem;
   font-size: 0.75rem;
-  color: ${theme.colors.text.secondary};
+  color: #737373;
 `;
 
 export const ErrorMessage = styled.span`

@@ -14,7 +14,7 @@ export const Footer: React.FC = () => {
         <S.FooterContent>
           <Logo />
           <S.SocialLinks>
-            <S.SocialLink href="mailto:support@foxapply.com" aria-label="Email">
+            <S.SocialLink href="mailto:suporte@entrevistaja.com.br" aria-label="Email">
               <FiMail size={20} />
             </S.SocialLink>
             <S.SocialLink href="https://linkedin.com/company/entrevista-ja" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">

@@ -2,12 +2,36 @@ import styled from 'styled-components';
 import 'styled-components';
 import { theme } from '../../GlobalStyles';
 
-const { colors } = theme;
+const { colors, typography } = theme;
+
+/** Full-page wrapper for landing-style pages (e.g. Blog). Uses app theme. */
+export const PageWrapper = styled.div`
+  min-height: 100vh;
+  background-color: ${colors.background.primary};
+  color: ${colors.text.primary};
+  font-family: ${typography.fontFamily.primary};
+  overflow-x: hidden;
+  position: relative;
+`;
 
 export const Container = styled.div`
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 1.5rem;
+`;
+
+/** Heading/typography for landing-style content (e.g. Blog). */
+export const Heading1 = styled.h1`
+  font-family: ${typography.fontFamily.display};
+  font-weight: 700;
+  line-height: 1.2;
+  color: ${colors.text.primary};
+`;
+
+/** Body text for landing-style content. */
+export const Text = styled.p`
+  color: ${colors.text.secondary};
+  line-height: 1.6;
 `;
 
 export const Section = styled.section`

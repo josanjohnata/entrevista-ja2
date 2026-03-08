@@ -32,7 +32,7 @@ A IA atua em diversas etapas do processo seletivo:
 
 Em vez de temer a IA, veja-a como uma ferramenta que pode ser utilizada a seu favor. Aqui estão algumas dicas para se destacar nos processos seletivos com IA:
 
-1.  **Otimize seu Currículo para ATS:** Como mencionado no artigo sobre currículos campeões, use palavras-chave relevantes da descrição da vaga, mantenha um formato limpo e evite jargões excessivos. A **FoxApply** pode te ajudar a criar um currículo otimizado.
+1.  **Otimize seu Currículo para ATS:** Como mencionado no artigo sobre currículos campeões, use palavras-chave relevantes da descrição da vaga, mantenha um formato limpo e evite jargões excessivos. A **Entrevista Já** pode te ajudar a criar um currículo otimizado.
 2.  **Desenvolva Suas Soft Skills:** A IA pode identificar padrões, mas a capacidade de comunicação, inteligência emocional e pensamento crítico ainda são habilidades humanas insubstituíveis. Invista no desenvolvimento dessas competências.
 3.  **Prepare-se para Entrevistas com IA:** Se a empresa utiliza entrevistas por vídeo com IA, pratique suas respostas, mantenha contato visual com a câmera, fale de forma clara e demonstre confiança. Esteja ciente de que a IA pode analisar sua linguagem corporal e expressões.
 4.  **Seja Autêntico:** Embora a otimização seja importante, não tente "enganar" a IA. Seja honesto sobre suas habilidades e experiências. A autenticidade é valorizada tanto por máquinas quanto por humanos.
@@ -40,12 +40,12 @@ Em vez de temer a IA, veja-a como uma ferramenta que pode ser utilizada a seu fa
 
 A **Inteligência Artificial no recrutamento** veio para ficar. Ao entender seu funcionamento e adaptar suas estratégias de busca de emprego, você não apenas superará os desafios, mas também se posicionará como um profissional moderno e preparado para o futuro do trabalho.
 
-**Quer otimizar seu currículo para processos com IA?** Acesse [foxapply.com](https://foxapply.com) e comece hoje mesmo!
+**Quer otimizar seu currículo para processos com IA?** Acesse [entrevistaja.com.br](https://entrevistaja.com.br) e comece hoje mesmo!
     `,
     coverImage: '/images/blog/inteligencia-artificial-recrutamento-2026.jpg',
     date: '2026-02-08',
     author: {
-      name: 'Equipe FoxApply',
+      name: 'Equipe Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Inteligência Artificial', 'Recrutamento', 'Carreira', 'IA', 'Processos Seletivos'],
@@ -80,7 +80,7 @@ AI acts at various stages of the selection process:
 
 Instead of fearing AI, see it as a tool that can be used to your advantage. Here are some tips to stand out in AI-driven selection processes:
 
-1.  **Optimize Your Resume for ATS:** As mentioned in the article about winning resumes, use relevant keywords from the job description, keep a clean format, and avoid excessive jargon. **FoxApply** can help you create an optimized resume.
+1.  **Optimize Your Resume for ATS:** As mentioned in the article about winning resumes, use relevant keywords from the job description, keep a clean format, and avoid excessive jargon. **Entrevista Já** can help you create an optimized resume.
 2.  **Develop Your Soft Skills:** AI can identify patterns, but communication skills, emotional intelligence, and critical thinking are still irreplaceable human skills. Invest in developing these competencies.
 3.  **Prepare for AI Interviews:** If the company uses AI video interviews, practice your answers, maintain eye contact with the camera, speak clearly, and demonstrate confidence. Be aware that AI can analyze your body language and expressions.
 4.  **Be Authentic:** Although optimization is important, don't try to "trick" AI. Be honest about your skills and experiences. Authenticity is valued by both machines and humans.
@@ -88,12 +88,12 @@ Instead of fearing AI, see it as a tool that can be used to your advantage. Here
 
 **Artificial Intelligence in recruitment** is here to stay. By understanding how it works and adapting your job search strategies, you will not only overcome the challenges but also position yourself as a modern professional prepared for the future of work.
 
-**Want to optimize your resume for AI-driven processes?** Visit [foxapply.com](https://foxapply.com) and start today!
+**Want to optimize your resume for AI-driven processes?** Visit [entrevistaja.com.br](https://entrevistaja.com.br) and start today!
     `,
     coverImage: '/images/blog/inteligencia-artificial-recrutamento-2026.jpg',
     date: '2026-02-08',
     author: {
-      name: 'FoxApply Team',
+      name: 'Entrevista Já Team',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Artificial Intelligence', 'Recruitment', 'Career', 'AI', 'Selection Processes'],
@@ -128,7 +128,7 @@ La IA actúa en diversas etapas del proceso selectivo:
 
 En lugar de temer la IA, véala como una herramienta que puede ser utilizada a tu favor. Aquí hay algunos consejos para destacarse en los procesos selectivos con IA:
 
-1.  **Optimiza tu Currículum para ATS:** Como se mencionó en el artículo sobre currículums ganadores, usa palabras clave relevantes de la descripción del puesto, mantén un formato limpio y evita jergas excesivas. **FoxApply** puede ayudarte a crear un currículum optimizado.
+1.  **Optimiza tu Currículum para ATS:** Como se mencionó en el artículo sobre currículums ganadores, usa palabras clave relevantes de la descripción del puesto, mantén un formato limpio y evita jergas excesivas. **Entrevista Já** puede ayudarte a crear un currículum optimizado.
 2.  **Desarrolla tus Soft Skills:** La IA puede identificar patrones, pero la capacidad de comunicación, inteligencia emocional y pensamiento crítico siguen siendo habilidades humanas insustituibles. Invierte en el desarrollo de estas competencias.
 3.  **Prepárate para Entrevistas con IA:** Si la empresa utiliza entrevistas por vídeo con IA, practica tus respuestas, mantén contacto visual con la cámara, habla de forma clara y demuestra confianza. Ten en cuenta que la IA puede analizar tu lenguaje corporal y expresiones.
 4.  **Sé Auténtico:** Aunque la optimización es importante, no intentes "engañar" a la IA. Sé honesto sobre tus habilidades y experiencias. La autenticidad es valorada tanto por máquinas como por humanos.
@@ -136,12 +136,12 @@ En lugar de temer la IA, véala como una herramienta que puede ser utilizada a t
 
 La **Inteligencia Artificial en el reclutamiento** llegó para quedarse. Al entender su funcionamiento y adaptar tus estrategias de búsqueda de empleo, no solo superarás los desafíos, sino que también te posicionarás como un profesional moderno y preparado para el futuro del trabajo.
 
-**¿Quieres optimizar tu currículum para procesos con IA?** Visita [foxapply.com](https://foxapply.com) y comienza hoy mismo!
+**¿Quieres optimizar tu currículum para procesos con IA?** Visita [entrevistaja.com.br](https://entrevistaja.com.br) y comienza hoy mismo!
     `,
     coverImage: '/images/blog/inteligencia-artificial-recrutamento-2026.jpg',
     date: '2026-02-08',
     author: {
-      name: 'Equipo FoxApply',
+      name: 'Equipo Entrevista Já',
       avatar: '/images/fox-mascot.png',
     },
     tags: ['Inteligencia Artificial', 'Reclutamiento', 'Carrera', 'IA', 'Procesos Selectivos'],

@@ -18,10 +18,9 @@ export const PlansScreen: React.FC = () => {
       return {
         monthly: { amount: '39', cents: ',90', currency: 'R$', perMonth: '39,90' },
         lifetime: { 
-          amount: '79', 
-          cents: ',80', 
+          amount: '798', 
+          cents: ',00', 
           currency: 'R$', 
-          originalPrice: '798,00',
           discount: '90%'
         }
       };
@@ -57,20 +56,18 @@ export const PlansScreen: React.FC = () => {
   };
 
   const handleBack = () => {
-    navigate(-1);
+    navigate('/');
   };
 
   const planFeatures = t('plans.features.monthly', { returnObjects: true }) as string[];
 
   return (
-    <>
-      <S.PlansGlobalStyles />
-      <S.PageWrapper>
+    <S.PageWrapper>
       <S.BackButton onClick={handleBack}>
         <FiArrowLeft size={18} />
         {t('plans.back')}
       </S.BackButton>
-      
+
       <S.Container>
         <S.Header>
           <S.Title>
@@ -121,10 +118,6 @@ export const PlansScreen: React.FC = () => {
             
             <S.PriceContainer>
               <S.Price>
-                <S.OriginalPrice>
-                  {t('plans.from')} {prices.lifetime.currency} {prices.lifetime.originalPrice}
-                </S.OriginalPrice>
-                <S.PriceText>{t('plans.for')}</S.PriceText>
                 <S.CurrentPrice>
                   {prices.lifetime.currency} {prices.lifetime.amount}{prices.lifetime.cents}
                 </S.CurrentPrice>
@@ -158,6 +151,5 @@ export const PlansScreen: React.FC = () => {
         </S.Guarantee>
       </S.Container>
     </S.PageWrapper>
-    </>
   );
 };
