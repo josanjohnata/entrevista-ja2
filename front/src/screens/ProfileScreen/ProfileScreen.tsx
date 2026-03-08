@@ -30,18 +30,7 @@ import { useResumeEditor } from '../../hooks/useResumeEditor';
 import { useAuth } from '../../contexts/AuthContext';
 import { CancelSubscriptionDialog } from '../../components/CancelSubscriptionDialog';
 import { CreateUserForm } from '../../components/Admin/CreateUserForm';
-import {
-  FoxLogoWrapper,
-  OrbitRing,
-  OrbitRingInner,
-  FoxOutline,
-  FoxMask,
-  FoxDetail,
-  LoadingBarTrack,
-  LoadingBarShine,
-  LoadingText,
-  Dot,
-} from '../../components/ProtectedRoute/styles';
+import { Loading } from '../../components/common/Loading';
 import { toast } from 'react-toastify';
 import type {
   ResumeData,
@@ -971,41 +960,8 @@ export const ProfileScreen: React.FC = () => {
 
   if (loading) {
     return (
-      <S.Wrapper style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: 'calc(100vh - 80px)', gap: 36 }}>
-        <FoxLogoWrapper>
-          <OrbitRing />
-          <OrbitRingInner />
-          <svg width="56" height="56" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="foxGradProfile" x1="10%" y1="0%" x2="90%" y2="100%">
-                <stop offset="0%" stopColor="#FF7A2E" />
-                <stop offset="100%" stopColor="#CC4400" />
-              </linearGradient>
-              <linearGradient id="foxEarProfile" x1="50%" y1="0%" x2="50%" y2="100%">
-                <stop offset="0%" stopColor="#FFB088" stopOpacity="0.45" />
-                <stop offset="100%" stopColor="#FF8844" stopOpacity="0.25" />
-              </linearGradient>
-              <linearGradient id="foxMaskProfile" x1="50%" y1="20%" x2="50%" y2="100%">
-                <stop offset="0%" stopColor="#FFEEDD" stopOpacity="0.2" />
-                <stop offset="100%" stopColor="#FFCCAA" stopOpacity="0.08" />
-              </linearGradient>
-            </defs>
-            <FoxOutline d="M 10 8 L 24 26 L 32 20 L 40 26 L 54 8 L 50 42 L 32 58 L 14 42 Z" fill="url(#foxGradProfile)" />
-            <FoxMask d="M 25 33 L 32 52 L 39 33 L 32 27 Z" fill="url(#foxMaskProfile)" />
-            <FoxDetail d="M 14 13 L 23 25 L 20 17 Z" fill="url(#foxEarProfile)" $delay={0.15} />
-            <FoxDetail d="M 50 13 L 41 25 L 44 17 Z" fill="url(#foxEarProfile)" $delay={0.25} />
-            <FoxDetail d="M 30 45 L 32 49 L 34 45 Z" fill="rgba(0,0,0,0.5)" $delay={0.4} />
-          </svg>
-        </FoxLogoWrapper>
-        <LoadingBarTrack>
-          <LoadingBarShine />
-        </LoadingBarTrack>
-        <LoadingText>
-          {t('common.loading', 'Carregando').replace('...', '')}
-          <Dot $delay={0}>.</Dot>
-          <Dot $delay={0.2}>.</Dot>
-          <Dot $delay={0.4}>.</Dot>
-        </LoadingText>
+      <S.Wrapper style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: 'calc(100vh - 80px)' }}>
+        <Loading size="lg" />
       </S.Wrapper>
     );
   }
