@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useSearchParams, useNavigate } from 'react-router-dom';
+import { ROUTES } from '../../routes/paths';
 import { useAuth } from '../../contexts/AuthContext';
 import { getCheckoutSession, syncSubscription } from '../../lib/stripe';
 import { clearProfileCache } from '../../components/ProtectedRoute/ProtectedRoute';
@@ -35,17 +36,17 @@ export const CurriculoTurboScreen: React.FC = () => {
               newParams.delete('session_id');
               return newParams;
             });
-            navigate('/cv-automation', { replace: true });
+            navigate(ROUTES.CURRICULO_TURBO, { replace: true });
           } else if (session.status === 'pending') {
-            navigate('/pending-payment', { replace: true });
+            navigate(ROUTES.PAGAMENTO_PENDENTE, { replace: true });
           } else if (session.status === 'expired') {
-            navigate('/pending-payment?type=expired', { replace: true });
+            navigate(`${ROUTES.PAGAMENTO_PENDENTE}?type=expired`, { replace: true });
           } else {
-            navigate('/pending-payment', { replace: true });
+            navigate(ROUTES.PAGAMENTO_PENDENTE, { replace: true });
           }
         } catch (error) {
           console.error('Erro ao verificar status do pagamento:', error);
-          navigate('/pending-payment', { replace: true });
+          navigate(ROUTES.PAGAMENTO_PENDENTE, { replace: true });
         }
       };
 

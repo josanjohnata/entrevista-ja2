@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
+import { ROUTES } from './paths';
 import { LoginScreen } from '../screens/Login/Login';
 import { CheckoutScreen } from '../screens/CheckoutScreen/CheckoutScreen';
 import { CheckoutPCDScreen } from '../screens/CheckoutPCDScreen';
@@ -10,7 +11,6 @@ import { ProtectedRoute } from '../components/ProtectedRoute/ProtectedRoute';
 import { UserRole, useAuth } from '../contexts/AuthContext';
 import { LinkedInSearchScreen } from '../screens/LinkedInSearch/LinkedInSearch';
 import { ProfileScreen } from '../screens/ProfileScreen/ProfileScreen';
-import { CoverLetterScreen } from '../screens/CoverLetterScreen/CoverLetterScreen';
 import { LinkedInChampionScreen } from '../screens/LinkedInChampionScreen/LinkedInChampionScreen';
 import { RecommendedJobsScreen } from '../screens/RecommendedJobsScreen/RecommendedJobsScreen';
 import { BlogScreen, BlogPostScreen } from '../screens/BlogScreen';
@@ -69,24 +69,24 @@ export const AppRoutes: React.FC = () => {
 
   return (
     <Routes>
-      {/* Public routes (without header/layout) */}
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/pcd" element={<PCDLandingScreen />} />
-      <Route path="/login" element={<LoginScreen />} />
-      <Route path="/plans" element={<PlansScreen />} />
-      <Route path="/checkout" element={<CheckoutScreen />} />
-      <Route path="/checkout-pcd" element={<CheckoutPCDScreen />} />
-      <Route path="/pending-payment" element={<PendingPaymentScreen />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicyScreen />} />
-      <Route path="/refund-return" element={<RefundReturnScreen />} />
-      <Route path="/blog" element={<BlogScreen />} />
-      <Route path="/blog/:slug" element={<BlogPostScreen />} />
-      <Route path="/home" element={<LandingPage />} />
+      {/* Rotas públicas */}
+      <Route path={ROUTES.HOME} element={<LandingPage />} />
+      <Route path={ROUTES.PCD} element={<PCDLandingScreen />} />
+      <Route path={ROUTES.LOGIN} element={<LoginScreen />} />
+      <Route path={ROUTES.PLANOS} element={<PlansScreen />} />
+      <Route path={ROUTES.PAGAMENTO} element={<CheckoutScreen />} />
+      <Route path={ROUTES.PAGAMENTO_PCD} element={<CheckoutPCDScreen />} />
+      <Route path={ROUTES.PAGAMENTO_PENDENTE} element={<PendingPaymentScreen />} />
+      <Route path={ROUTES.POLITICA_PRIVACIDADE} element={<PrivacyPolicyScreen />} />
+      <Route path={ROUTES.REEMBOLSO} element={<RefundReturnScreen />} />
+      <Route path={ROUTES.BLOG} element={<BlogScreen />} />
+      <Route path={`${ROUTES.BLOG}/:slug`} element={<BlogPostScreen />} />
+      <Route path={ROUTES.INICIO} element={<LandingPage />} />
 
-      {/* Protected routes with persistent layout (Header stays mounted) */}
+      {/* Rotas protegidas com layout (sidebar) */}
       <Route element={<LayoutWithSidebar />}>
         <Route
-          path="/cv-automation"
+          path={ROUTES.CURRICULO_TURBO}
           element={
             <ProtectedRoute requiredRole={UserRole.BASIC_PLAN} key={`cv-automation-${userKey}`}>
               <CurriculoTurboScreen key={userKey} />
@@ -94,7 +94,7 @@ export const AppRoutes: React.FC = () => {
           }
         />
         <Route
-          path="/linkedin-search"
+          path={ROUTES.FILTRAR_VAGAS}
           element={
             <ProtectedRoute requiredRole={UserRole.BASIC_PLAN} key={`linkedin-${userKey}`}>
               <LinkedInSearchScreen key={userKey} />
@@ -102,15 +102,7 @@ export const AppRoutes: React.FC = () => {
           }
         />
         <Route
-          path="/cover-letter"
-          element={
-            <ProtectedRoute requiredRole={UserRole.BASIC_PLAN} key={`cover-letter-${userKey}`}>
-              <CoverLetterScreen />
-            </ProtectedRoute>
-          }
-        />
-        <Route
-          path="/linkedin-champion"
+          path={ROUTES.LINKEDIN_CAMPEAO}
           element={
             <ProtectedRoute requiredRole={UserRole.BASIC_PLAN} key={`linkedin-champion-${userKey}`}>
               <LinkedInChampionScreen />
@@ -118,7 +110,7 @@ export const AppRoutes: React.FC = () => {
           }
         />
         <Route
-          path="/recommended-jobs"
+          path={ROUTES.VAGAS_RECOMENDADAS}
           element={
             <ProtectedRoute requiredRole={UserRole.BASIC_PLAN} key={`recommended-jobs-${userKey}`}>
               <RecommendedJobsScreen />
@@ -126,7 +118,7 @@ export const AppRoutes: React.FC = () => {
           }
         />
         <Route
-          path="/results"
+          path={ROUTES.RESULTADOS}
           element={
             <ProtectedRoute requiredRole={UserRole.BASIC_PLAN} key={`results-${userKey}`}>
               <ResultadosPageWrapper />
@@ -134,7 +126,7 @@ export const AppRoutes: React.FC = () => {
           }
         />
         <Route
-          path="/profile"
+          path={ROUTES.PERFIL}
           element={
             <ErrorBoundary>
               <ProtectedRoute requireAuth={true} skipProfileCheck={true} requireActiveSubscription={false} key={`profile-${userKey}`}>
@@ -144,7 +136,7 @@ export const AppRoutes: React.FC = () => {
           }
         />
         <Route
-          path="/admin/referral-dashboard"
+          path={ROUTES.ADMIN_PAINEL_INDICACOES}
           element={
             <ErrorBoundary>
               <ProtectedRoute requireAuth={true} skipProfileCheck={true} requireActiveSubscription={false} key={`referral-dashboard-${userKey}`}>
@@ -154,6 +146,22 @@ export const AppRoutes: React.FC = () => {
           }
         />
       </Route>
+
+      {/* Redirecionamentos das rotas antigas (inglês) para português */}
+      <Route path="/login" element={<Navigate to={ROUTES.LOGIN} replace />} />
+      <Route path="/plans" element={<Navigate to={ROUTES.PLANOS} replace />} />
+      <Route path="/checkout" element={<Navigate to={ROUTES.PAGAMENTO} replace />} />
+      <Route path="/checkout-pcd" element={<Navigate to={ROUTES.PAGAMENTO_PCD} replace />} />
+      <Route path="/pending-payment" element={<Navigate to={ROUTES.PAGAMENTO_PENDENTE} replace />} />
+      <Route path="/privacy-policy" element={<Navigate to={ROUTES.POLITICA_PRIVACIDADE} replace />} />
+      <Route path="/refund-return" element={<Navigate to={ROUTES.REEMBOLSO} replace />} />
+      <Route path="/cv-automation" element={<Navigate to={ROUTES.CURRICULO_TURBO} replace />} />
+      <Route path="/linkedin-search" element={<Navigate to={ROUTES.FILTRAR_VAGAS} replace />} />
+      <Route path="/linkedin-champion" element={<Navigate to={ROUTES.LINKEDIN_CAMPEAO} replace />} />
+      <Route path="/recommended-jobs" element={<Navigate to={ROUTES.VAGAS_RECOMENDADAS} replace />} />
+      <Route path="/results" element={<Navigate to={ROUTES.RESULTADOS} replace />} />
+      <Route path="/profile" element={<Navigate to={ROUTES.PERFIL} replace />} />
+      <Route path="/admin/referral-dashboard" element={<Navigate to={ROUTES.ADMIN_PAINEL_INDICACOES} replace />} />
 
       <Route path="*" element={<NotFoundPage />} />
     </Routes>

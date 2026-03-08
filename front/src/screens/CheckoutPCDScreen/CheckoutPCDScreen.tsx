@@ -9,6 +9,7 @@ import { httpsCallable } from "firebase/functions";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { FeaturesList, FeatureItem } from "../../components/sections/Features/styles";
 import { Link, useSearchParams } from "react-router-dom";
+import { ROUTES } from '../../routes/paths';
 import { Loading } from '../../components/common/Loading';
 import { doc, setDoc, increment } from "firebase/firestore";
 import { SimpleHeader } from "../../components/SimpleHeader";
@@ -518,7 +519,7 @@ export const CheckoutPCDScreen: React.FC = () => {
                             }
                           }}
                         />
-                        <span>{t('checkout.acceptTerms')} <S.TermsLink as={Link} to="/privacy-policy" target="_blank">{t('checkout.termsAndPrivacy')}</S.TermsLink> {t('checkout.ofPrivacy')}</span>
+                        <span>{t('checkout.acceptTerms')} <S.TermsLink as={Link} to={ROUTES.POLITICA_PRIVACIDADE} target="_blank">{t('checkout.termsAndPrivacy')}</S.TermsLink> {t('checkout.ofPrivacy')}</span>
                       </S.TermsLabel>
                       {touched.acceptedTerms && errors.acceptedTerms && <S.FieldErrorMessage>{errors.acceptedTerms}</S.FieldErrorMessage>}
                     </S.InputGroup>

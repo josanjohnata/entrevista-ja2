@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Download, User, Menu, X, FileText, Award, Mail, Search, Briefcase, LogOut, Activity, Bell } from 'lucide-react';
 import { useAuth, UserRole } from '../../contexts/AuthContext';
-import logoImage from '../../assets/logo.png';
+import { ROUTES } from '../../routes/paths';
 import * as S from './Header.styles';
 
 export const Header: React.FC = () => {
@@ -60,11 +60,10 @@ export const Header: React.FC = () => {
   }, [menuOpen, closeMenu]);
 
   const navItems = [
-    { id: 'resume', label: t('header.resumeTurbo'), path: '/cv-automation', icon: <FileText size={18} /> },
-    { id: 'linkedin-champion', label: t('header.linkedinChampion'), path: '/linkedin-champion', icon: <Award size={18} /> },
-    { id: 'cover-letter', label: t('header.coverLetter'), path: '/cover-letter', icon: <Mail size={18} /> },
-    { id: 'filter-jobs', label: t('header.filterJobs'), path: '/linkedin-search', icon: <Search size={18} /> },
-    { id: 'recommended-jobs', label: t('header.recommendedJobs'), path: '/recommended-jobs', icon: <Briefcase size={18} />, hasBell: true },
+    { id: 'resume', label: t('header.resumeTurbo'), path: ROUTES.CURRICULO_TURBO, icon: <FileText size={18} /> },
+    { id: 'linkedin-champion', label: t('header.linkedinChampion'), path: ROUTES.LINKEDIN_CAMPEAO, icon: <Award size={18} /> },
+    { id: 'filter-jobs', label: t('header.filterJobs'), path: ROUTES.FILTRAR_VAGAS, icon: <Search size={18} /> },
+    { id: 'recommended-jobs', label: t('header.recommendedJobs'), path: ROUTES.VAGAS_RECOMENDADAS, icon: <Briefcase size={18} />, hasBell: true },
   ];
 
   const extensionUrl = 'https://chromewebstore.google.com/detail/entrevistaj%C3%A1-linkedin-eas/hmebmpekpajofnclfboeghbhcfomomdp';
@@ -96,7 +95,7 @@ export const Header: React.FC = () => {
     try {
       await logout();
       closeMobile();
-      navigate('/');
+      navigate(ROUTES.HOME);
     } catch (error) {
       console.error('Erro no logout:', error);
     }
@@ -135,10 +134,9 @@ export const Header: React.FC = () => {
     <>
       <S.HeaderWrapper>
         <S.PremiumHeaderBar>
-          <S.BrandWrapper to="/cv-automation">
-            <S.LogoImg src={logoImage} alt="Logo Raposa" />
+          <S.BrandWrapper to={ROUTES.CURRICULO_TURBO}>
             <S.BrandName>
-              Fox<span>Apply</span>
+              Entrevista<span> Já</span>
             </S.BrandName>
           </S.BrandWrapper>
 
@@ -205,13 +203,13 @@ export const Header: React.FC = () => {
                     </S.DropdownUserInfo>
 
                     <S.DropdownMenuItems>
-                      <S.DropdownMenuLink to="/profile" onClick={closeMenu}>
+                      <S.DropdownMenuLink to={ROUTES.PERFIL} onClick={closeMenu}>
                         <User size={16} />
                         {t('header.profile')}
                       </S.DropdownMenuLink>
 
                       {isAdmin && (
-                        <S.DropdownMenuLink to="/admin/referral-dashboard" onClick={closeMenu}>
+                        <S.DropdownMenuLink to={ROUTES.ADMIN_PAINEL_INDICACOES} onClick={closeMenu}>
                           <Activity size={16} />
                           {t('header.referralDashboard')}
                         </S.DropdownMenuLink>
@@ -250,8 +248,7 @@ export const Header: React.FC = () => {
           <S.MobileDrawer $isOpen={mobileOpen} $isClosing={isClosing}>
             <S.DrawerHeader>
               <S.DrawerBrand>
-                <S.LogoImg src={logoImage} alt="Logo" style={{ height: 24 }} />
-                <S.DrawerBrandName>Fox<span>Apply</span></S.DrawerBrandName>
+                <S.DrawerBrandName>Entrevista<span> Já</span></S.DrawerBrandName>
               </S.DrawerBrand>
               <S.DrawerCloseBtn onClick={closeMobile} aria-label="Fechar menu">
                 <X size={16} />
@@ -285,8 +282,8 @@ export const Header: React.FC = () => {
               </S.DrawerExternalLink>
 
               <S.DrawerNavLink
-                to="/profile"
-                $active={location.pathname === '/profile'}
+                to={ROUTES.PERFIL}
+                $active={location.pathname === ROUTES.PERFIL}
                 onClick={handleNavClick}
               >
                 <User size={18} />
@@ -295,8 +292,8 @@ export const Header: React.FC = () => {
 
               {isAdmin && (
                 <S.DrawerNavLink
-                  to="/admin/referral-dashboard"
-                  $active={location.pathname === '/admin/referral-dashboard'}
+                  to={ROUTES.ADMIN_PAINEL_INDICACOES}
+                  $active={location.pathname === ROUTES.ADMIN_PAINEL_INDICACOES}
                   onClick={handleNavClick}
                 >
                   <Activity size={18} />

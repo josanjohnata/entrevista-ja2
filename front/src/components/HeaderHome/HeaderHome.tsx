@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useAuth } from '../../contexts/AuthContext';
+import { ROUTES } from '../../routes/paths';
 import { FiUser, FiLogOut, FiFileText, FiSearch, FiDownload, FiMail, FiAward } from 'react-icons/fi';
 import * as S from './styles';
 import { Logo } from '../Logo';
@@ -20,17 +21,17 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
   const { userData, logout } = useAuth();
   const profileMenuRef = useRef<HTMLDivElement>(null);
   
-  const isSearchScreen = location.pathname === '/linkedin-search';
-  const isProfileScreen = location.pathname === '/profile';
+  const isSearchScreen = location.pathname === ROUTES.FILTRAR_VAGAS;
+  const isProfileScreen = location.pathname === ROUTES.PERFIL;
   const isCoverLetterScreen = location.pathname === '/cover-letter';
-  const isLinkedInChampionScreen = location.pathname === '/linkedin-champion';
+  const isLinkedInChampionScreen = location.pathname === ROUTES.LINKEDIN_CAMPEAO;
   const isFirstAccess = propIsFirstAccess || location.state?.isFirstAccess;
 
   const handleLogout = async () => {
     try {
       await logout();
       setIsProfileMenuOpen(false);
-      navigate('/');
+      navigate(ROUTES.HOME);
     } catch (error) {
       console.error('Erro no logout:', error);
     }
@@ -45,7 +46,7 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
         navigate('/empresas');
         break;
       case 'profile':
-        navigate('/profile');
+        navigate(ROUTES.PERFIL);
         break;
       case 'coverLetter':
         navigate('/cover-letter');
@@ -86,7 +87,7 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
             </S.LoginButton>
           ) : isSearchScreen || isLinkedInChampionScreen ? (
             <>
-              <S.NavLink as={Link} to="/cv-automation">
+              <S.NavLink as={Link} to={ROUTES.CURRICULO_TURBO}>
                 <FiFileText /> {t('header.resumeTurbo')}
               </S.NavLink>
               {!isCoverLetterScreen && (
@@ -95,8 +96,8 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
                 </S.NavLink>
               )}
               {!isLinkedInChampionScreen && (
-                <S.NavLink as={Link} to="/linkedin-champion">
-                  <FiAward /> LinkedIn Champion
+                <S.NavLink as={Link} to={ROUTES.LINKEDIN_CAMPEAO}>
+                  <FiAward /> LinkedIn Campeão
                 </S.NavLink>
               )}
               {!isProfileScreen && (
@@ -111,13 +112,13 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
           ) : (
             <>
               {isCoverLetterScreen && (
-                <S.NavLink as={Link} to="/cv-automation">
+                <S.NavLink as={Link} to={ROUTES.CURRICULO_TURBO}>
                   <FiFileText /> {t('header.resumeTurbo')}
                 </S.NavLink>
               )}
               {!isFirstAccess && (
                 <>
-                  <S.NavLink as={Link} to="/linkedin-search">
+                  <S.NavLink as={Link} to={ROUTES.FILTRAR_VAGAS}>
                     <FiSearch /> {t('header.filterJobs')}
                   </S.NavLink>
                   {!isCoverLetterScreen && (
@@ -126,7 +127,7 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
                     </S.NavLink>
                   )}
                   {!isLinkedInChampionScreen && (
-                    <S.NavLink as={Link} to="/linkedin-champion">
+                    <S.NavLink as={Link} to={ROUTES.LINKEDIN_CAMPEAO}>
                       <FiAward /> {t('header.linkedinChampion')}
                     </S.NavLink>
                   )}
@@ -184,7 +185,7 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
           </S.LoginButton>
         ) : isSearchScreen || isLinkedInChampionScreen ? (
           <>
-            <S.NavLink as={Link} to="/cv-automation" onClick={() => setIsMobileMenuOpen(false)}>
+            <S.NavLink as={Link} to={ROUTES.CURRICULO_TURBO} onClick={() => setIsMobileMenuOpen(false)}>
               <FiFileText /> {t('header.resumeTurbo')}
             </S.NavLink>
             {!isCoverLetterScreen && (
@@ -193,8 +194,8 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
               </S.MobileMenuItem>
             )}
             {!isLinkedInChampionScreen && (
-              <S.NavLink as={Link} to="/linkedin-champion" onClick={() => setIsMobileMenuOpen(false)}>
-                <FiAward /> LinkedIn Champion
+              <S.NavLink as={Link} to={ROUTES.LINKEDIN_CAMPEAO} onClick={() => setIsMobileMenuOpen(false)}>
+                <FiAward /> LinkedIn Campeão
               </S.NavLink>
             )}
             {!isProfileScreen && (
@@ -209,13 +210,13 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
         ) : (
           <>
             {isCoverLetterScreen && (
-              <S.NavLink as={Link} to="/cv-automation" onClick={() => setIsMobileMenuOpen(false)}>
+              <S.NavLink as={Link} to={ROUTES.CURRICULO_TURBO} onClick={() => setIsMobileMenuOpen(false)}>
                 <FiFileText /> {t('header.resumeTurbo')}
               </S.NavLink>
             )}
             {!isFirstAccess && (
               <>
-                <S.NavLink as={Link} to="/linkedin-search" onClick={() => setIsMobileMenuOpen(false)}>
+                <S.NavLink as={Link} to={ROUTES.FILTRAR_VAGAS} onClick={() => setIsMobileMenuOpen(false)}>
                   <FiSearch /> {t('header.filterJobs')}
                 </S.NavLink>
                 {!isCoverLetterScreen && (
@@ -224,8 +225,8 @@ export const HeaderHome: React.FC<HeaderHomeProps> = ({ isFirstAccess: propIsFir
                   </S.MobileMenuItem>
                 )}
                 {!isLinkedInChampionScreen && (
-                  <S.NavLink as={Link} to="/linkedin-champion" onClick={() => setIsMobileMenuOpen(false)}>
-                    <FiAward /> LinkedIn Champion
+                  <S.NavLink as={Link} to={ROUTES.LINKEDIN_CAMPEAO} onClick={() => setIsMobileMenuOpen(false)}>
+                    <FiAward /> LinkedIn Campeão
                   </S.NavLink>
                 )}
                 <S.NavLink

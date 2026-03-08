@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { ROUTES } from '../../../routes/paths';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import styled from 'styled-components';
 import { Section, Container, Button, Heading1, Text, Badge } from '../styles';
@@ -305,7 +306,7 @@ export const HeroSection: React.FC = () => {
             
             <div>
               <ButtonGroup>
-                <Button as={Link} to="/checkout-pcd" $variant="hero" $size="lg">
+                <Button as={Link} to={ROUTES.PAGAMENTO_PCD} $variant="hero" $size="lg">
                   Testar 30 Dias Grátis
                   <ArrowRight size={20} />
                 </Button>

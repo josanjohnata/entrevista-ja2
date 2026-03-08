@@ -1,6 +1,7 @@
 import React, { useMemo } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { ROUTES } from '../../routes/paths';
 import { FiCheck, FiShield, FiArrowLeft } from 'react-icons/fi';
 import * as S from './styles';
 import { getRegionConfig } from '../../utils/regionDetector';
@@ -52,11 +53,11 @@ export const PlansScreen: React.FC = () => {
   const handleSelectPlan = (planId: 'monthly' | 'lifetime') => {
     const params = new URLSearchParams({ plan: planId });
     if (email) params.set('email', email);
-    navigate(`/checkout?${params.toString()}`);
+    navigate(`${ROUTES.PAGAMENTO}?${params.toString()}`);
   };
 
   const handleBack = () => {
-    navigate('/');
+    navigate(ROUTES.HOME);
   };
 
   const planFeatures = t('plans.features.monthly', { returnObjects: true }) as string[];

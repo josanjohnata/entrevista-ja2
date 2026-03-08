@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { ROUTES } from '../../../routes/paths';
 import { useTranslation } from 'react-i18next';
 import { ArrowLeft } from 'lucide-react';
 
@@ -71,7 +72,7 @@ export const NotFoundPage: React.FC = () => {
           {location.pathname}
         </S.PathChip>
         <br />
-        <S.Cta onClick={() => navigate('/')}>
+        <S.Cta onClick={() => navigate(ROUTES.HOME)}>
           <ArrowLeft />
           {t('notFound.backToHome')}
         </S.Cta>

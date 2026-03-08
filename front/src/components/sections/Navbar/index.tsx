@@ -5,6 +5,7 @@ import { FiMenu, FiX } from 'react-icons/fi';
 import * as S from './styles';
 import type { NavItem } from '../../../types/index';
 import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../routes/paths';
 
 export const Navbar: React.FC = () => {
   const { t } = useTranslation();
@@ -12,7 +13,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks: NavItem[] = [
     { href: '#funcionamento', label: t('landing.navbar.howItWorks') },
-    { href: '/plans', label: t('landing.navbar.price') },
+    { href: ROUTES.PLANOS, label: t('landing.navbar.price') },
   ];
 
   return (
@@ -26,7 +27,7 @@ export const Navbar: React.FC = () => {
               {link.label}
             </S.NavLink>
           ))}
-          <S.LoginButton as={Link} to="/login">{t('landing.navbar.login')}</S.LoginButton>
+          <S.LoginButton as={Link} to={ROUTES.LOGIN}>{t('landing.navbar.login')}</S.LoginButton>
         </S.DesktopNav>
 
         <S.MobileMenuButton onClick={() => setIsMobileMenuOpen(true)}>
@@ -50,7 +51,7 @@ export const Navbar: React.FC = () => {
             {link.label}
           </S.NavLink>
         ))}
-        <S.LoginButton as={Link} to="/login" onClick={() => setIsMobileMenuOpen(false)}>{t('landing.navbar.login')}</S.LoginButton>
+        <S.LoginButton as={Link} to={ROUTES.LOGIN} onClick={() => setIsMobileMenuOpen(false)}>{t('landing.navbar.login')}</S.LoginButton>
       </S.MobileSheet>
     </S.Header>
   );

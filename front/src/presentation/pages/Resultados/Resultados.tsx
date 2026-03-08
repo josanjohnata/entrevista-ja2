@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { ROUTES } from '../../../routes/paths';
 import {
   TrendingUp,
   AlertCircle,
@@ -47,7 +48,7 @@ export const ResultadosPage: React.FC = () => {
     window.scrollTo(0, 0);
     
     if (!analysis) {
-      navigate('/');
+      navigate(ROUTES.HOME);
     }
   }, [analysis, navigate]);
 
@@ -307,7 +308,7 @@ export const ResultadosPage: React.FC = () => {
 
             <S.ActionContainer>
               <Button 
-                onClick={() => navigate('/cv-automation', { 
+                onClick={() => navigate(ROUTES.CURRICULO_TURBO, { 
                   state: isLowCompatibility ? { clearJobDescription: true } : undefined 
                 })} 
                 size="lg" 
@@ -320,7 +321,7 @@ export const ResultadosPage: React.FC = () => {
                 <Button 
                   onClick={() => {
                     const optimizedResume = generateOptimizedResume();
-                    navigate('/cv-automation', { 
+                    navigate(ROUTES.CURRICULO_TURBO, { 
                       state: { 
                         optimizedResume,
                         fromResults: true

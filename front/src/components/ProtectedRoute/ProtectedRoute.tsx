@@ -18,6 +18,7 @@ import {
   LoadingText,
   Dot,
 } from './styles';
+import { ROUTES } from '../../routes/paths';
 import { PendingPaymentScreen } from '../../screens/PendingPayment';
 
 const FoxLoadingScreen = React.memo(() => {
@@ -193,7 +194,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
   }
 
   if (requireAuth && !isAuthenticated) {
-    return <Navigate to="/login" state={{ from: location }} replace />;
+    return <Navigate to={ROUTES.LOGIN} state={{ from: location }} replace />;
   }
 
   // Verificar assinatura ANTES do perfil
@@ -209,8 +210,8 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
   }
 
   // Só verifica perfil depois de confirmar que a assinatura está ativa
-  if (!skipProfileCheck && isAuthenticated && !profileCompleted && location.pathname !== '/profile') {
-    return <Navigate to="/profile" state={{ isFirstAccess: true }} replace />;
+  if (!skipProfileCheck && isAuthenticated && !profileCompleted && location.pathname !== ROUTES.PERFIL) {
+    return <Navigate to={ROUTES.PERFIL} state={{ isFirstAccess: true }} replace />;
   }
 
   if (requiredRole && userData) {

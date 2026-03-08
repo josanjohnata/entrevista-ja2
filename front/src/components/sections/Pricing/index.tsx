@@ -5,6 +5,7 @@ import { Container } from '../../common/Container';
 import { PricingSection, PricingContent, PricingCard, PriceText } from './styles';
 import { FeaturesList, FeatureItem } from '../Features/styles';
 import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../routes/paths';
 import { getRegionConfig } from '../../../utils/regionDetector';
 
 const planFeatures = [
@@ -49,7 +50,7 @@ export const Pricing: React.FC = () => {
                 </FeatureItem>
               ))}
             </FeaturesList>
-            <Button as={Link} to="/checkout" style={{ width: '100%', marginTop: '2rem' }}>
+            <Button as={Link} to={ROUTES.PAGAMENTO} style={{ width: '100%', marginTop: '2rem' }}>
               Assinar Agora e Ser Chamado
             </Button>
           </PricingCard>

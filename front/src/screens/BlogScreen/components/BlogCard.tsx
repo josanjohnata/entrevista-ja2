@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ROUTES } from '../../../routes/paths';
 import { useTranslation } from 'react-i18next';
 import styled from 'styled-components';
 import { Calendar, Clock, Tag as TagIcon } from 'lucide-react';
@@ -125,7 +126,7 @@ export const BlogCard: React.FC<BlogCardProps> = ({ post }) => {
   const { t } = useTranslation();
   
   const handleClick = () => {
-    navigate(`/blog/${post.slug}`);
+    navigate(ROUTES.BLOG_POST(post.slug));
   };
   
   return (

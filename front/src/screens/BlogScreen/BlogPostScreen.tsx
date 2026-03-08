@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { ROUTES } from '../../routes/paths';
 import { useTranslation } from 'react-i18next';
 import { Calendar, Clock, ArrowLeft, Tag as TagIcon, User } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
@@ -47,7 +48,7 @@ export const BlogPostScreen: React.FC = () => {
   }, [slug]);
   
   const handleBack = () => {
-    navigate('/blog');
+    navigate(ROUTES.BLOG);
   };
   
   return (

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { ROUTES } from '../../../routes/paths';
 import styled from 'styled-components';
 import { Button } from '../styles';
 
@@ -78,7 +79,7 @@ export const Navbar: React.FC = () => {
   return (
     <Nav>
       <NavContainer>
-        <Logo to="/">
+        <Logo to={ROUTES.HOME}>
           <span>🦊</span>
           <span>
             Fox<span className="highlight">Apply</span>
@@ -89,11 +90,11 @@ export const Navbar: React.FC = () => {
           <HashLink smooth to="/pcd#como-funciona">Como Funciona</HashLink>
           <HashLink smooth to="/pcd#recursos">Recursos</HashLink>
           <HashLink smooth to="/pcd#depoimentos">Depoimentos</HashLink>
-          <Link to="/blog">Blog</Link>
+          <Link to={ROUTES.BLOG}>Blog</Link>
           <HashLink smooth to="/pcd#faq">FAQ</HashLink>
         </NavLinks>
         
-        <NavButton as={Link} to="/checkout-pcd" $size="sm">
+        <NavButton as={Link} to={ROUTES.PAGAMENTO_PCD} $size="sm">
           Começar Grátis
         </NavButton>
       </NavContainer>

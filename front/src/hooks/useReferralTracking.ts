@@ -1,5 +1,6 @@
 import { useEffect, useState, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
+import { ROUTES } from '../routes/paths';
 
 const REFERRAL_CODE_KEY = 'referral_code';
 const REFERRAL_TRACKING_KEY = 'referral_tracking';
@@ -78,13 +79,12 @@ export const useReferralTracking = () => {
 
   // Obter URL de checkout com código de indicação
   const getCheckoutUrl = useCallback((planId?: string) => {
-    // Se não há planId, redireciona para /plans (tela de planos)
+    // Se não há planId, redireciona para planos
     if (!planId) {
-      return referralCode ? `/plans?ref=${referralCode}` : '/plans';
+      return referralCode ? `${ROUTES.PLANOS}?ref=${referralCode}` : ROUTES.PLANOS;
     }
-    
-    // Se há planId, vai direto para checkout
-    const baseUrl = `/checkout?plan=${planId}`;
+    // Se há planId, vai direto para pagamento
+    const baseUrl = `${ROUTES.PAGAMENTO}?plan=${planId}`;
     if (referralCode) {
       return `${baseUrl}&ref=${referralCode}`;
     }

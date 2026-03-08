@@ -4,6 +4,7 @@ import * as S from "./styles";
 import { FiEye, FiEyeOff, FiX, FiCheckCircle, FiArrowLeft } from 'react-icons/fi';
 import { AlertTriangle } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../routes/paths";
 import { useAuthForm } from "../../hooks/useAuthForm";
 import { useAuth } from "../../contexts/AuthContext";
 import { auth } from "../../lib/firebase";
@@ -51,7 +52,7 @@ export const LoginScreen: FC = () => {
           
           if (!userDoc.exists()) {
             // Usuário não existe no banco - redirecionar para pagamento pendente por segurança
-            navigate('/pending-payment', { replace: true });
+            navigate(ROUTES.PAGAMENTO_PENDENTE, { replace: true });
             return;
           }
           
@@ -91,7 +92,7 @@ export const LoginScreen: FC = () => {
               await signOut(auth);
               setGeneralError(t('login.pcdPendingCheckout'));
               setTimeout(() => {
-                navigate('/checkout-pcd', { replace: true });
+                navigate(ROUTES.PAGAMENTO_PCD, { replace: true });
               }, 2000);
               return;
             }
@@ -99,21 +100,21 @@ export const LoginScreen: FC = () => {
           
           // Verificar status da subscription para todos os usuários (PCD ou não)
           if (subscriptionStatus === 'active') {
-            navigate('/recommended-jobs', { replace: true });
+            navigate(ROUTES.VAGAS_RECOMENDADAS, { replace: true });
             return;
           } else if (subscriptionStatus === 'expired') {
             // Subscription expirada
-            navigate('/pending-payment?type=expired', { replace: true });
+            navigate(`${ROUTES.PAGAMENTO_PENDENTE}?type=expired`, { replace: true });
             return;
           } else {
             // Subscription pendente ou cancelada - redirecionar para pagamento pendente
-            navigate('/pending-payment', { replace: true });
+            navigate(ROUTES.PAGAMENTO_PENDENTE, { replace: true });
             return;
           }
         } catch (error) {
           console.error('Erro ao verificar status do usuário:', error);
           // Em caso de erro, redirecionar para pagamento pendente por segurança
-          navigate('/pending-payment', { replace: true });
+          navigate(ROUTES.PAGAMENTO_PENDENTE, { replace: true });
         }
       }
     };
@@ -247,7 +248,7 @@ export const LoginScreen: FC = () => {
   if (authLoading) {
     return (
       <S.PageWrapper>
-        <S.BackButton onClick={() => navigate('/')}>
+        <S.BackButton onClick={() => navigate(ROUTES.HOME)}>
           <FiArrowLeft size={18} />
           {t('plans.back')}
         </S.BackButton>
@@ -261,7 +262,7 @@ export const LoginScreen: FC = () => {
   return (
     <>
     <S.PageWrapper>
-      <S.BackButton onClick={() => navigate('/')}>
+      <S.BackButton onClick={() => navigate(ROUTES.HOME)}>
         <FiArrowLeft size={18} />
         {t('plans.back')}
       </S.BackButton>
@@ -374,7 +375,7 @@ export const LoginScreen: FC = () => {
                 {(loading || signInLoading) ? t('login.signingIn') : t('login.accessAccount')}
               </S.ActionButton>
 
-              <S.CreateAccountButton to="/plans">
+              <S.CreateAccountButton to={ROUTES.PLANOS}>
                 {t('login.createAccount')}
               </S.CreateAccountButton>
             </S.LoginForm>

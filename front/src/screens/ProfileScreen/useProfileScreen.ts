@@ -6,6 +6,7 @@ import { doc, getDoc, setDoc, Timestamp } from 'firebase/firestore';
 import { db } from '../../lib/firebase';
 import type { UserProfile, Experience, Education, Language } from './types';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { ROUTES } from '../../routes/paths';
 import { formatMonthYear } from '../../utils/dateFormatter';
 import { ProfileToResumeAdapter } from '../../infrastructure/adapters/ProfileToResumeAdapter';
 import { clearProfileCache } from '../../components/ProtectedRoute/ProtectedRoute';
@@ -458,7 +459,7 @@ export function useProfileScreen() {
         setIsFirstAccess(false);
         setMessage({ type: 'success', text: t('profile.profileCreated') });
         setTimeout(() => {
-          navigate('/recommended-jobs', { replace: true });
+          navigate(ROUTES.VAGAS_RECOMENDADAS, { replace: true });
         }, 2000);
       } else {
         setIsEditing(false);
@@ -635,14 +636,14 @@ export function useProfileScreen() {
         setIsFirstAccess(false);
         setMessage({ type: 'success', text: t('profile.profileCreated') });
         setTimeout(() => {
-          navigate('/recommended-jobs', { replace: true });
+          navigate(ROUTES.VAGAS_RECOMENDADAS, { replace: true });
         }, 2000);
       } else {
         setMessage({ type: 'success', text: t('profile.resumeSaved') });
 
         if (location.state?.fromProfile) {
           setTimeout(() => {
-            navigate('/recommended-jobs', {
+            navigate(ROUTES.VAGAS_RECOMENDADAS, {
               state: { fromProfile: true },
               replace: true
             });

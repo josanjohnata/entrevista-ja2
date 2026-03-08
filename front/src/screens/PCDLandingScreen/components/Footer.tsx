@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../routes/paths';
 import styled from 'styled-components';
 import { Container } from '../styles';
 
@@ -39,7 +40,7 @@ export const Footer: React.FC = () => {
   return (
     <FooterWrapper>
       <FooterContent>
-        <Logo to="/">
+        <Logo to={ROUTES.HOME}>
           <span>🦊</span>
           <span>
             Fox<span className="highlight">Apply</span>

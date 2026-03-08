@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { ROUTES } from '../../../routes/paths';
 import { db } from '../../../lib/firebase';
 import { Container } from '../../common/Container';
 import * as S from './styles';
@@ -46,7 +47,7 @@ export const Hero: React.FC = () => {
       return;
     }
     setError('');
-    navigate(`/checkout?email=${encodeURIComponent(email)}`);
+    navigate(`${ROUTES.PAGAMENTO}?email=${encodeURIComponent(email)}`);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {

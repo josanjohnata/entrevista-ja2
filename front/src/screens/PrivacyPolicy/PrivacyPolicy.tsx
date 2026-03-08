@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { ROUTES } from '../../routes/paths';
 import { useTranslation } from 'react-i18next';
 import { FiArrowLeft, FiShield, FiDatabase, FiLock, FiUsers, FiMail, FiRefreshCw, FiFileText } from 'react-icons/fi';
 import { SimpleHeader } from '../../components/SimpleHeader';
@@ -13,7 +14,7 @@ export const PrivacyPolicyScreen: React.FC = () => {
     if (window.history.length <= 1) {
       window.close();
       setTimeout(() => {
-        navigate('/');
+        navigate(ROUTES.HOME);
       }, 100);
     } else {
       navigate(-1);

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { ROUTES } from '../../../routes/paths';
 import { ArrowRight } from 'lucide-react';
 import styled from 'styled-components';
 import { Section, Container, Heading2, Text, Button, Card } from '../styles';
@@ -61,7 +62,7 @@ export const CTASection: React.FC = () => {
             Junte-se a milhares de profissionais PCD que já estão conquistando mais entrevistas com menos esforço.
           </Description>
           <ButtonWrapper>
-            <Button as={Link} to="/checkout-pcd" $variant="cta" $size="lg">
+            <Button as={Link} to={ROUTES.PAGAMENTO_PCD} $variant="cta" $size="lg">
               Começar 30 Dias Grátis
               <ArrowRight size={20} />
             </Button>

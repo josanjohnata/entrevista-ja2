@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuth, UserRole } from '../contexts/AuthContext';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { ROUTES } from '../routes/paths';
 
 interface UseAuthFormProps {
   redirectTo?: string;
@@ -9,7 +10,7 @@ interface UseAuthFormProps {
 }
 
 export const useAuthForm = ({ 
-  redirectTo = '/dashboard', 
+  redirectTo = ROUTES.CURRICULO_TURBO, 
   onSuccess, 
   onError 
 }: UseAuthFormProps = {}) => {
@@ -21,7 +22,7 @@ export const useAuthForm = ({
 
   const getRedirectPath = () => {
     const from = location.state?.from?.pathname;
-    return from && from !== '/login' ? from : redirectTo;
+    return from && from !== ROUTES.LOGIN ? from : redirectTo;
   };
 
   const handleLogin = async (email: string, password: string) => {

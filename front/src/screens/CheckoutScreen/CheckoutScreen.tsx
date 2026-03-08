@@ -8,6 +8,7 @@ import { auth, db, functions } from "../../lib/firebase";
 import { httpsCallable } from "firebase/functions";
 import { FeaturesList, FeatureItem } from "../../components/sections/Features/styles";
 import { useSearchParams, useNavigate, Link } from "react-router-dom";
+import { ROUTES } from "../../routes/paths";
 import { StripeCheckout } from "./StripeCheckout";
 import { Loading } from '../../components/common/Loading';
 import { doc, setDoc, increment } from "firebase/firestore";
@@ -265,7 +266,7 @@ export const CheckoutScreen: React.FC = () => {
         newParams.set('ref', referralCodeFromUrl);
       }
       
-      navigate(`/checkout?${newParams.toString()}`, { replace: true });
+      navigate(`${ROUTES.PAGAMENTO}?${newParams.toString()}`, { replace: true });
     } catch (e) {
       console.error('Error saving user data:', e);
       setErrors(prev => ({ ...prev, email: t('checkout.createAccountError') }));
@@ -405,7 +406,7 @@ export const CheckoutScreen: React.FC = () => {
                             }
                           }}
                         />
-                        <span>{t('checkout.acceptTerms')} <S.TermsLink as={Link} to="/privacy-policy" target="_blank">{t('checkout.termsAndPrivacy')}</S.TermsLink> {t('checkout.ofPrivacy')}</span>
+                        <span>{t('checkout.acceptTerms')} <S.TermsLink as={Link} to={ROUTES.POLITICA_PRIVACIDADE} target="_blank">{t('checkout.termsAndPrivacy')}</S.TermsLink> {t('checkout.ofPrivacy')}</span>
                       </S.TermsLabel>
                       {touched.acceptedTerms && errors.acceptedTerms && <S.FieldErrorMessage>{errors.acceptedTerms}</S.FieldErrorMessage>}
                     </S.InputGroup>

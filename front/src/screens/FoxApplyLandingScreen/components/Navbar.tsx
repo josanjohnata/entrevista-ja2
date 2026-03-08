@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
+import { ROUTES } from '../../../routes/paths';
 import styled from 'styled-components';
 import { Menu, X } from 'lucide-react';
 import { Button } from '../styles';
@@ -270,13 +271,13 @@ export const Navbar: React.FC<NavbarProps> = ({ hideSectionLinks = false, hideAc
               <HashLink smooth to="/#como-funciona" className="nav-link">{t('foxApplyLanding.navbar.howItWorks')}</HashLink>
               <HashLink smooth to="/#recursos" className="nav-link">{t('foxApplyLanding.navbar.features')}</HashLink>
               <HashLink smooth to="/#linkedin-champion" className="nav-link">{t('foxApplyLanding.navbar.linkedinChampion')}</HashLink>
-              <Link to="/blog" className="nav-link">{t('foxApplyLanding.navbar.blog')}</Link>
+              <Link to={ROUTES.BLOG} className="nav-link">{t('foxApplyLanding.navbar.blog')}</Link>
             </NavLinks>
           )}
           
           {!hideActionButtons && (
             <NavActions>
-              <LoginButton to="/login">
+              <LoginButton to={ROUTES.LOGIN}>
                 {t('foxApplyLanding.navbar.login')}
               </LoginButton>
               <Button 
@@ -311,14 +312,14 @@ export const Navbar: React.FC<NavbarProps> = ({ hideSectionLinks = false, hideAc
               <HashLink smooth to="/#linkedin-champion" className="nav-link" onClick={closeMobileMenu}>
                 {t('foxApplyLanding.navbar.linkedinChampion')}
               </HashLink>
-              <Link to="/blog" className="nav-link" onClick={closeMobileMenu}>
+              <Link to={ROUTES.BLOG} className="nav-link" onClick={closeMobileMenu}>
                 {t('foxApplyLanding.navbar.blog')}
               </Link>
             </MobileNavLinks>
           )}
           
           <MobileNavActions>
-            <MobileLoginButton to="/login" onClick={closeMobileMenu}>
+            <MobileLoginButton to={ROUTES.LOGIN} onClick={closeMobileMenu}>
               {t('foxApplyLanding.navbar.login')}
             </MobileLoginButton>
             <Button 

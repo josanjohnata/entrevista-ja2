@@ -1,4 +1,5 @@
 import { useNavigate, useSearchParams } from 'react-router-dom';
+import { ROUTES } from '../../routes/paths';
 import { FiAlertCircle, FiClock } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { useState, useEffect } from 'react';
@@ -42,7 +43,7 @@ export const PendingPaymentScreen: React.FC<PendingPaymentProps> = ({ type: prop
 
   const handleGoToPlans = async () => {
     if (!currentUser?.uid || !currentUser?.email) {
-      navigate('/checkout');
+      navigate(ROUTES.PAGAMENTO);
       return;
     }
 
@@ -80,7 +81,7 @@ export const PendingPaymentScreen: React.FC<PendingPaymentProps> = ({ type: prop
   const handleLogout = async () => {
     try {
       await logout();
-      navigate('/login');
+      navigate(ROUTES.LOGIN);
     } catch (error) {
       console.error('Erro ao fazer logout:', error);
     }

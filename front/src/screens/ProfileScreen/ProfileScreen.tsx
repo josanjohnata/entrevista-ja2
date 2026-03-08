@@ -24,15 +24,11 @@ import {
   AlertTriangle,
   Check,
   Users,
-  Key,
-  Gift,
 } from 'lucide-react';
-import { detectRegion } from '../../utils/regionDetector';
 import { useProfileScreen } from './useProfileScreen';
 import { useResumeEditor } from '../../hooks/useResumeEditor';
 import { useAuth } from '../../contexts/AuthContext';
 import { CancelSubscriptionDialog } from '../../components/CancelSubscriptionDialog';
-import { ReferralComponent } from '../../components/Referral/ReferralComponent';
 import { CreateUserForm } from '../../components/Admin/CreateUserForm';
 import {
   FoxLogoWrapper,
@@ -58,6 +54,7 @@ import type {
 } from '../../domain/resume/types';
 import { ScrollTextarea } from './ScrollTextarea';
 import { AnimatedHeight } from './AnimatedHeight';
+import { ROUTES } from '../../routes/paths';
 import * as S from './styles';
 
 type TabId = 'contato' | 'resumo' | 'experiencia' | 'formacao' | 'habilidades' | 'idiomas' | 'admin';
@@ -145,10 +142,6 @@ export const ProfileScreen: React.FC = () => {
 
   const [activeTab, setActiveTab] = useState<TabId>('contato');
 
-  /* ---- referral panel tabs ---- */
-  type ReferralTabId = 'indicacao' | 'metricas' | 'pix';
-  const [referralTab, setReferralTab] = useState<ReferralTabId>('indicacao');
-  const isBR = useMemo(() => detectRegion() === 'BR', []);
   const isAdmin = useMemo(() => currentUser?.email && ADMIN_EMAILS.includes(currentUser.email), [currentUser]);
 
   const [showCancelDialog, setShowCancelDialog] = useState(false);
@@ -1091,32 +1084,7 @@ export const ProfileScreen: React.FC = () => {
               </S.ProfileHeroActions>
             </S.ProfileHero>
 
-            {/* Referral Panel — tab navigation replaces the header title */}
-            {!isFirstAccess && (
-              <S.ReferralPanel>
-                <S.ReferralTabBar>
-                  <S.ReferralTab $active={referralTab === 'indicacao'} onClick={() => setReferralTab('indicacao')}>
-                    <Gift size={12} />
-                    {t('referral.title', 'Indicação')}
-                  </S.ReferralTab>
-                  <S.ReferralTab $active={referralTab === 'metricas'} onClick={() => setReferralTab('metricas')}>
-                    <Users size={12} />
-                    {t('referral.metrics', 'Métricas')}
-                  </S.ReferralTab>
-                  {isBR && (
-                    <S.ReferralTab $active={referralTab === 'pix'} onClick={() => setReferralTab('pix')}>
-                      <Key size={12} />
-                      PIX
-                    </S.ReferralTab>
-                  )}
-                </S.ReferralTabBar>
-                <S.ReferralTabContent>
-                  <ReferralComponent view={referralTab} />
-                </S.ReferralTabContent>
-              </S.ReferralPanel>
-            )}
-
-            {/* First Access Banner (shown only when no referral panel) */}
+            {/* First Access Banner (shown only when first access) */}
             {isFirstAccess && (
               <S.FirstAccessBanner>
                 <h3>{t('profile.welcome', 'Bem-vindo ao Entrevista Já!')}</h3>
@@ -1151,7 +1119,7 @@ export const ProfileScreen: React.FC = () => {
                 <S.AlertContent>
                   {message.text}
                   {message.text.includes('Recarregar do Perfil Atualizado') && (
-                    <S.ActionBtn onClick={() => navigate('/cv-automation', { state: { fromProfile: true } })} style={{ marginTop: 8, maxWidth: 300 }}>
+                    <S.ActionBtn onClick={() => navigate(ROUTES.CURRICULO_TURBO, { state: { fromProfile: true } })} style={{ marginTop: 8, maxWidth: 300 }}>
                       {t('profile.goToHomeAndAnalyze', 'Ir para Análise')}
                     </S.ActionBtn>
                   )}
@@ -1291,7 +1259,7 @@ export const ProfileScreen: React.FC = () => {
         <CancelSubscriptionDialog
           isOpen={showCancelDialog}
           onClose={() => setShowCancelDialog(false)}
-          onCancel={() => { setShowCancelDialog(false); navigate('/'); }}
+          onCancel={() => { setShowCancelDialog(false); navigate(ROUTES.HOME); }}
           subscriptionDate={userData?.lastPaymentAt || userData?.createdAt}
         />
     </S.Wrapper>
