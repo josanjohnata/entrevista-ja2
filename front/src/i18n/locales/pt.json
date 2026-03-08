@@ -1,0 +1,1390 @@
+{
+  "seo": {
+    "title": "FoxApply - Candidaturas Automáticas no LinkedIn",
+    "description": "Otimize seu currículo para ATS e aplique automaticamente em vagas do LinkedIn. Aumente suas chances de receber entrevistas com inteligência artificial.",
+    "keywords": "candidatura automática, LinkedIn, emprego, currículo, ATS, inteligência artificial, vagas, carreira, recrutamento, entrevista"
+  },
+  "landing": {
+    "hero": {
+      "title": "Candidaturas automáticas no LinkedIn que funcionam",
+      "subtitle": "Aplique em centenas de vagas com um clique. Otimizamos seu currículo para ATS e aumentamos suas chances de entrevista.",
+      "socialProof": "candidatos já usam a FoxApply",
+      "emailPlaceholder": "Seu melhor e-mail",
+      "startNow": "Começar agora",
+      "freeTrial": "Teste grátis. Cancele quando quiser.",
+      "invalidEmail": "Digite um e-mail válido."
+    },
+    "navbar": {
+      "howItWorks": "Como funciona",
+      "contact": "Contato",
+      "signUp": "Cadastre-se",
+      "login": "Entrar"
+    },
+    "footer": {
+      "copyright": "© {{year}} FoxApply. Todos os direitos reservados."
+    },
+    "finalCTA": {
+      "title": "Pronto para acelerar suas candidaturas?",
+      "description": "Junte-se a milhares de profissionais que já usam a FoxApply.",
+      "button": "Começar agora"
+    },
+    "features": {
+      "title": "Como funciona",
+      "subtitle": "Em poucos passos você começa a receber mais entrevistas",
+      "description": "A extensão FoxApply aplica automaticamente nas vagas do LinkedIn com seus dados e currículo otimizado para ATS.",
+      "step1": {
+        "title": "Instale a extensão",
+        "functionality": "Um clique no Chrome",
+        "benefit": "Pronto em segundos"
+      },
+      "step2": {
+        "title": "Conecte seu LinkedIn",
+        "functionality": "Login seguro",
+        "benefit": "Dados preenchidos automaticamente"
+      },
+      "step3": {
+        "title": "Ative o modo automático",
+        "functionality": "Nas vagas que quiser",
+        "benefit": "Aplique em massa"
+      },
+      "step4": {
+        "title": "Acompanhe os resultados",
+        "functionality": "Dashboard em tempo real",
+        "benefit": "Mais entrevistas"
+      }
+    },
+    "extension": {
+      "title": "Extensão para LinkedIn",
+      "description": "Aplique em vagas com um clique. Preenche formulários e otimiza seu perfil para ATS.",
+      "feature1": "Um clique para aplicar",
+      "feature2": "Preenchimento automático",
+      "feature3": "Foco nas vagas que importam",
+      "feature4": "Dados seguros",
+      "step1": "Instalar extensão",
+      "step2": "Conectar LinkedIn",
+      "step3": "Ativar modo automático",
+      "step4": "Acompanhar resultados"
+    }
+  },
+  "common": {
+    "back": "Voltar",
+    "loading": "Carregando...",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "delete": "Excluir",
+    "edit": "Editar",
+    "close": "Fechar",
+    "confirm": "Confirmar",
+    "error": "Erro",
+    "success": "Sucesso",
+    "warning": "Aviso",
+    "points": "pontos"
+  },
+  "coverLetter": {
+    "title": {
+      "part1": "Crie Cover Letters que",
+      "part2": "Impressionam"
+    },
+    "description": "Use inteligência artificial para criar cartas de apresentação profissionais ou melhorar a sua carta existente em segundos.",
+    "hero": {
+      "title": "Crie Cover Letters que Impressionam",
+      "subtitle": "Use inteligência artificial para criar cartas de apresentação profissionais ou melhorar a sua carta existente em segundos.",
+      "feature1": {
+        "title": "Criação Inteligente",
+        "description": "Gere cartas personalizadas baseadas no seu currículo e na descrição da vaga"
+      },
+      "feature2": {
+        "title": "Melhoria Automática",
+        "description": "Corrija erros e melhore a estrutura da sua carta existente automaticamente"
+      },
+      "feature3": {
+        "title": "Profissional e Persuasivo",
+        "description": "Cartas otimizadas para destacar suas qualificações e conquistar recrutadores"
+      }
+    },
+    "tabs": {
+      "create": "Criar Nova",
+      "improve": "Melhorar"
+    },
+    "create": {
+      "title": "Criar Nova Cover Letter",
+      "description": "Insira seu currículo e, se quiser, a descrição da vaga para personalizar ainda mais.",
+      "resumeLabel": "Currículo / Informações Profissionais",
+      "resumePlaceholder": "Cole seu currículo aqui ou descreva sua experiência profissional, habilidades e formação...",
+      "jobDescriptionLabel": "Descrição da Vaga (opcional)",
+      "jobDescriptionPlaceholder": "Cole a descrição da vaga para uma carta mais personalizada..."
+    },
+    "improve": {
+      "title": "Melhorar Cover Letter Existente",
+      "description": "Cole sua carta e a IA irá corrigir, reestruturar e profissionalizar.",
+      "letterLabel": "Sua Cover Letter",
+      "letterPlaceholder": "Cole sua carta de apresentação aqui para análise e melhorias..."
+    },
+    "actions": {
+      "clear": "Limpar",
+      "generate": "Gerar Cover Letter",
+      "improve": "Melhorar Cover Letter",
+      "processing": "Processando..."
+    },
+    "result": {
+      "newTitle": "Sua Nova Cover Letter",
+      "improvedTitle": "Cover Letter Melhorada",
+      "description": "Revise e personalize conforme necessário",
+      "copy": "Copiar",
+      "copied": "Copiado",
+      "download": "Baixar"
+    },
+    "success": {
+      "created": "Carta criada com sucesso!",
+      "improved": "Carta melhorada com sucesso!",
+      "copied": "Copiado para a área de transferência!",
+      "downloaded": "Cover letter baixada com sucesso!"
+    },
+    "errors": {
+      "resumeRequired": "Por favor, insira seu currículo ou informações profissionais.",
+      "letterRequired": "Por favor, insira sua carta de apresentação existente.",
+      "generationError": "Erro ao processar sua solicitação. Tente novamente.",
+      "copyError": "Erro ao copiar o texto.",
+      "downloadError": "Erro ao baixar o arquivo."
+    },
+    "profile": {
+      "sections": {
+        "summary": "RESUMO PROFISSIONAL",
+        "experience": "EXPERIÊNCIA PROFISSIONAL",
+        "education": "FORMAÇÃO ACADÊMICA",
+        "skills": "PRINCIPAIS COMPETÊNCIAS",
+        "languages": "IDIOMAS",
+        "certifications": "CERTIFICAÇÕES",
+        "courses": "CURSOS E TREINAMENTOS"
+      },
+      "proficiency": {
+        "basic": "Básico",
+        "intermediate": "Intermediário",
+        "professional": "Profissional",
+        "native": "Nativo"
+      },
+      "current": "Atual",
+      "warnings": {
+        "basicProfile": "📝 Seu perfil ainda está muito básico. Adicione pelo menos uma experiência profissional, formação ou habilidade no seu perfil, ou cole seu currículo completo diretamente no campo.",
+        "completeProfile": "Complete seu perfil para carregar o currículo automaticamente.",
+        "profileNotFound": "Perfil não encontrado. Complete seu perfil primeiro."
+      }
+    }
+  },
+  "header": {
+    "logout": "Sair",
+    "profile": "Perfil",
+    "resumeTurbo": "Currículo Turbo",
+    "filterJobs": "Filtrar Vagas",
+    "downloadExtension": "Baixar Extensão",
+    "coverLetter": "Carta de Apresentação",
+    "linkedinChampion": "LinkedIn Champion",
+    "recommendedJobs": "Vagas Recomendadas",
+    "blog": "Blog",
+    "logo": "FoxApply",
+    "plans": "Planos",
+    "contact": "Contato",
+    "jobs": "Vagas",
+    "dashboard": "Dashboard",
+    "referralDashboard": "Dashboard de Indicações",
+    "login": "Login",
+    "configureFirebase": "Configure o Firebase para fazer login",
+    "doLogin": "Fazer login",
+    "roles": {
+      "recruiter": "Recrutador",
+      "quarterlyPlan": "Plano Trimestral",
+      "monthlyPlan": "Plano Mensal",
+      "basicPlan": "Plano Básico",
+      "user": "Usuário"
+    }
+  },
+  "blog": {
+    "subtitle": "Dicas, estratégias e insights para turbinar sua carreira e conseguir a vaga dos sonhos",
+    "minRead": "min"
+  },
+  "resume": {
+    "title": "Seu Currículo",
+    "reloadFromProfile": "Recarregar do Perfil",
+    "placeholder": "Cole aqui o texto do seu currículo...\n\nExemplo:\nJoão Silva\nDesenvolvedor Full Stack\n\nExperiência:\n- 3 anos como desenvolvedor React\n- 2 anos com Node.js e TypeScript\n- Experiência com AWS e Docker\n\nFormação:\n- Ciência da Computação - UNICAMP",
+    "loading": "Carregando..."
+  },
+  "job": {
+    "title": "Descrição da Vaga",
+    "placeholder": "Cole aqui a descrição da vaga...\n\nExemplo:\nDesenvolvedor Full Stack Sênior\n\nRequisitos:\n- 5+ anos de experiência com React\n- Conhecimento em Node.js e TypeScript\n- Experiência com cloud (AWS/GCP)\n- Inglês avançado\n\nDiferenciais:\n- Experiência com microsserviços\n- Conhecimento em CI/CD"
+  },
+  "analysis": {
+    "analyze": "Analisar e Otimizar Agora",
+    "analyzing": "Analisando...",
+    "title": "Análise",
+    "recommendation": "Recomendação",
+    "suggestions": "Sugestões de Melhoria",
+    "bestScore": "Este é o melhor score possível para esta vaga!",
+    "lastAnalysis": "Última análise: Score {{score}}%",
+    "suggestionsApplied": "Sugestões já aplicadas para esta vaga. Score atual: {{score}}%",
+    "applySuggestions": "Aplicar Sugestões no Currículo",
+    "downloadOptimized": "Baixar Currículo Otimizado",
+    "highCompatibility": "Alta Compatibilidade",
+    "mediumCompatibility": "Compatibilidade Moderada",
+    "lowCompatibility": "Baixa Compatibilidade",
+    "resumeUpdated": "Currículo atualizado! As sugestões foram aplicadas. Analise novamente para ver o novo score.",
+    "resumeDownloaded": "Currículo otimizado baixado com sucesso!",
+    "pdfError": "Erro ao gerar PDF. Tente novamente.",
+    "noResumeToDownload": "Não há currículo para baixar.",
+    "fillResumeAndJob": "Por favor, preencha o currículo e a descrição da vaga.",
+    "noOptimizedResume": "Não há currículo otimizado disponível. Tente analisar novamente.",
+    "loginToLoadProfile": "Faça login para carregar seu perfil.",
+    "profileLoaded": "Currículo carregado do seu perfil!",
+    "errorLoadingProfile": "Erro ao carregar perfil.",
+    "analysisError": "Erro ao analisar o currículo. Tente novamente.",
+    "basicProfileAnalysis": "📝 Seu perfil ainda está muito básico para uma análise completa. Adicione pelo menos uma experiência profissional, formação ou habilidade no seu perfil, ou cole seu currículo completo diretamente no campo.",
+    "completeProfileAnalysis": "Complete seu perfil para carregar o currículo automaticamente.",
+    "profileNotFoundAnalysis": "Perfil não encontrado. Complete seu perfil primeiro.",
+    "generatingPDF": "Gerando PDF Profissional..."
+  },
+  "features": {
+    "keywords": "Palavras-Chave",
+    "keywordsDesc": "Identifique termos essenciais que faltam",
+    "aiSuggestions": "Sugestões IA",
+    "aiSuggestionsDesc": "Receba dicas personalizadas de melhoria",
+    "matchScore": "Score de Match",
+    "matchScoreDesc": "Veja sua compatibilidade com a vaga em %"
+  },
+  "login": {
+    "title": "Login / Registro",
+    "signIn": "Entrar",
+    "signUp": "Registre-se",
+    "email": "E-mail",
+    "password": "Senha",
+    "rememberMe": "Lembre-me",
+    "forgotPassword": "Esqueceu sua senha?",
+    "accessAccount": "Acessar Conta",
+    "signingIn": "Entrando...",
+    "createAccount": "Criar a sua conta",
+    "signUpDescription": "Se você ainda não possui uma conta, escolha um plano e preencha o cadastro para ter acesso a todas as funcionalidades.",
+    "checkingAuth": "Verificando autenticação...",
+    "emailRequired": "E-mail é obrigatório",
+    "passwordRequired": "Senha é obrigatória",
+    "invalidEmail": "E-mail inválido",
+    "wrongPassword": "Senha incorreta",
+    "userNotFound": "Usuário não encontrado",
+    "invalidCredentials": "E-mail ou senha incorretos",
+    "verifyEmail": "Verifique seu e-mail",
+    "verifyPassword": "Verifique sua senha",
+    "emailPlaceholder": "ester-mp@email.com",
+    "passwordPlaceholder": "********",
+    "resetEmailPlaceholder": "seu-email@exemplo.com",
+    "tooManyAttempts": "Muitas tentativas. Aguarde alguns minutos.",
+    "tooManyRequests": "Muitas tentativas de login. Tente novamente mais tarde.",
+    "networkError": "Erro de conexão. Verifique sua internet.",
+    "loginError": "Erro ao fazer login. Tente novamente.",
+    "accountDisabled": "Esta conta foi desabilitada. Entre em contato com o suporte.",
+    "resetPassword": "Recuperar Senha",
+    "resetPasswordDescription": "Digite seu e-mail cadastrado e enviaremos um link para você criar uma nova senha.",
+    "emailSent": "E-mail enviado!",
+    "emailSentDescription": "Verifique sua caixa de entrada e siga as instruções para redefinir sua senha.",
+    "backToLogin": "Voltar ao Login",
+    "sendResetLink": "Enviar Link de Recuperação",
+    "sending": "Enviando...",
+    "accountNotFound": "Não existe conta com este e-mail",
+    "resetError": "Erro ao enviar e-mail. Tente novamente.",
+    "firebaseNotConfigured": "Firebase não configurado:",
+    "firebaseNotConfiguredDesc": "Para usar o login, configure as variáveis de ambiente do Firebase. Consulte o arquivo FIREBASE_AUTH_SETUP.md para instruções.",
+    "showPassword": "Mostrar senha",
+    "hidePassword": "Ocultar senha",
+    "pcdPendingCheckout": "Você precisa completar o checkout para acessar sua conta. Por favor, finalize o pagamento primeiro."
+  },
+  "checkout": {
+    "title": "Assine o Plano",
+    "data": "Dados",
+    "fullName": "Nome Completo",
+    "fullNamePlaceholder": "João da Silva",
+    "email": "Email",
+    "emailPlaceholder": "joao@email.com",
+    "password": "Senha",
+    "confirmPassword": "Confirmar Senha",
+    "createAccount": "Criar conta",
+    "chosenPlan": "Transforme Sua Carreira Agora",
+    "planName": "FoxApply",
+    "fullPrice": "à vista",
+    "acceptTerms": "Li e concordo com os",
+    "termsAndPrivacy": "termos e política",
+    "ofPrivacy": "de privacidade.",
+    "nameRequired": "Nome é obrigatório",
+    "emailRequired": "E-mail é obrigatório",
+    "emailInvalid": "E-mail inválido",
+    "passwordRequired": "Senha é obrigatória",
+    "passwordMinLength": "Senha deve ter pelo menos 6 caracteres",
+    "confirmPasswordRequired": "Confirmação de senha é obrigatória",
+    "passwordsDontMatch": "As senhas não coincidem",
+    "acceptTermsRequired": "Você deve aceitar os termos e política de privacidade",
+    "emailAlreadyInUse": "Este e-mail já está cadastrado. Faça login ou use outro e-mail.",
+    "emailInvalidError": "E-mail inválido.",
+    "weakPassword": "Senha muito fraca. Use pelo menos 6 caracteres.",
+    "operationNotAllowed": "Cadastro temporariamente desabilitado. Tente novamente mais tarde.",
+    "createAccountError": "Erro ao criar conta. Tente novamente.",
+    "saveUserError": "Erro ao salvar dados do usuário:",
+    "sessionCreateError": "Erro ao criar sessão de checkout. Tente novamente.",
+    "redirectingToPayment": "Redirecionando para o pagamento...",
+    "features": {
+      "feature1": "Extensão de Aplicações Automática para Vagas no LinkedIn",
+      "feature2": "Acesso a templates de currículo",
+      "feature3": "Filtro Inteligente com o LinkedIn",
+      "feature4": "Análise Instantânea de Currículo",
+      "feature5": "Veja sua compatibilidade com a vaga",
+      "feature6": "Identifique termos essenciais que faltam",
+      "feature7": "Ajustes Precisos para a Entrevista",
+      "feature8": "Acesso a Consultoria de Carreira",
+      "feature9": "Cancele quando quiser",
+      "feature10": "Geração Automática de Cartas de Apresentação com IA"
+    }
+  },
+  "checkoutPCD": {
+    "title": "Checkout - Pessoas com Deficiência",
+    "monthly": "Plano Mensal",
+    "monthlyDescription": "Acesso mensal completo à plataforma FoxApply",
+    "monthlyPlan": "Plano Mensal",
+    "monthlyPlanDescription": "Acesso mensal completo à plataforma FoxApply com 30 dias grátis",
+    "createAccount": "Criar conta",
+    "chosenPlan": "Transforme Sua Carreira Agora",
+    "freeTrialBadge": "30 dias grátis",
+    "freeFor30Days": "Grátis por 30 dias",
+    "bannerTitle": "Programa de Inclusão PCD",
+    "bannerText": "Oferecemos 30 dias grátis para pessoas com deficiência. Após o período de teste, você terá acesso completo a todos os recursos da plataforma.",
+    "laudoLabel": "Laudo Médico (Obrigatório)",
+    "laudoHint": "Envie o laudo médico que comprova sua condição. Formatos aceitos: PDF, JPG, PNG (máx. 10MB)",
+    "laudoRequired": "O laudo médico é obrigatório para validar sua condição",
+    "laudoMaxSize": "O arquivo deve ter no máximo 10MB",
+    "laudoInvalidType": "Formato inválido. Use PDF, JPG ou PNG",
+    "laudoUploadError": "Erro ao fazer upload do laudo. Tente novamente.",
+    "selectFile": "Selecionar arquivo",
+    "uploading": "Enviando...",
+    "fileUploaded": "Arquivo enviado com sucesso"
+  },
+  "pcdLanding": {
+    "badge": "Programa de Inclusão",
+    "hero": {
+      "title": "Transforme Sua Carreira com 30 Dias Grátis",
+      "subtitle": "Programa Especial para Pessoas com Deficiência",
+      "description": "Oferecemos 30 dias gratuitos para pessoas com deficiência. Após o período de teste, você terá acesso completo a todas as funcionalidades da plataforma.",
+      "cta": "Começar Agora",
+      "freeTrial": "30 dias grátis - Sem compromisso"
+    },
+    "features": {
+      "title": "Por que escolher o FoxApply?",
+      "freeTrial": {
+        "title": "30 Dias Grátis",
+        "description": "Teste todas as funcionalidades sem compromisso durante 30 dias completos."
+      },
+      "inclusion": {
+        "title": "Inclusão e Acessibilidade",
+        "description": "Plataforma desenvolvida pensando na acessibilidade e inclusão de todos."
+      },
+      "fullAccess": {
+        "title": "Acesso Completo",
+        "description": "Todas as funcionalidades premium disponíveis desde o primeiro dia."
+      },
+      "career": {
+        "title": "Transforme Sua Carreira",
+        "description": "Aplique para centenas de vagas automaticamente e multiplique suas chances."
+      }
+    },
+    "howItWorks": {
+      "title": "Como Funciona",
+      "step1": {
+        "title": "Crie Sua Conta",
+        "description": "Cadastre-se gratuitamente e envie seu laudo médico para validação."
+      },
+      "step2": {
+        "title": "Aproveite os 30 Dias Grátis",
+        "description": "Teste todas as funcionalidades sem nenhum custo durante 30 dias."
+      },
+      "step3": {
+        "title": "Configure Seu Perfil",
+        "description": "Complete seu perfil e configure suas preferências de trabalho."
+      },
+      "step4": {
+        "title": "Comece a Aplicar",
+        "description": "A plataforma aplica automaticamente para vagas que combinam com você."
+      }
+    },
+    "benefits": {
+      "title": "Benefícios Exclusivos",
+      "benefit1": "30 dias grátis para testar todas as funcionalidades",
+      "benefit2": "Aplicações automáticas para centenas de vagas",
+      "benefit3": "Otimização de currículo para ATS",
+      "benefit4": "Geração de cartas de apresentação com IA",
+      "benefit5": "Acesso completo à plataforma desde o primeiro dia",
+      "benefit6": "Suporte dedicado para pessoas com deficiência"
+    },
+    "cta": {
+      "title": "Pronto para Transformar Sua Carreira?",
+      "description": "Junte-se a milhares de profissionais que já estão acelerando suas carreiras com o FoxApply.",
+      "button": "Começar Agora - 30 Dias Grátis"
+    }
+  },
+  "results": {
+    "title": "Resultados da Otimização",
+    "optimizedCompatibility": "Compatibilidade Otimizada!",
+    "yourCompatibility": "Sua Compatibilidade com a Vaga",
+    "congratulations": "Parabéns! Você melhorou de {{previous}}% para {{current}}% (+{{improvement}} pontos)",
+    "excellentScore": "Excelente! Seu currículo está muito alinhado com a vaga.",
+    "goodScore": "Bom, mas ainda há espaço para melhorias.",
+    "canImprove": "Você pode melhorar significativamente o match com a vaga.",
+    "lowCompatibility": "Baixa Compatibilidade com a Vaga",
+    "lowCompatibilitySubtitle": "Esta vaga não está alinhada com sua experiência profissional atual",
+    "notRecommended": "Não recomendamos aplicar para esta vaga.",
+    "atsWarning": "Com apenas {{score}}% de compatibilidade, seu currículo pode não passar pelos sistemas ATS (Applicant Tracking Systems) que filtram candidatos automaticamente.",
+    "suggestions": "Sugestões:",
+    "searchAlignedJobs": "Busque vagas mais alinhadas com suas experiências em: {{keywords}}",
+    "developSkills": "Desenvolva as habilidades requeridas antes de aplicar",
+    "considerLevel": "Considere posições de nível mais adequado ao seu perfil",
+    "optimizedProfile": "Perfil Otimizado para Esta Vaga",
+    "bestScorePossible": "Este é o melhor score possível com base no seu perfil atual",
+    "profileOptimized": "Perfil Otimizado!",
+    "profileEvolved": "Seu perfil evoluiu após aplicar as sugestões.",
+    "profileAlreadyOptimized": "Seu perfil já está otimizado para esta vaga.",
+    "scoreEvolution": "Evolução do Score:",
+    "excellentChances": "Com {{score}}% de compatibilidade, seu currículo tem excelentes chances de passar pela triagem automática desta vaga!",
+    "continueOptimizing": "Você melhorou {{improvement}} pontos! Continue otimizando seu perfil para aumentar ainda mais suas chances.",
+    "analysisNumber": "Análise #{{count}}:",
+    "bestFormat": "Seu perfil já está no melhor formato possível para esta vaga. Continue aplicando!",
+    "nextSteps": "Próximos passos:",
+    "downloadOptimized": "Baixe seu currículo otimizado usando o botão abaixo",
+    "useWhenApplying": "Use-o ao aplicar para esta vaga",
+    "keepImproving": "Continue aprimorando seu perfil com novas experiências e certificações",
+    "optimizedSummary": "Resumo Profissional Otimizado",
+    "optimizedSummarySubtitle": "Use este resumo no topo do seu currículo",
+    "missingKeywords": "Palavras-Chave Faltando",
+    "missingKeywordsSubtitle": "Incorpore estas palavras-chave no seu currículo",
+    "improvements": "Sugestões de Melhoria",
+    "detailedComparison": "Comparação Detalhada",
+    "detailedComparisonSubtitle": "Como reescrever seu currículo para esta vaga específica",
+    "analyzeNewJob": "Analisar Nova Vaga",
+    "analyzeAnotherJob": "Analisar Outra Vaga",
+    "applySuggestions": "Aplicar Sugestões no Currículo",
+    "relevantSkills": "Habilidades relevantes demonstradas:"
+  },
+  "error": {
+    "title": "Erro ao carregar componente de otimização de currículo",
+    "unknown": "Erro desconhecido",
+    "checkConsole": "Verifique o console do navegador para mais detalhes."
+  },
+  "home": {
+    "heroTitle": "Currículo Turbo",
+    "heroSubtitle": "Analise seu currículo e aumente suas chances de ser chamado para a entrevista."
+  },
+  "linkedinSearch": {
+    "title": "Filtrar Vagas no LinkedIn",
+    "subtitle": "Encontre as vagas perfeitas com filtros avançados e personalizados",
+    "hero": {
+      "title": "Filtrar Vagas no LinkedIn",
+      "subtitle": "Encontre as vagas perfeitas com filtros avançados e personalizados",
+      "feature1": {
+        "title": "Busca Inteligente",
+        "description": "Use palavras-chave e filtros para encontrar exatamente o que procura"
+      },
+      "feature2": {
+        "title": "Filtros Avançados",
+        "description": "Filtre por localização, senioridade e exclua termos indesejados"
+      },
+      "feature3": {
+        "title": "Resultados Precisos",
+        "description": "Acesse diretamente as vagas e publicações do LinkedIn com seus filtros aplicados"
+      }
+    },
+    "searchIn": "Buscar em:",
+    "jobs": "Vagas",
+    "posts": "Publicações",
+    "keywords": "Palavras Chave (separadas por vírgula):",
+    "keywordsPlaceholder": "Engenheiro de Software, Scrum Master, Financeiro, etc.",
+    "excludeKeywords": "Excluir palavras chave (separadas por vírgula):",
+    "excludePlaceholder": "Ex: senior, estágio, 5 anos de experiência",
+    "location": "Localização:",
+    "locationPlaceholder": "Ex: Brasil, São Paulo, Remoto, etc.",
+    "workMode": "Modalidade de Trabalho:",
+    "any": "Qualquer uma",
+    "remote": "Remoto",
+    "onSite": "Presencial",
+    "hybrid": "Híbrido",
+    "seniority": "Senioridade:",
+    "internship": "Estágio",
+    "junior": "Junior",
+    "mid": "Pleno",
+    "senior": "Senior",
+    "searchPage": "Página de Pesquisa",
+    "searchLinkedIn": "Buscar no LinkedIn",
+    "clearFilters": "Limpar Filtros",
+    "searchOpened": "Pesquisa aberta em nova aba do LinkedIn!",
+    "selectWorkMode": "Selecione a(s) modalidade(s)",
+    "selectSeniority": "Selecione o(s) nível(is)",
+    "datePosted": "Data de Publicação:",
+    "anyTime": "Qualquer momento",
+    "past24Hours": "Últimas 24 horas",
+    "pastWeek": "Última semana",
+    "pastMonth": "Último mês"
+  },
+  "profile": {
+    "loading": "Carregando perfil...",
+    "loginRequired": "Você precisa estar logado para acessar esta página.",
+    "noName": "Sem nome",
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "welcome": "Bem-vindo! Complete seu Currículo Profissional",
+    "welcomeDescription": "Para começar a usar a plataforma, precisamos que você preencha algumas informações importantes sobre sua carreira profissional.",
+    "importFromLinkedIn": "Importar do LinkedIn",
+    "importingFromLinkedIn": "Importando...",
+    "linkedinImportSuccess": "{{name}}, dados do LinkedIn importados com sucesso! Por favor, verifique todos os campos, pois algumas informações podem não estar disponíveis no LinkedIn.",
+    "linkedinImportError": "Erro ao importar dados do LinkedIn. Por favor, tente novamente.",
+    "enterLinkedInURL": "Cole a URL do seu perfil do LinkedIn",
+    "linkedinURLPlaceholder": "https://www.linkedin.com/in/seu-perfil",
+    "goToHomeAndAnalyze": "Ir para Home e Analisar Novamente",
+    "suggestionsApplied": "Sugestões Aplicadas Automaticamente",
+    "fieldsUpdated": "Campos atualizados automaticamente:",
+    "summaryReplaced": "Resumo Profissional - substituído pela versão otimizada",
+    "experiencesUpdated": "Experiências - palavras-chave distribuídas nas descrições",
+    "otherFieldsUpdated": "Título/Localização/Formação/Idiomas - verificados e atualizados quando sugeridos",
+    "importantReview": "Importante: Revise TODAS as seções antes de salvar. As sugestões foram aplicadas automaticamente mas você deve ajustar conforme necessário.",
+    "keywordsIncorporated": "Palavras-chave incorporadas:",
+    "otherSuggestions": "Outras sugestões para revisar:",
+    "professionalResume": "Currículo Profissional",
+    "cancel": "Cancelar",
+    "generating": "Gerando...",
+    "downloadPDF": "Baixar PDF",
+    "generatingPDF": "Gerando PDF...",
+    "saving": "Salvando...",
+    "completeRegistration": "Concluir Cadastro",
+    "saveResume": "Salvar Currículo",
+    "editResume": "Editar Currículo",
+    "fillRequiredFields": "Por favor, preencha todos os campos obrigatórios",
+    "fillRequiredFieldsBeforeDownload": "Por favor, preencha todos os campos obrigatórios antes de baixar o PDF",
+    "resumeDownloaded": "Currículo baixado com sucesso!",
+    "pdfError": "Erro ao gerar PDF",
+    "fullNameRequired": "Nome completo é obrigatório.",
+    "summaryRequired": "Resumo profissional é obrigatório.",
+    "experienceRequired": "Adicione pelo menos uma experiência profissional com empresa, cargo e data de início.",
+    "educationRequired": "Adicione pelo menos uma formação acadêmica com instituição.",
+    "userNotAuthenticated": "Usuário não autenticado.",
+    "profileCreated": "Perfil criado com sucesso! Redirecionando...",
+    "profileUpdated": "Perfil atualizado com sucesso!",
+    "fieldsUpdatedMessage": "{{count}} campo(s) atualizado(s): {{fields}}. Revise todas as alterações antes de salvar!",
+    "connectionError": "Erro de conexão. Verifique sua internet.",
+    "saveError": "Erro ao salvar perfil: {{error}}",
+    "resumeSaved": "Currículo salvo com sucesso!",
+    "reloadFromUpdatedProfile": "Recarregar do Perfil Atualizado",
+    "firestorePermissionError": "Erro de permissão do Firestore. Você precisa configurar as regras de segurança no Firebase Console. Verifique o console do navegador (F12) para instruções.",
+    "cancelSubscription": "Cancelar Assinatura",
+    "cancelSubscriptionTitle": "Cancelar Assinatura?",
+    "cancelSubscriptionMessage": "Tem certeza que deseja cancelar sua assinatura? Você perderá o acesso a todas as funcionalidades premium após o cancelamento.",
+    "confirmCancelSubscription": "Sim, Cancelar Assinatura",
+    "subscriptionCanceled": "Assinatura cancelada com sucesso. Você será deslogado em instantes.",
+    "subscriptionCancelError": "Erro ao cancelar assinatura. Tente novamente.",
+    "refundEligible": "Você assinou há menos de 7 dias. Você receberá o reembolso em alguns dias úteis após o cancelamento."
+  },
+  "resumeForm": {
+    "personalInfo": "Informações Pessoais",
+    "fullName": "Nome Completo",
+    "fullNamePlaceholder": "Seu nome completo",
+    "professionalTitle": "Título Profissional",
+    "professionalTitlePlaceholder": "Ex: Software Engineer | React Developer",
+    "contact": "Contato",
+    "email": "Email",
+    "emailPlaceholder": "seu@email.com",
+    "phone": "Telefone",
+    "phonePlaceholder": "(85) 99999-9999",
+    "linkedin": "LinkedIn",
+    "linkedinPlaceholder": "linkedin.com/in/seuperfil",
+    "github": "GitHub (opcional)",
+    "githubPlaceholder": "github.com/seuperfil",
+    "location": "Localização",
+    "locationPlaceholder": "Cidade, Estado, País",
+    "locationCountry": "País",
+    "locationState": "Estado / Província",
+    "locationCity": "Cidade",
+    "placeholderCountry": "Selecione o país",
+    "placeholderState": "Selecione o estado",
+    "placeholderCity": "Selecione a cidade",
+    "professionalSummary": "Resumo Profissional",
+    "summaryPlaceholder": "Escreva um resumo sobre sua experiência e objetivos profissionais...",
+    "skills": "Habilidades",
+    "add": "Adicionar",
+    "skillPlaceholder": "Ex: React Native, TypeScript",
+    "languages": "Idiomas",
+    "languagePlaceholder": "Ex: Português",
+    "languageLevelPlaceholder": "Ex: Nativo",
+    "certifications": "Certificações",
+    "certificationPlaceholder": "Nome da certificação",
+    "courses": "Cursos e Treinamentos",
+    "course": "Curso/Treinamento",
+    "courseName": "Nome do Curso",
+    "courseNamePlaceholder": "Ex: AWS Solutions Architect",
+    "institution": "Instituição",
+    "institutionPlaceholderCourse": "Ex: Udemy, Alura, Coursera",
+    "completionDate": "Data de Conclusão (opcional)",
+    "duration": "Duração (opcional)",
+    "durationPlaceholder": "Ex: 40 horas, 6 meses",
+    "professionalExperience": "Experiência Profissional",
+    "experience": "Experiência",
+    "company": "Empresa",
+    "companyPlaceholder": "Nome da empresa",
+    "position": "Cargo",
+    "positionPlaceholder": "Seu cargo",
+    "startDate": "Data de Início",
+    "endDate": "Data de Término",
+    "currentlyWorking": "Trabalho aqui atualmente",
+    "expLocationPlaceholder": "Cidade, Estado, País",
+    "description": "Descrição",
+    "descriptionPlaceholder": "Descreva suas responsabilidades e conquistas...",
+    "academicEducation": "Formação Acadêmica",
+    "education": "Formação",
+    "institutionPlaceholder": "Nome da instituição",
+    "degree": "Grau",
+    "degreePlaceholder": "Ex: Bacharelado, Pós-graduação",
+    "fieldOfStudy": "Área de Estudo",
+    "fieldPlaceholder": "Ex: Ciência da Computação",
+    "courseDescription": "Descrição do Curso",
+    "courseDescriptionPlaceholder": "Descreva o que você aprendeu, projetos desenvolvidos, disciplinas relevantes...",
+    "dateFormat": "MM/AAAA",
+    "fieldRequired": "Este campo é obrigatório",
+    "invalidEmail": "E-mail inválido",
+    "invalidPhone": "Telefone inválido - mínimo 10 dígitos",
+    "invalidPhoneMax": "Telefone inválido - máximo 11 dígitos",
+    "institutionRequired": "Instituição é obrigatória",
+    "courseNameRequired": "Nome do curso é obrigatório",
+    "fillPreviousExperience": "Preencha a experiência anterior antes de adicionar uma nova",
+    "newExperienceAdded": "Nova experiência adicionada",
+    "experienceRemoved": "Experiência removida",
+    "fillPreviousEducation": "Preencha a formação anterior antes de adicionar uma nova",
+    "newEducationAdded": "Nova formação adicionada",
+    "educationRemoved": "Formação removida",
+    "fillPreviousSkill": "Preencha a habilidade anterior antes de adicionar uma nova",
+    "fillPreviousLanguage": "Preencha o idioma anterior antes de adicionar um novo",
+    "fillPreviousCertification": "Preencha a certificação anterior antes de adicionar uma nova",
+    "fillPreviousCourse": "Preencha o curso anterior antes de adicionar um novo",
+    "newCourseAdded": "Novo curso/treinamento adicionado",
+    "courseRemoved": "Curso/treinamento removido"
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidade",
+    "lastUpdated": "Última atualização: Dezembro de 2024",
+    "intro": "A FoxApply está comprometida em proteger sua privacidade. Esta Política de Privacidade explica como coletamos, usamos, divulgamos e protegemos suas informações quando você utiliza nossa plataforma e serviços.",
+    "section1": {
+      "title": "1. Informações que Coletamos",
+      "description": "Coletamos informações que você nos fornece diretamente, incluindo:",
+      "item1": "Dados de cadastro: nome, e-mail, telefone e senha",
+      "item2": "Informações profissionais: currículo, experiências, formação e habilidades",
+      "item3": "Dados de uso: interações com a plataforma, preferências e configurações",
+      "item4": "Informações de pagamento: processadas de forma segura por nossos parceiros de pagamento"
+    },
+    "section2": {
+      "title": "2. Como Usamos suas Informações",
+      "description": "Utilizamos suas informações para:",
+      "item1": "Fornecer, manter e melhorar nossos serviços",
+      "item2": "Personalizar sua experiência na plataforma",
+      "item3": "Processar pagamentos e gerenciar sua assinatura",
+      "item4": "Enviar comunicações importantes sobre sua conta",
+      "item5": "Analisar e otimizar seu currículo utilizando inteligência artificial",
+      "item6": "Auxiliar na busca e candidatura a vagas de emprego"
+    },
+    "section3": {
+      "title": "3. Compartilhamento de Informações",
+      "description": "Não vendemos suas informações pessoais. Podemos compartilhar seus dados nas seguintes situações:",
+      "item1": "Com prestadores de serviços que nos ajudam a operar a plataforma",
+      "item2": "Com empregadores quando você se candidata a vagas através da nossa plataforma",
+      "item3": "Para cumprir obrigações legais ou proteger nossos direitos",
+      "item4": "Com seu consentimento expresso para outros fins"
+    },
+    "section4": {
+      "title": "4. Segurança dos Dados",
+      "description": "Implementamos medidas técnicas e organizacionais apropriadas para proteger suas informações contra acesso não autorizado, alteração, divulgação ou destruição. Isso inclui:",
+      "item1": "Criptografia de dados em trânsito e em repouso",
+      "item2": "Autenticação segura e controle de acesso",
+      "item3": "Monitoramento contínuo de segurança",
+      "item4": "Backups regulares e recuperação de desastres"
+    },
+    "section5": {
+      "title": "5. Seus Direitos",
+      "description": "De acordo com a Lei Geral de Proteção de Dados (LGPD), você tem os seguintes direitos:",
+      "item1": "Acessar seus dados pessoais que mantemos",
+      "item2": "Corrigir dados incompletos, inexatos ou desatualizados",
+      "item3": "Solicitar a exclusão de seus dados pessoais",
+      "item4": "Revogar seu consentimento a qualquer momento",
+      "item5": "Solicitar a portabilidade de seus dados",
+      "item6": "Obter informações sobre o compartilhamento de seus dados"
+    },
+    "section6": {
+      "title": "6. Retenção de Dados",
+      "description": "Mantemos suas informações pelo tempo necessário para fornecer nossos serviços ou conforme exigido por lei. Quando você encerra sua conta, excluímos ou anonimizamos suas informações pessoais, exceto quando houver obrigação legal de retenção."
+    },
+    "section7": {
+      "title": "7. Contato",
+      "description": "Se você tiver dúvidas sobre esta Política de Privacidade ou sobre como tratamos seus dados, entre em contato conosco:",
+      "email": "E-mail:",
+      "website": "Site:"
+    },
+    "footer": "Ao utilizar nossos serviços, você concorda com os termos desta Política de Privacidade. Reservamo-nos o direito de atualizar esta política periodicamente, notificando você sobre quaisquer alterações significativas."
+  },
+  "refundReturn": {
+    "title": "Política de Reembolso e Devolução",
+    "lastUpdated": "Última atualização: Janeiro de 2025",
+    "intro": "A FoxApply está comprometida em garantir sua satisfação. Esta política detalha nossos procedimentos de reembolso e devolução para garantir transparência e clareza em todas as transações.",
+    "section1": {
+      "title": "1. Política de Reembolso",
+      "description": "Oferecemos reembolso total para assinaturas canceladas dentro do prazo estabelecido. Nossa política de reembolso inclui:",
+      "item1": "Reembolso de 100% para cancelamentos realizados em até 7 dias após a compra",
+      "item2": "Processamento do reembolso em até 5-10 dias úteis após a aprovação",
+      "item3": "Reembolso creditado no mesmo método de pagamento utilizado na compra original",
+      "item4": "Notificação por e-mail assim que o reembolso for processado"
+    },
+    "section2": {
+      "title": "2. Prazo para Solicitar Reembolso",
+      "description": "Você tem direito a solicitar reembolso total da sua assinatura se o cancelamento for realizado dentro de 7 dias corridos a partir da data da compra inicial.",
+      "infoTitle": "Período de Garantia",
+      "infoText": "O período de 7 dias é contado a partir da data do primeiro pagamento. Após este período, não será possível solicitar reembolso, mas você pode cancelar sua assinatura a qualquer momento para evitar cobranças futuras."
+    },
+    "section3": {
+      "title": "3. Processo de Reembolso",
+      "description": "Para solicitar um reembolso, siga estes passos:",
+      "item1": "Acesse sua conta e vá até a seção de Perfil",
+      "item2": "Clique em 'Cancelar Assinatura' e confirme o cancelamento",
+      "item3": "Se você estiver dentro do prazo de 7 dias, o reembolso será processado automaticamente",
+      "item4": "Aguarde o processamento (5-10 dias úteis) e verifique sua conta bancária ou cartão de crédito"
+    },
+    "section4": {
+      "title": "4. Condições de Reembolso",
+      "description": "Algumas condições se aplicam aos reembolsos:",
+      "warningTitle": "Importante",
+      "warningText": "Reembolsos só são aplicáveis para o primeiro pagamento da assinatura. Pagamentos recorrentes subsequentes não são elegíveis para reembolso, mas podem ser cancelados para evitar futuras cobranças. O reembolso será proporcional se você já utilizou parte do período de assinatura."
+    },
+    "section5": {
+      "title": "5. Devolução de Serviços",
+      "description": "Como fornecemos serviços digitais, não há devolução física de produtos. No entanto:",
+      "item1": "Você pode cancelar sua assinatura a qualquer momento através do seu perfil",
+      "item2": "O cancelamento impede futuras cobranças, mas não reembolsa períodos já utilizados (exceto dentro dos 7 dias)",
+      "item3": "Após o cancelamento, você manterá acesso aos serviços até o final do período já pago"
+    },
+    "section6": {
+      "title": "6. Contato para Questões de Reembolso",
+      "description": "Se você tiver dúvidas sobre reembolsos ou precisar de assistência com o processo, entre em contato conosco:",
+      "email": "E-mail:",
+      "responseTime": "Tempo de resposta:",
+      "responseTimeValue": "Até 48 horas úteis"
+    },
+    "footer": "Esta política pode ser atualizada periodicamente. Recomendamos que você revise esta página regularmente para estar ciente de quaisquer alterações. Ao utilizar nossos serviços, você concorda com os termos desta Política de Reembolso e Devolução."
+  },
+  "notFound": {
+    "title": "Página Não Encontrada",
+    "message": "Desculpe, a página que você está procurando não existe ou foi movida.",
+    "backToHome": "Voltar para Home"
+  },
+  "protectedRoute": {
+    "accessDenied": "Acesso Negado",
+    "noPermission": "Você não tem permissão para acessar esta página.",
+    "currentPlan": "Seu plano atual:",
+    "requiredPlan": "Plano necessário:",
+    "roles": {
+      "recruiter": "Recrutador/Parceiro",
+      "quarterlyPlan": "Plano Trimestral",
+      "monthlyPlan": "Plano Mensal",
+      "basicPlan": "Plano Básico",
+      "unknown": "Desconhecido"
+    }
+  },
+  "errorBoundary": {
+    "title": "Algo deu errado!",
+    "viewDetails": "Ver detalhes do erro",
+    "error": "Erro:",
+    "stack": "Stack:",
+    "componentStack": "Component Stack:",
+    "reloadPage": "Recarregar Página"
+  },
+  "plans": {
+    "title": "Escolha o plano ideal",
+    "titleSpan": "para você",
+    "subtitle": "Desbloqueie todo o potencial do FoxApply e conquiste a vaga dos seus sonhos",
+    "back": "Voltar",
+    "popularBadge": "✨ Melhor Preço",
+    "monthly": "Acesso Premium Mensal",
+    "monthlyPlan": "Plano Mensal",
+    "monthlyPlanDescription": "Acesso mensal completo à plataforma FoxApply",
+    "annual": "Acesso Premium Anual",
+    "annualDescription": "Melhor custo-benefício com 50% de desconto",
+    "quarterly": "Acesso Premium Trimestral",
+    "lifetime": "Acesso Premium Vitalício",
+    "yearly": "Anual",
+    "monthlyDescription": "Ideal para quem quer testar",
+    "quarterlyDescription": "Pague 2 meses e ganhe 3 meses de acesso com 33% de desconto",
+    "lifetimeDescription": "Acesso vitalício com 90% de desconto - Oferta por tempo limitado",
+    "yearlyDescription": "Melhor custo-benefício",
+    "perMonth": "/mês",
+    "perYear": "/ano",
+    "perQuarter": "/trimestre",
+    "lifetimePeriod": "vitalício",
+    "limitedTime": "⏰ Tempo Limitado",
+    "equivalentTo": "Equivale a",
+    "discountBadge": "50% OFF",
+    "off": "OFF",
+    "from": "De",
+    "for": "por",
+    "installments": "Ou 12x de {{currency}} {{installments}}",
+    "total": "Total: R$",
+    "startNow": "Começar agora",
+    "selectPlan": "Selecionar plano",
+    "guarantee": "Garantia de 7 dias",
+    "guaranteeText": "Se não gostar, devolvemos 100% do seu dinheiro. Sem perguntas.",
+    "savings": {
+      "quarterly": "Economize 25%",
+      "yearly": "Economize 69%"
+    },
+    "features": {
+      "monthly": [
+        "Extensão que aplica automaticamente para vagas no LinkedIn",
+        "Análise ilimitada de currículos",
+        "Filtro inteligente de vagas",
+        "Compatibilidade com vagas",
+        "Suporte por email"
+      ],
+      "quarterly": [
+        "Extensão que aplica automaticamente para vagas no LinkedIn",
+        "Análise ilimitada de currículos",
+        "Templates exclusivos de currículo",
+        "Consultoria de carreira",
+        "Suporte prioritário",
+        "Acesso antecipado a novidades"
+      ],
+      "yearly": [
+        "Extensão que aplica automaticamente para vagas no LinkedIn",
+        "Análise ilimitada de currículos",
+        "Templates exclusivos de currículo",
+        "Mentoria 1:1 mensal",
+        "Acesso vitalício a templates",
+        "Prioridade máxima no suporte"
+      ]
+    }
+  },
+  "errors": {
+    "backend": {
+      "STRIPE_NOT_CONFIGURED": "Stripe não está configurado. Entre em contato com o suporte.",
+      "MISSING_REQUIRED_FIELDS": "Campos obrigatórios estão faltando. Verifique os dados enviados.",
+      "INVALID_CURRENCY": "Moeda inválida. Use: brl, eur ou usd",
+      "MINIMUM_AMOUNT_REQUIRED": "Valor mínimo é 1.00 da moeda selecionada",
+      "CHECKOUT_SESSION_CREATE_ERROR": "Erro ao criar sessão de checkout. Tente novamente.",
+      "CHECKOUT_SESSION_GET_ERROR": "Erro ao buscar sessão de checkout. Tente novamente.",
+      "MISSING_SESSION_ID": "ID da sessão é obrigatório",
+      "PIX_PAYMENT_CREATE_ERROR": "Erro ao criar pagamento PIX. Tente novamente.",
+      "MISSING_PAYMENT_INTENT_ID": "ID do pagamento é obrigatório",
+      "PIX_STATUS_CHECK_ERROR": "Erro ao verificar status do PIX. Tente novamente.",
+      "PAYMENT_CONFIRM_ERROR": "Erro ao confirmar pagamento. Tente novamente.",
+      "WEBHOOK_SIGNATURE_MISSING": "Assinatura do webhook não encontrada",
+      "WEBHOOK_PROCESS_ERROR": "Erro ao processar webhook",
+      "USER_COUNT_ERROR": "Erro ao buscar contagem de usuários",
+      "SYNC_ERROR": "Erro ao sincronizar dados",
+      "UNKNOWN_ERROR": "Erro desconhecido. Tente novamente."
+    }
+  },
+  "pendingPayment": {
+    "pendingTitle": "Pagamento Pendente",
+    "expiredTitle": "Plano Expirado",
+    "pendingDescription": "Seu cadastro foi criado com sucesso, mas ainda não identificamos o pagamento da sua assinatura. Finalize o pagamento para ter acesso completo à plataforma.",
+    "expiredDescription": "Seu plano expirou e você não tem mais acesso às funcionalidades premium. Renove sua assinatura para continuar utilizando o Entrevista Já.",
+    "awaitingPayment": "Aguardando pagamento",
+    "planExpired": "Plano expirado",
+    "email": "E-mail",
+    "status": "Status",
+    "pending": "Pendente",
+    "expired": "Expirado",
+    "finishPayment": "Finalizar Pagamento",
+    "renewSubscription": "Renovar Assinatura",
+    "logout": "Sair da conta",
+    "helpText": "Já efetuou o pagamento? O status pode levar alguns minutos para atualizar.",
+    "needHelp": "Precisa de ajuda?",
+    "contactUs": "Entre em contato"
+  },
+  "foxApplyLanding": {
+    "navbar": {
+      "logo": "FoxApply",
+      "howItWorks": "Como Funciona",
+      "features": "Recursos",
+      "linkedinChampion": "LinkedIn Champion",
+      "forWho": "Para Quem",
+      "testimonials": "Depoimentos",
+      "blog": "Blog",
+      "login": "Entrar",
+      "getStarted": "Começar Agora"
+    },
+    "hero": {
+      "title": "Pare de mendigar atenção no LinkedIn e comece a ser caçado por recrutadores em dias…não meses.",
+      "hundreds": "centenas de vagas",
+      "subtitle": "Nossa IA aplica por você em centenas de vagas compatíveis, otimiza seu currículo para e multiplica por 10x suas chances de receber convites para entrevista.",
+      "cta": "Quero testar agora!",
+      "ctaSecondary": "Ver Como Funciona",
+      "noCreditCard": "Sem cartão de crédito",
+      "noChargeBeforeTest": "Não cobramos nada antes do teste",
+      "cancelAnytime": "cancele quando quise. sem pergunta, sem drama.",
+      "applyingNow": "Enquanto você lê isso",
+      "applicationsSentToday": "candidatos já usaram o FoxApply hoje\ne enviaram candidaturas automáticas.",
+      "jobsPerMonth": "Vagas/mês",
+      "faster": "Mais rápido",
+      "atsRate": "Taxa ATS"
+    },
+    "painPoints": {
+      "title": "Você já sabe como é…",
+      "ignored": "",
+      "subtitle": "A busca tradicional por emprego está quebrada. E o pior: ela está te custando meses (ou anos) de vida, salário e autoestima.",
+      "introList": [
+        "Passar 3 horas por dia preenchendo formulário igual, copiando e colando a mesma informação",
+        "Enviar currículo e… silêncio. Zero. Nada.",
+        "Ver a vaga fechar com \"mais de 300 candidatos\" e você nem chegou na fila",
+        "Sentir aquele aperto no peito toda vez que abre o LinkedIn e não tem nenhuma notificação de \"Entrevista agendada\"",
+        "Ver amigos sendo chamados enquanto você \"tem um bom currículo, mas falta experiência\" ou \"o mercado está difícil\""
+      ],
+      "point1": {
+        "title": "Horas perdidas aplicando manualmente",
+        "description": "Você passa horas por dia copiando e colando informações, preenchendo formulários repetitivos."
+      },
+      "point2": {
+        "title": "Currículo ignorado pelos robôs",
+        "description": "Seu currículo é descartado pelo ATS antes mesmo de chegar nas mãos do recrutador."
+      },
+      "point3": {
+        "title": "Concorrência cada vez maior",
+        "description": "Centenas de candidatos aplicam para a mesma vaga. Quem aplica primeiro tem vantagem."
+      }
+    },
+    "howItWorks": {
+      "badge": "Simples e Poderoso",
+      "title": "Em literalmente 4 cliques você vira o jogo:",
+      "subtitle": "Sem precisar virar expert em ATS, sem ficar horas no LinkedIn Easy Apply, sem medo de ser banido, já que nós simulamos comportamento 100% humano.",
+      "step1": {
+        "title": "Instale a extensão no Chrome (leva 30 segundos)"
+      },
+      "step2": {
+        "title": "Importe seu currículo e diga o que você quer (salário, techs, remoto, gringa…)"
+      },
+      "step3": {
+        "title": "Ative o Piloto Automático – a IA busca, filtra, otimiza e aplica por você"
+      },
+      "step4": {
+        "title": "Acompanhe no dashboard e foque no que importa: estudar, se preparar e negociar salário"
+      }
+    },
+    "features": {
+      "badge": "Recursos Poderosos",
+      "title": "Tudo que você precisa para {conquer}",
+      "conquer": "conquistar sua vaga de emprego",
+      "feature1": {
+        "title": "Candidatura Automática",
+        "description": "Aplique para dezenas de vagas em minutos. A extensão preenche formulários e responde perguntas automaticamente."
+      },
+      "feature2": {
+        "title": "Otimização ATS",
+        "description": "Seu currículo é analisado e otimizado com palavras-chave essenciais para passar pelos filtros dos robôs."
+      },
+      "feature3": {
+        "title": "Busca Inteligente",
+        "description": "Filtros avançados identificam apenas vagas que realmente combinam com seu perfil e ambições."
+      },
+      "feature4": {
+        "title": "Carta de Apresentação IA",
+        "description": "Gere cartas personalizadas para cada vaga em segundos, destacando suas qualificações relevantes."
+      },
+      "feature5": {
+        "title": "Dados Seguros",
+        "description": "Suas informações são criptografadas e nunca compartilhadas. Você tem controle total."
+      },
+      "feature6": {
+        "title": "Análise de Compatibilidade",
+        "description": "Veja sua pontuação de compatibilidade com cada vaga e saiba exatamente o que melhorar."
+      }
+    },
+    "linkedinChampion": {
+      "title": {
+        "part1": "75% dos currículos são descartados pelo",
+        "highlight": "robô antes de um humano ver.",
+        "part2": "Você pode ter o melhor perfil do mundo…",
+        "highlight2": "Mas sem passar no filtro invisível, ninguém te vê."
+      },
+      "subtitle": "Em 2026, 98% das grandes empresas usam ATS, e a maioria rejeita currículos por falta de palavras-chave exatas, formato errado ou incompatibilidade simples.",
+      "subtitle2": "Enquanto outros perdem horas tentando “adivinhar” o que o ATS quer, o FoxApply resolve isso em segundos, sem você mexer um dedo:",
+      "subtitle3": "O robô trabalha por você 24/7… enquanto você se prepara para as entrevistas que vão chegar.",
+      "feature1": {
+        "title": "Otimização ATS automática",
+        "description": "IA injeta as palavras-chave perfeitas da vaga → 85%+ de aprovação nos filtros"
+      },
+      "feature2": {
+        "title": "Candidaturas automáticas",
+        "description": "Dezenas de vagas em minutos, formulários preenchidos sozinhos"
+      },
+      "feature3": {
+        "title": "Busca inteligente + % de match",
+        "description": "Só aplica em vagas que realmente valem a pena"
+      },
+      "feature4": {
+        "title": "Cartas de apresentação IA",
+        "description": "Personalizadas em segundos, únicas para cada vaga"
+      },
+      "feature5": {
+        "title": "LinkedIn Champion",
+        "description": "+40% visibilidade, +3x mais conexões com dicas acionáveis"
+      },
+      "feature6": {
+        "title": "100% seguro",
+        "description": "Dados criptografados, controle total"
+      },
+      "cta": "Analisar Meu Perfil Agora"
+    },
+    "targetAudience": {
+      "badge": "Para Você",
+      "title": "O FoxApply é para {professionals} que querem mais",
+      "professionals": "profissionais",
+      "audience1": {
+        "highlight": "Ideal para quem está começando",
+        "title": "Buscando a Primeira Vaga",
+        "description": "Você é dev júnior ou está fazendo transição de carreira? Multiplique suas candidaturas e destaque-se da concorrência."
+      },
+      "audience2": {
+        "highlight": "Busca silenciosa e eficiente",
+        "title": "Quer se Realocar",
+        "description": "Está empregado mas insatisfeito? Aplique discretamente para novas oportunidades sem perder tempo."
+      },
+      "audience3": {
+        "highlight": "Foco em crescimento",
+        "title": "Busca Novos Desafios",
+        "description": "Quer crescer na carreira ou aumentar seu salário? Encontre vagas que pagam o que você merece."
+      },
+      "audience4": {
+        "highlight": "Vagas internacionais",
+        "title": "Aplicando para a Gringa",
+        "description": "Quer trabalhar remoto para empresas internacionais? Otimize seu currículo em inglês e aplique em escala."
+      }
+    },
+    "testimonials": {
+      "badge": "Histórias Reais",
+      "title": "De zero retorno por meses a {receiving}",
+      "receiving": "8 entrevistas em 2 semanas",
+      "subtitle": "Veja como devs juniores como você estão virando o jogo com o FoxApply."
+    },
+    "success": {
+      "title": "Agora, imagine acordar, olhar para o seu celular e já ter:",
+      "invites": "",
+      "description": "Isso não é sonho. É exatamente o que {highlight} estão vivendo agora com o FoxApply.",
+      "descriptionHighlight": "centenas de devs juniores, plenos em transição e quem quer gringa remota",
+      "benefit1": "3 novos convites para entrevista na caixa de entrada",
+      "benefit2": "Ter aplicado para 50–100 vagas reais enquanto tomava café",
+      "benefit3": "Seu currículo finalmente passando pelos robôs ATS (85%+ de taxa de aprovação)",
+      "benefit4": "Recrutadores te achando pelo LinkedIn porque seu perfil virou imã",
+      "benefit5": "Poder escolher entre propostas ao invés de aceitar a primeira que aparece",
+      "benefit6": "Sentir aquela sensação de “finalmente alguém me viu”… toda semana",
+      "cta": "Quero testar grátis!"
+    },
+    "pricing": {
+      "badge": "Investimento",
+      "title": "Pague {change1} agora ou continue pagando {change2} com frustração de não ser escolhido.",
+      "change1": "POUCO",
+      "change2": "CARO",
+      "freeTrial": "7 dias grátis",
+      "price": "9.90",
+      "currency": "R$",
+      "period": "/mês",
+      "chargeAfterTrial": "Cobrança apenas após o período de teste",
+      "noChargeDuringTrial": "Nenhuma cobrança durante os 7 dias grátis",
+      "feature1": "Extensão de candidatura automática para LinkedIn",
+      "feature2": "Acesso a templates de currículo",
+      "feature3": "Filtro inteligente de vagas",
+      "feature4": "Análise instantânea de currículo",
+      "feature5": "Ver compatibilidade com cada vaga",
+      "feature6": "Identificar termos essenciais faltando",
+      "feature7": "Ajustes precisos para entrevista",
+      "feature8": "Acesso a consultoria de carreira",
+      "feature9": "Cancele quando quiser",
+      "cta": "Começar Teste Grátis",
+      "disclaimer": "Nenhuma cobrança durante o teste • Só cobramos após os 7 dias grátis"
+    },
+    "faq": {
+      "title": "Ficou alguma dúvida? Então vamos esclarecer agora!",
+      "q1": {
+        "question": "É seguro no LinkedIn? Posso ser banido?",
+        "answer": "Sim, seguro. Simula comportamento humano, respeita limites. Milhares usam sem problema."
+      },
+      "q2": {
+        "question": "Funciona para júnior ou transição de carreira?",
+        "answer": "Sim, ótimo para iniciantes. Otimiza currículo, aplica em massa e filtra vagas reais para seu nível."
+      },
+      "q3": {
+        "question": "Quanto tempo para receber entrevistas?",
+        "answer": "Maioria vê convites na primeira semana. Mais aplicações = resultados mais rápidos."
+      },
+      "q4": {
+        "question": "Dá pra aplicar em vagas internacionais/remotas em dólar?",
+        "answer": "Sim. Filtro específico + otimização em inglês. Vários usuários já conseguiram jobs remotos nos EUA/Europa."
+      },
+      "q5": {
+        "question": "E se eu não gostar? Posso cancelar sem pagar?",
+        "answer": "Sim. 7 dias grátis sem cartão. Cancele antes do 7º dia = zero cobrança. Depois, cancele quando quiser no painel."
+      }
+    },
+    "cta": {
+      "title": "Pronto para {accelerate}",
+      "accelerate": "ser chamado?",
+      "description": "Junte-se a milhares de devs que já estão recebendo mais entrevistas com menos esforço. Comece seu teste grátis agora.",
+      "button": "Começar Teste Grátis de 7 Dias",
+      "disclaimer": "Nenhuma cobrança durante o teste • Só cobramos após os 7 dias grátis • Cancele quando quiser"
+    },
+    "couponPopUp": {
+      "badge": "Oferta especial",
+      "title": "Um presente para você",
+      "description": "Use este cupom no checkout e ganhe desconto na primeira assinatura.",
+      "discount": "de desconto no primeiro pagamento",
+      "cta": "Usar cupom",
+      "ctaCopy": "Copiar e usar cupom",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "close": "Fechar"
+    },
+    "footer": {
+      "privacy": "Política de Privacidade",
+      "officialSite": "Site Oficial",
+      "copyright": "© 2026 FoxApply. Todos os direitos reservados."
+    }
+  },
+  "recommendedJobs": {
+    "title": "Vagas Recomendadas",
+    "subtitle": "Baseadas no seu perfil",
+    "jobTypeLabel": "Qual tipo de vaga você busca?",
+    "jobTitlePlaceholder": "Ex: Desenvolvedor React, Analista de Dados...",
+    "noJobTitle": "Nenhum tipo de vaga definido",
+    "editJobTitle": "Editar tipo de vaga",
+    "saveJobTitle": "Salvar",
+    "cancelEdit": "Cancelar",
+    "refresh": "Atualizar vagas",
+    "searchStarted": "Buscando vagas...",
+    "hero": {
+      "title": "Vagas Recomendadas",
+      "subtitle": "Encontre as melhores oportunidades baseadas no seu perfil profissional",
+      "feature1": {
+        "title": "IA Personalizada",
+        "description": "Vagas selecionadas automaticamente com base nas suas habilidades e experiências"
+      },
+      "feature2": {
+        "title": "Match Perfeito",
+        "description": "Algoritmo inteligente que encontra oportunidades alinhadas ao seu perfil"
+      },
+      "feature3": {
+        "title": "Atualizadas Diariamente",
+        "description": "Novas vagas são adicionadas constantemente para maximizar suas chances"
+      }
+    },
+    "search": {
+      "title": "Buscar Vagas Específicas",
+      "label": "Palavras-chave",
+      "placeholder": "Ex: React, Node.js, Product Manager...",
+      "button": "Buscar",
+      "clear": "Limpar"
+    },
+    "empty": {
+      "title": "Nenhuma vaga encontrada",
+      "description": "Tente ajustar suas palavras-chave ou complete seu perfil para receber recomendações"
+    },
+    "pagination": {
+      "previous": "Anterior",
+      "next": "Próxima",
+      "page": "Página"
+    },
+    "errors": {
+      "fetchError": "Erro ao buscar vagas. Tente novamente."
+    },
+    "locationInfo": {
+      "message": "As vagas são filtradas pela sua localização.",
+      "changeCountry": "Clique ao lado para alterar país, estado ou cidade."
+    },
+    "pcdTerms": {
+      "pcd": "PCD",
+      "personWithDisability": "pessoa com deficiência",
+      "disability": "deficiência",
+      "disabled": "deficiente",
+      "inclusion": "inclusão",
+      "inclusive": "inclusivo"
+    }
+  },
+  "linkedinChampion": {
+    "hero": {
+      "title": "LinkedIn Champion",
+      "subtitle": "Analise seu perfil LinkedIn e receba dicas personalizadas para atrair mais recrutadores e oportunidades de carreira.",
+      "feature1": {
+        "title": "Aumente sua visibilidade",
+        "description": "Otimize seu perfil para aparecer mais nas buscas de recrutadores"
+      },
+      "feature2": {
+        "title": "Atraia recrutadores",
+        "description": "Receba recomendações para destacar seus pontos fortes"
+      },
+      "feature3": {
+        "title": "Perfil otimizado",
+        "description": "Identifique pontos de melhoria e implemente dicas personalizadas"
+      }
+    },
+    "analyzer": {
+      "title": "Analise seu Perfil",
+      "subtitle": "Escolha como deseja analisar seu perfil LinkedIn",
+      "tabs": {
+        "url": "Por URL",
+        "text": "Colar Texto"
+      },
+      "urlTab": {
+        "label": "URL do seu perfil LinkedIn",
+        "placeholder": "https://linkedin.com/in/seunome",
+        "helpText": "Copie a URL completa do seu perfil LinkedIn",
+        "button": "Analisar por URL",
+        "analyzing": "Buscando e analisando perfil..."
+      },
+      "textTab": {
+        "label": "Informações do seu perfil",
+        "placeholder": "Cole aqui as informações do seu perfil LinkedIn...\n\nExemplo: Nome, headline, sobre, experiências, formação, habilidades, etc.",
+        "button": "Analisar Texto",
+        "analyzing": "Analisando seu perfil..."
+      },
+      "results": {
+        "title": "Resultado da Análise",
+        "profileSubtitle": "Análise do perfil",
+        "positives": "Pontos Positivos",
+        "improvements": "Pontos de Melhoria",
+        "tips": "Dicas para um Perfil Campeão",
+        "emptyPositives": "Continue preenchendo seu perfil para destacar seus pontos fortes!",
+        "cta": "Implemente as melhorias e analise novamente para ver sua evolução!",
+        "newAnalysis": "Nova Análise"
+      },
+      "errors": {
+        "invalidUrl": "URL inválida. Use o formato: https://linkedin.com/in/seunome",
+        "fetchError": "Erro ao buscar perfil. Verifique a URL e tente novamente.",
+        "analysisError": "Erro ao analisar perfil. Tente novamente.",
+        "success": "Perfil analisado com sucesso!",
+        "textSuccess": "Análise concluída!"
+      },
+      "analysis": {
+        "profilePhoto": {
+          "positive": "Você tem uma foto de perfil profissional, essencial para causar uma boa primeira impressão.",
+          "improvement": "Adicione uma foto profissional. Perfis com foto recebem 21x mais visualizações e 36x mais mensagens.",
+          "textPositive": "Você mencionou ter foto de perfil, essencial para causar uma boa primeira impressão.",
+          "textImprovement": "Adicione uma foto profissional. Perfis com foto recebem 21x mais visualizações."
+        },
+        "headline": {
+          "positiveDescriptive": "Seu headline \"{{headline}}...\" é descritivo e otimizado para buscas.",
+          "positiveBasic": "Você possui um headline que ajuda a destacar sua proposta de valor.",
+          "improvementExpand": "Considere expandir seu headline com palavras-chave do seu setor para melhorar sua visibilidade.",
+          "improvement": "Crie um headline impactante (mais de 60 caracteres) que vá além do cargo. Inclua sua especialidade e o valor que entrega.",
+          "textPositive": "Seu headline está presente, ajudando a destacar sua proposta de valor.",
+          "textImprovement": "Crie um headline impactante que vá além do cargo. Inclua sua especialidade e valor que entrega."
+        },
+        "summary": {
+          "positiveComplete": "Sua seção 'Sobre' é completa e conta sua história de forma envolvente.",
+          "positiveBasic": "Você tem uma seção 'Sobre' que apresenta sua trajetória.",
+          "improvementExpand": "Expanda seu resumo para pelo menos 300 palavras, incluindo conquistas e objetivos de carreira.",
+          "improvement": "Escreva um resumo envolvente na seção 'Sobre' (mínimo 300 palavras). Conte sua jornada, conquistas e objetivos.",
+          "textPositive": "Você tem uma seção 'Sobre' que ajuda recrutadores a conhecerem sua história.",
+          "textImprovement": "Escreva um resumo envolvente na seção 'Sobre'. Conte sua jornada e objetivos."
+        },
+        "experience": {
+          "positiveDetailed": "Você possui {{count}} experiências bem documentadas com descrições detalhadas.",
+          "positiveBasic": "Você listou {{count}} experiência(s) profissional(is).",
+          "improvementDetails": "Adicione descrições detalhadas em cada experiência com resultados mensuráveis (%, R$, números).",
+          "improvement": "Adicione suas experiências profissionais com descrições ricas em resultados e conquistas mensuráveis.",
+          "textPositive": "Suas experiências profissionais estão documentadas.",
+          "textImprovement": "Detalhe suas experiências com resultados mensuráveis e conquistas específicas."
+        },
+        "education": {
+          "positive": "Sua formação acadêmica está visível com {{count}} item(ns) listado(s).",
+          "improvement": "Complete a seção de formação acadêmica, incluindo cursos, bootcamps e certificações relevantes.",
+          "textPositive": "Sua formação acadêmica está visível no perfil.",
+          "textImprovement": "Complete a seção de formação acadêmica, incluindo cursos e certificações."
+        },
+        "skills": {
+          "positiveMany": "Você listou {{count}} habilidades, facilitando o match com vagas e recrutadores.",
+          "positiveFew": "Você possui {{count}} habilidades listadas.",
+          "improvementAdd": "Adicione mais habilidades (recomendado: pelo menos 10). Você tem apenas {{count}}.",
+          "improvement": "Adicione pelo menos 10 habilidades técnicas e comportamentais relevantes para sua área.",
+          "textPositive": "Suas habilidades estão listadas, facilitando o match com vagas.",
+          "textImprovement": "Adicione pelo menos 10 habilidades relevantes e peça endossos de colegas."
+        },
+        "recommendations": {
+          "positive": "Você possui {{count}} recomendação(ões), que aumentam muito sua credibilidade.",
+          "improvement": "Solicite recomendações de ex-colegas, gestores e clientes. São uma prova social poderosa.",
+          "textPositive": "Você possui recomendações, que aumentam muito sua credibilidade."
+        },
+        "connections": {
+          "positiveMany": "Sua rede tem {{count}}+ conexões, demonstrando um bom networking profissional.",
+          "improvementModerate": "Expanda sua rede! Com {{count}} conexões, você pode aumentar sua visibilidade conectando com profissionais da sua área.",
+          "improvement": "Construa sua rede profissional. Conecte-se com colegas, recrutadores e profissionais da sua área."
+        },
+        "projects": {
+          "positive": "Seus projetos estão destacados, mostrando resultados práticos.",
+          "improvement": "Adicione projetos relevantes para demonstrar suas entregas e impacto."
+        },
+        "certifications": {
+          "positive": "Suas certificações demonstram investimento em desenvolvimento profissional."
+        },
+        "tips": {
+          "tip1": "Use palavras-chave do seu setor no headline e resumo para aparecer mais nas buscas de recrutadores.",
+          "tip2": "Publique conteúdo relevante regularmente para aumentar sua visibilidade em até 10x.",
+          "tip3": "Personalize a URL do seu perfil (linkedin.com/in/seunome) para ficar mais profissional.",
+          "tip4": "Ative o modo 'Open to Work' de forma discreta para receber propostas de recrutadores sem que sua empresa atual veja.",
+          "tip5": "Interaja com posts de empresas e profissionais onde deseja trabalhar para aparecer no radar delas.",
+          "tip6": "Peça endossos para suas principais habilidades de colegas que trabalharam com você.",
+          "textTip1": "Use palavras-chave do seu setor no headline e resumo para aparecer mais nas buscas.",
+          "textTip2": "Publique conteúdo regularmente para aumentar sua visibilidade em até 10x.",
+          "textTip3": "Personalize a URL do seu perfil para ficar mais profissional e fácil de compartilhar.",
+          "textTip4": "Ative o modo 'Open to Work' de forma discreta para receber propostas de recrutadores.",
+          "textTip5": "Interaja com posts de empresas onde deseja trabalhar para aparecer no radar delas."
+        }
+      }
+    }
+  },
+  "referral": {
+    "title": "Indique e Ganhe",
+    "description": "Indique amigos e ganhe Dinheiro! Quando alguém se cadastrar usando seu LINK e fizer o primeiro pagamento, você receberá uma recompensa em dinheiro.",
+    "yourCode": "Seu Código de Indicação",
+    "yourLink": "Seu Link de Indicação",
+    "yourBalance": "Seu Saldo",
+    "copyCode": "Copiar código",
+    "copyLink": "Copiar link",
+    "codeGenerating": "Seu código de indicação está sendo gerado...",
+    "howItWorks": "Como funciona: Compartilhe seu link com seus amigos. Quando eles se cadastrarem e fizerem o primeiro pagamento, você receberá R$ 20,00 em dinheiro. Para o primeiro pagamento, é necessário acumular pelo menos R$ 50,00.",
+    "metrics": "Métricas de Indicação",
+    "totalReferrals": "Total de Indicações",
+    "completedReferrals": "Completadas",
+    "pendingReferrals": "Pendentes",
+    "totalEarned": "Total Ganho",
+    "pixKey": "Chave PIX",
+    "pixKeyPlaceholder": "Digite sua chave PIX (CPF, e-mail, telefone ou chave aleatória)",
+    "pixKeyRequired": "Por favor, informe sua chave PIX",
+    "pixKeySaved": "Chave PIX salva com sucesso!",
+    "pixKeySaveError": "Erro ao salvar chave PIX. Tente novamente.",
+    "pixKeyInfo": "Cadastre sua chave PIX para receber seus pagamentos de indicação",
+    "pixKeyTooLong": "Chave PIX muito longa. Máximo de 77 caracteres.",
+    "pixKeyInvalidChars": "Chave PIX contém caracteres inválidos. Use apenas letras, números, @, ., - e +.",
+    "pixKeyInvalid": "Chave PIX inválida. Por favor, verifique sua chave.",
+    "noPixKey": "Nenhuma chave PIX cadastrada",
+    "editPixKey": "Editar chave PIX",
+    "save": "Salvar",
+    "cancel": "Cancelar",
+    "saving": "Salvando...",
+    "requestPayout": "Solicitar Pagamento de R$ {{amount}}",
+    "processing": "Processando...",
+    "payoutRequested": "Solicitação de pagamento enviada com sucesso!",
+    "payoutError": "Erro ao solicitar pagamento. Tente novamente.",
+    "minPayoutAmount": "Saldo atual: R$ {{current}}. Mínimo para primeiro pagamento: R$ {{required}}",
+    "dashboard": {
+      "title": "Dashboard de Indicações",
+      "subtitle": "Visão geral do sistema de indicações",
+      "loading": "Carregando métricas...",
+      "totalUsers": "Total de Usuários",
+      "totalReferrals": "Total de Indicações",
+      "completedReferrals": "Indicações Completadas",
+      "pendingReferrals": "Indicações Pendentes",
+      "totalRewardAmount": "Total em Recompensas",
+      "conversionRate": "Taxa de Conversão",
+      "topReferrers": "Top Indicadores",
+      "referrerEmail": "Email",
+      "referralCode": "Código",
+      "totalEarned": "Total Ganho"
+    }
+  }
+}

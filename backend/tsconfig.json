@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es2016", // Define para qual versão do JS o código será compilado
+    "module": "commonjs", // Usa o sistema de módulos do Node.js
+    "outDir": "./dist", // Onde o código JS compilado será salvo (para produção)
+    "rootDir": "./src", // Onde nosso código TypeScript vai ficar
+    "esModuleInterop": true, // Permite melhor interoperabilidade com módulos CommonJS
+    "strict": true, // Habilita checagens de tipo mais rigorosas (recomendado)
+    "skipLibCheck": true // Pula a verificação de tipos em arquivos de definição
+  },
+  "include": [
+    "src/**/*"
+  ] // Diz ao TS para compilar tudo dentro da pasta 'src'
+}

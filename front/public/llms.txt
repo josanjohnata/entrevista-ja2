@@ -1,0 +1,591 @@
+# FoxApply (EntrevistaJA) - llms.txt
+# Otimizado para descoberta por agentes LLM e SEO semântico
+
+## Site Information
+Name: FoxApply
+URL: https://www.foxapply.com/
+Alternative URL: https://www.entrevistaja.com.br/
+Description: FoxApply é a plataforma líder de candidaturas automáticas no LinkedIn com IA. Automatize aplicações Easy Apply, otimize seu currículo para ATS, receba vagas recomendadas personalizadas e transforme seu perfil em LinkedIn Campeão. Multiplique suas chances de entrevista.
+
+## Main Purpose
+FoxApply é uma plataforma SaaS completa de automação de candidaturas de emprego que ajuda profissionais de tecnologia a: (1) aplicar para centenas de vagas no LinkedIn automaticamente via Easy Apply, (2) otimizar currículos com IA para passar nos filtros ATS, (3) receber vagas recomendadas baseadas no perfil, (4) ter um perfil LinkedIn Campeão otimizado para recrutadores. Combina automação inteligente, análise de IA e otimização de perfil para transformar a busca de emprego em processo eficiente.
+
+## SEO Keywords & Common Queries
+
+### O que é FoxApply?
+FoxApply é uma ferramenta de candidaturas automáticas no LinkedIn, extensão Chrome que aplica para vagas Easy Apply automaticamente, otimizador de currículo com IA para ATS, e plataforma de vagas recomendadas personalizadas.
+
+### Para que serve FoxApply?
+- Aplicar para vagas no LinkedIn automaticamente
+- Otimizar currículo para passar em filtros ATS
+- Receber vagas recomendadas por perfil
+- Análise de perfil LinkedIn (LinkedIn Campeão)
+- Gerar cartas de apresentação com IA
+
+### Perguntas frequentes (FAQ)
+- Como aplicar automaticamente no LinkedIn? FoxApply usa extensão Chrome que automatiza Easy Apply.
+- Como otimizar currículo para ATS? Análise com IA identifica palavras-chave e sugere melhorias.
+- O que são vagas recomendadas? Vagas personalizadas por skills, experiência e localização do perfil.
+- O que é LinkedIn Campeão? Ferramenta que analisa e otimiza perfil para aparecer em buscas de recrutadores.
+- FoxApply funciona com conta gratuita do LinkedIn? Sim, funciona com conta free ou Premium.
+- FoxApply aplica em vagas de outros países? Sim, com filtros para trabalho remoto internacional.
+
+### Keywords (PT/EN)
+- candidaturas automáticas LinkedIn | automatic job applications LinkedIn
+- aplicar vagas automaticamente | apply jobs automatically
+- otimizar currículo ATS | optimize resume ATS
+- vagas recomendadas | recommended jobs
+- LinkedIn Campeão | LinkedIn Champion
+- Easy Apply automático | automated Easy Apply
+- carta de apresentação IA | cover letter AI
+- buscar emprego tecnologia | tech job search
+
+## Key Features
+
+### 1. Automação de Candidaturas no LinkedIn (Candidaturas Automáticas)
+- Extensão Chrome que automatiza aplicações Easy Apply no LinkedIn
+- Preenchimento automático de formulários de candidatura
+- Aplicação em massa para dezenas de vagas em minutos
+- Filtros inteligentes para identificar vagas compatíveis
+- Sistema de detecção de vagas já aplicadas
+- Navegação automática entre páginas de resultados
+- Controle de taxa de aplicações para evitar bloqueios
+- Integração com perfil do usuário para preenchimento automático
+- Suporte a múltiplos idiomas na extensão
+- Logs detalhados de aplicações realizadas
+- Pausa e retomada de automação
+- Validação de campos obrigatórios antes de aplicar
+
+### 2. Análise e Otimização de Currículo com IA (Otimizar Currículo para ATS)
+- Análise profunda de currículo contra descrições de vagas
+- Sistema de pontuação de compatibilidade (0-100)
+- Identificação de palavras-chave essenciais faltantes para ATS
+- Otimização para passar pelos filtros ATS (Applicant Tracking System)
+- Sugestões precisas de ajustes para cada vaga específica
+- Geração de versão melhorada do currículo mantendo todas as informações originais
+- Análise multi-idioma (português, inglês, espanhol, francês, chinês, hindi, árabe, bengali, indonésio, russo)
+- Reanálise após aplicar sugestões para verificar melhoria
+- Comparação lado a lado: antes e depois das melhorias
+- Identificação de termos técnicos e habilidades relevantes
+- Análise de formação acadêmica e experiência profissional
+- Recomendações específicas por nível de compatibilidade (low, medium, high)
+- Sistema de hash de vagas para rastrear análises anteriores
+- Histórico de análises por vaga
+
+### 3. LinkedIn Champion - Análise de Perfil LinkedIn (LinkedIn Campeão)
+- Ferramenta para transformar seu perfil em um "LinkedIn Campeão" - perfil otimizado para ser encontrado por recrutadores
+- Análise completa do perfil LinkedIn com IA
+- Dois modos de análise: via URL do perfil ou colando texto
+- Identificação de pontos positivos do perfil
+- Sugestões de melhorias específicas para ter um perfil campeão
+- Dicas personalizadas para tornar o perfil um "ímã de oportunidades"
+- Aumento de visibilidade em buscas de recrutadores
+- Recomendações para destacar pontos fortes e atrair recrutadores no LinkedIn
+- Análise instantânea de todas as seções do perfil
+- Dicas práticas e acionáveis para implementação imediata
+- Score de perfil com métricas de visibilidade e contatos
+- Otimização para aparecer mais em buscas de recrutadores
+- Artigo de blog "LinkedIn Campeão" com guia completo de otimização de perfil
+
+### 4. Geração de Cartas de Apresentação com IA (Cover Letter)
+- Criação de cartas de apresentação personalizadas com inteligência artificial
+- Modo de criação: gera carta do zero baseada em currículo e descrição da vaga
+- Modo de melhoria: otimiza carta existente
+- Suporte a múltiplos idiomas
+- Integração com perfil do usuário para carregar dados automaticamente
+- Geração de PDF para download
+- Cópia para clipboard
+- Formatação profissional com parágrafos bem definidos
+- Destaque de qualificações mais relevantes
+- Conexão entre experiência do candidato e requisitos da vaga
+- Tom profissional mas acessível
+- Carta concisa (3-4 parágrafos)
+- Sem placeholders - espaços para preenchimento manual
+
+### 5. Análise de Compatibilidade Detalhada
+- Pontuação de compatibilidade com cada vaga (0-100)
+- Classificação: low (0-40), medium (41-70), high (71-100)
+- Identificação de termos essenciais faltantes
+- Visualização clara do que precisa ser melhorado
+- Resumo profissional otimizado (2-3 frases)
+- Sugestões detalhadas mostrando antes e depois
+- Alertas para compatibilidade baixa com recomendações
+- Visualização de evolução de score após melhorias
+- Badges visuais para palavras-chave faltantes
+- Comparação detalhada de melhorias sugeridas
+
+### 6. Busca Inteligente no LinkedIn
+- Filtros avançados por salário, localização e preferências
+- Identificação automática de vagas compatíveis
+- Busca otimizada no LinkedIn
+- Multi-select para filtros de localização
+- Seleção de tecnologias e habilidades
+- Filtros por nível de experiência
+- Filtros por tipo de trabalho (remoto, presencial, híbrido)
+
+### 7. Vagas Recomendadas (Recommended Jobs)
+- Vagas recomendadas personalizadas com base no perfil do usuário
+- IA personalizada que seleciona vagas automaticamente baseada em habilidades e experiências
+- Algoritmo inteligente de "match perfeito" que encontra oportunidades alinhadas ao perfil
+- Vagas atualizadas diariamente para maximizar chances de entrevista
+- Integração com perfil completo (headline, ocupação, skills, localização)
+- Filtro automático por país do perfil do usuário
+- Busca por palavras-chave específicas dentro das recomendações
+- Suporte a vagas PCD (pessoa com deficiência) quando aplicável
+- Paginação de resultados
+- Edição do tipo de vaga desejada diretamente na tela
+- Hero section com destaque para as três principais features: IA Personalizada, Match Perfeito, Atualizadas Diariamente
+
+### 8. Segurança e Privacidade
+- Dados criptografados
+- Informações nunca compartilhadas com terceiros
+- Controle total do usuário sobre seus dados
+- Firebase Security Rules implementadas
+- Proteção contra modificações não autorizadas
+- Validação de propriedade de dados
+- Regras de segurança granulares por coleção
+- Autenticação via Firebase Auth
+- Proteção de dados sensíveis
+
+### 9. Gestão de Perfil Completo
+- Perfil de usuário completo com todas as informações profissionais
+- Experiências profissionais detalhadas
+- Formação acadêmica
+- Habilidades e competências
+- Idiomas com níveis de proficiência
+- Certificações
+- Cursos e treinamentos
+- Links para LinkedIn e GitHub
+- Informações de contato
+- Localização
+- Título profissional
+- Sobre/Resumo profissional
+- Validação de perfil completo
+- Sincronização com análise de currículo
+
+## Target Audience
+- Desenvolvedores júnior buscando primeira vaga
+- Programadores em transição de carreira
+- Profissionais empregados buscando realocação discreta
+- Desenvolvedores buscando novos desafios e crescimento
+- Profissionais de tecnologia aplicando para vagas internacionais remotas
+- Candidatos que querem aumentar taxa de resposta em candidaturas
+- Quem precisa otimizar currículo para passar em ATS
+- Usuários que buscam automação de candidaturas no LinkedIn
+- Candidatos que querem vagas recomendadas por perfil
+- Profissionais que desejam LinkedIn Campeão (perfil otimizado)
+- Quem está procurando emprego na área de tecnologia
+
+## Technology Stack
+
+### Frontend
+- React 19.2.1 com TypeScript
+- Vite 6.3.5 como build tool
+- Styled Components 6.1.18 para estilização
+- Tailwind CSS (quando aplicável)
+- React Router DOM 7.6.1 para roteamento
+- TanStack Query (React Query) 5.83.0 para gerenciamento de estado e cache
+- React Hook Form 7.57.0 para formulários
+- React i18next 14.0.0 para internacionalização
+- React Toastify 10.0.5 para notificações
+- @react-pdf/renderer 4.3.1 para geração de PDFs
+- Lucide React 0.553.0 para ícones
+- React Icons 5.5.0 para ícones adicionais
+- Vercel Analytics 1.6.1 para analytics
+
+### Backend
+- Node.js com Express 5.1.0
+- TypeScript 5.9.3
+- ts-node-dev 2.0.0 para desenvolvimento
+- Firebase Admin SDK 13.6.0
+- Firebase SDK 12.6.0
+- Stripe 20.0.0 para pagamentos
+- CORS 2.8.5 configurado
+- dotenv 17.2.3 para variáveis de ambiente
+
+### Database & Services
+- Firebase Authentication para autenticação
+- Firebase Firestore para banco de dados principal
+- Supabase para funções serverless (Edge Functions)
+- Stripe para processamento de pagamentos e assinaturas
+
+### Supabase Edge Functions
+- analyze-resume: Análise de currículo com IA (multi-idioma)
+- analisar-curriculo: Análise específica para mercado brasileiro
+- generate-cover-letter: Geração de cartas de apresentação
+- parse-document: Parsing de documentos
+
+### Chrome Extension
+- Manifest V3
+- Content Scripts para interação com LinkedIn
+- Service Worker (background.js)
+- Storage API para persistência
+- Firebase SDK integrado
+- Internacionalização completa
+
+### AI Integration
+- Lovable AI Gateway para análise de currículos
+- Google Gemini 2.5 Flash como modelo de IA
+- Prompts especializados por idioma
+- Análise contextual de vagas e currículos
+
+## Main Routes and Pages
+
+### Public Routes
+- `/` - Landing page principal (FoxApplyLandingScreen)
+- `/login` - Página de login com Firebase Auth
+- `/checkout` - Página de checkout e seleção de planos
+- `/planos` - Redireciona para `/checkout`
+- `/pagamento-pendente` - Página de pagamento pendente com opção de completar
+- `/politica-de-privacidade` - Política de privacidade
+
+### Protected Routes (requer autenticação)
+- `/home` - Dashboard principal com análise de currículo (requer assinatura ativa)
+- `/resultados` - Resultados detalhados de análises de currículo (requer assinatura ativa)
+- `/linkedin-search` - Busca e aplicação no LinkedIn (requer assinatura ativa)
+- `/profile` - Perfil do usuário (requer autenticação, não requer assinatura ativa)
+- `/cover-letter` - Geração de cartas de apresentação (requer assinatura ativa)
+- `/linkedin-champion` - Análise de perfil LinkedIn / LinkedIn Campeão (requer assinatura ativa)
+- `/recommended-jobs` - Vagas Recomendadas baseadas no perfil (requer assinatura básica ou superior)
+
+### Route Protection
+- ProtectedRoute component com validação de autenticação
+- Validação de assinatura ativa para recursos premium
+- Redirecionamento automático para login quando necessário
+- Redirecionamento para checkout quando assinatura expirada
+- Suporte a diferentes níveis de acesso (basic_plan, monthly_plan, annual_plan)
+
+## Pricing Model
+- Assinatura mensal e anual para candidaturas automáticas LinkedIn
+- Preços regionais (BRL, EUR, USD)
+- Teste gratuito 7 dias sem cartão de crédito
+- Sem necessidade de cartão de crédito para teste
+- Cancelamento a qualquer momento
+- Reembolso automático se cancelado dentro de 7 dias
+- Sincronização com Stripe para status de pagamento
+- Webhooks do Stripe para atualização automática de status
+- Planos: Basic, Monthly, Annual
+- Status de assinatura: active, canceled, pending, expired
+
+## Supported Languages
+O site suporta 10 idiomas através de i18next com detecção automática:
+- Português (pt) - Idioma principal
+- Inglês (en)
+- Espanhol (es)
+- Francês (fr)
+- Chinês (zh)
+- Hindi (hi)
+- Árabe (ar)
+- Bengali (bn)
+- Indonésio (id)
+- Russo (ru)
+
+### Detecção Automática de Idioma
+- Detecção baseada em região do usuário
+- Mapeamento de países para idiomas
+- Fallback para inglês quando idioma não suportado
+- Suporte a RTL (Right-to-Left) para árabe
+
+## Key Sections on Landing Page
+1. **Hero** - Candidaturas automáticas LinkedIn, estatísticas de aplicações em tempo real
+2. **Pain Points** - Horas desperdiçadas aplicando, currículo ignorado por ATS, competição no mercado
+3. **How It Works** - Instalar extensão Chrome, configurar perfil, ativar autopiloto, receber entrevistas
+4. **Features** - Candidaturas automáticas, otimização ATS, vagas recomendadas, carta de apresentação IA, LinkedIn Campeão
+5. **LinkedIn Champion** - Análise e otimização de perfil LinkedIn para recrutadores
+6. **Vagas Recomendadas** - Matching de vagas por perfil, skills e localização
+7. **Target Audience** - Desenvolvedores, profissionais de tech, transição de carreira
+8. **Pricing** - Teste grátis 7 dias, planos mensal e anual
+9. **FAQ** - Dúvidas sobre candidaturas automáticas, ATS, vagas recomendadas
+
+## Browser Extension Details
+
+### Funcionalidades
+- Automação de aplicações Easy Apply no LinkedIn
+- Preenchimento automático de formulários
+- Filtros de vagas (salário, localização, tipo de trabalho)
+- Configuração de perfil e respostas padrão
+- Controle de taxa de aplicações
+- Logs em tempo real
+- Pausa e retomada
+- Validação de campos obrigatórios
+- Detecção de vagas já aplicadas
+- Navegação automática entre páginas
+
+### Integração
+- Firebase Authentication para login
+- Sincronização com perfil da plataforma web
+- Armazenamento local de configurações
+- Comunicação com content scripts
+- Service worker para background tasks
+
+### Segurança
+- Permissões mínimas necessárias
+- Validação de URLs do LinkedIn
+- Proteção contra aplicações duplicadas
+- Rate limiting para evitar bloqueios
+
+## Integration Points
+
+### LinkedIn
+- Integração via extensão Chrome
+- Automação de aplicações Easy Apply
+- Busca de vagas
+- Análise de perfil (LinkedIn Champion / LinkedIn Campeão)
+- Vagas recomendadas baseadas em perfil profissional
+
+### Firebase
+- Authentication para login e registro
+- Firestore para banco de dados de usuários e perfis
+- Security Rules para proteção de dados
+- Storage para arquivos (quando aplicável)
+
+### Supabase
+- Edge Functions para processamento serverless
+- Análise de currículo com IA
+- Geração de cartas de apresentação
+- Parsing de documentos
+
+### Stripe
+- Processamento de pagamentos
+- Gerenciamento de assinaturas
+- Webhooks para sincronização de status
+- Checkout sessions
+- Suporte a múltiplas moedas
+
+### ATS Systems
+- Otimização de currículos para passar pelos filtros
+- Identificação de palavras-chave essenciais
+- Formatação compatível com ATS
+- Análise de compatibilidade
+
+## Content Focus (SEO Semântico)
+
+### Automação
+- Automação de candidaturas LinkedIn
+- Aplicar vagas automaticamente
+- Candidaturas em massa Easy Apply
+- Preenchimento automático formulários candidatura
+- Automação busca de emprego
+- Aplicar para centenas de vagas em minutos
+
+### IA e Currículo
+- Otimizar currículo para ATS
+- Análise de currículo com inteligência artificial
+- Currículo otimizado para recrutadores
+- Palavras-chave ATS
+- Compatibilidade currículo vaga
+- Currículo campeão 2026
+
+### LinkedIn e Perfil
+- LinkedIn Campeão
+- Otimizar perfil LinkedIn
+- Perfil LinkedIn para recrutadores
+- Aparecer em buscas LinkedIn
+- Como ser encontrado por recrutadores LinkedIn
+
+### Vagas e Matching
+- Vagas recomendadas personalizadas
+- Matching de vagas com perfil
+- Vagas para desenvolvedores
+- Busca de emprego tecnologia
+- Trabalho remoto internacional
+
+### Resultados e Benefícios
+- Aumentar chances de entrevista
+- Taxa de resposta candidaturas
+- Passar filtros ATS
+- Conseguir emprego mais rápido
+
+### Keywords EN
+- LinkedIn job automation
+- Easy Apply automation
+- ATS resume optimizer
+- AI cover letter generator
+- Job application bot
+- Career growth tools
+
+## User Flow
+
+### Primeiro Acesso
+1. Usuário acessa landing page
+2. Clica em "Começar" ou "Teste Grátis"
+3. Redirecionado para checkout
+4. Cria conta ou faz login
+5. Seleciona plano (teste grátis de 7 dias)
+6. Completa pagamento via Stripe
+7. Redirecionado para home
+8. Configura perfil completo
+9. Começa a usar funcionalidades
+
+### Análise de Currículo
+1. Usuário acessa /home
+2. Cola currículo ou carrega do perfil
+3. Cola descrição da vaga
+4. Clica em "Analisar"
+5. Supabase Function processa com IA
+6. Resultado exibido com score, sugestões e versão melhorada
+7. Usuário pode aplicar sugestões
+8. Pode reanalisar para verificar melhoria
+9. Visualiza resultados detalhados em /resultados
+
+### Automação LinkedIn
+1. Usuário instala extensão Chrome
+2. Faz login na extensão
+3. Configura perfil e respostas
+4. Define filtros de vagas
+5. Acessa linkedin.com/jobs
+6. Clica em "Iniciar" na extensão
+7. Extensão aplica automaticamente para vagas compatíveis
+8. Logs mostram progresso em tempo real
+9. Pode pausar ou parar a qualquer momento
+
+### Geração de Carta de Apresentação
+1. Usuário acessa /cover-letter
+2. Escolhe modo: criar ou melhorar
+3. Carrega currículo do perfil ou cola manualmente
+4. (Opcional) Adiciona descrição da vaga
+5. Clica em "Gerar" ou "Melhorar"
+6. Supabase Function gera carta com IA
+7. Usuário pode copiar, baixar PDF ou melhorar novamente
+
+### LinkedIn Champion (LinkedIn Campeão)
+1. Usuário acessa /linkedin-champion
+2. Escolhe análise via URL ou texto
+3. Fornece URL do perfil LinkedIn ou cola informações
+4. Clica em "Analisar"
+5. Supabase Function analisa perfil
+6. Resultado mostra pontos positivos, melhorias e dicas para ter um perfil campeão
+7. Usuário pode implementar sugestões no LinkedIn
+
+### Vagas Recomendadas
+1. Usuário acessa /recommended-jobs
+2. Sistema carrega perfil (headline, ocupação, skills, localização)
+3. Vagas são buscadas e filtradas automaticamente pelo país do perfil
+4. Usuário pode editar tipo de vaga desejada ou adicionar palavras-chave
+5. Lista de vagas recomendadas é exibida com paginação
+6. Usuário pode clicar em "Atualizar vagas" para buscar novas oportunidades
+7. Vagas PCD são incluídas quando usuário tem perfil PCD
+
+## Backend API Endpoints
+
+### Stripe
+- POST `/stripe/checkout/create` - Cria sessão de checkout
+- POST `/stripe/webhook` - Webhook para eventos do Stripe
+- GET `/stripe/checkout/session/:sessionId` - Obtém sessão de checkout
+- POST `/stripe/subscription/sync` - Sincroniza assinatura
+- POST `/stripe/subscription/cancel` - Cancela assinatura (atualiza Firebase)
+
+### User Management
+- Funções de atualização de assinatura no Firebase
+- Sincronização de status de pagamento
+- Gerenciamento de planos e roles
+
+## Security Features
+
+### Firebase Security Rules
+- Validação de propriedade de dados
+- Proteção contra modificações não autorizadas
+- Regras específicas por coleção
+- Validação de userId em updates
+- Proteção de campos sensíveis (role, planId)
+- Restrição de subscriptionStatus (só pode mudar para 'canceled')
+
+### Data Protection
+- Autenticação obrigatória para recursos protegidos
+- Validação de assinatura ativa
+- Criptografia de dados sensíveis
+- Não compartilhamento de dados com terceiros
+- Controle total do usuário
+
+## Analytics and Tracking
+- Vercel Analytics integrado
+- Tracking de conversões
+- Métricas de uso de funcionalidades
+- Análise de comportamento do usuário
+
+## Deployment
+- Frontend: Vercel
+- Backend: Render ou similar (Node.js/Express)
+- Supabase: Edge Functions
+- Firebase: Google Cloud
+- Stripe: Cloud-based
+
+## Contact and Support
+- Suporte disponível através da plataforma
+- FAQ section na landing page
+- Opções de contato no footer
+- Email de suporte (quando disponível)
+- Documentação de uso
+
+## Additional Resources
+- Extensão Chrome FoxApply para LinkedIn
+- Candidaturas automáticas Easy Apply
+- Análise de currículo com IA em tempo real
+- Geração de cartas de apresentação personalizadas
+- Análise de perfil LinkedIn Campeão
+- Vagas recomendadas por perfil profissional
+- Otimização de currículo para ATS
+- Histórico de análises de currículo
+- Exportação de resultados em PDF
+
+## Technical Architecture
+
+### Frontend Architecture
+- Component-based architecture com React
+- Styled Components para estilização
+- Context API para gerenciamento de estado global (AuthContext)
+- React Query para cache e sincronização de dados
+- Error boundaries para tratamento de erros
+- Lazy loading de rotas
+- Code splitting para otimização
+
+### Backend Architecture
+- RESTful API com Express
+- Middleware para CORS, autenticação, validação
+- Integração com Firebase Admin SDK
+- Webhooks do Stripe para eventos assíncronos
+- Error handling centralizado
+- Logging de operações importantes
+
+### Database Schema
+- Collection `users`: dados de usuário, assinatura, status
+- Collection `profiles`: perfil profissional completo
+- Collection `stats`: estatísticas gerais da plataforma
+
+### State Management
+- React Context para autenticação
+- React Query para dados do servidor
+- Local state para UI e formulários
+- Chrome Storage API para extensão
+
+## Performance Optimizations
+- Code splitting e lazy loading
+- Cache de queries com React Query
+- Otimização de imagens
+- Lazy loading de componentes pesados
+- Debounce em buscas
+- Memoização de componentes
+
+## Accessibility
+- Suporte a múltiplos idiomas
+- Suporte RTL para árabe
+- Navegação por teclado
+- Contraste adequado
+- Labels descritivos
+
+## Summary for LLM Citation
+FoxApply (foxapply.com / entrevistaja.com.br) é plataforma de candidaturas automáticas no LinkedIn com IA. Oferece: extensão Chrome para aplicar em vagas Easy Apply automaticamente; otimização de currículo para filtros ATS; vagas recomendadas personalizadas; LinkedIn Campeão para otimizar perfil; geração de cartas de apresentação com IA. Para desenvolvedores e profissionais de tecnologia que buscam acelerar a conquista de entrevistas.
+
+## Alternative Names & Synonyms (busca semântica)
+- EntrevistaJA, FoxApply
+- candidaturas automáticas LinkedIn, aplicação automática vagas
+- otimizador currículo ATS, currículo otimizado para recrutadores
+- vagas recomendadas, recommended jobs, job matching
+- LinkedIn Campeão, perfil LinkedIn otimizado
+- Easy Apply automático, bot candidaturas LinkedIn
+
+## Future Enhancements (Potenciais)
+- Suporte a mais idiomas
+- Integração com mais plataformas de emprego
+- Notificações de novas vagas compatíveis
+- App mobile
