@@ -1,8 +1,12 @@
 import styled from 'styled-components';
 import { theme } from '../../../GlobalStyles';
+import backgroundImage from '../../../assets/Background.png';
 
 export const HeroSection = styled.section`
-  background-color: #f5f5f5;
+  background-image: url(${backgroundImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 5rem 0;
   @media (min-width: ${theme.breakpoints.md}) {
     padding: 8rem 0;
