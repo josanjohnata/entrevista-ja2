@@ -46,16 +46,13 @@ export const Panel = styled.div<{ $closing?: boolean }>`
   width: 100%;
   max-width: 640px;
   max-height: 85vh;
-  background: rgba(12, 12, 13, 0.97);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 24px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  box-shadow:
-    0 40px 80px rgba(0, 0, 0, 0.5),
-    0 0 60px rgba(255, 85, 0, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12);
   animation: ${({ $closing }) => ($closing ? 'modalContentOut' : 'modalContentIn')} 0.3s ease forwards;
 `;
 
@@ -65,18 +62,18 @@ export const Panel = styled.div<{ $closing?: boolean }>`
 
 export const PanelHeader = styled.div`
   padding: 16px 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+  background: #fafafa;
 `;
 
 export const PanelTitle = styled.h2`
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 600;
-  color: var(--text-main);
+  color: #171717;
   letter-spacing: -0.01em;
 `;
 
@@ -84,9 +81,9 @@ export const CloseButton = styled.button`
   width: 32px;
   height: 32px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
-  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  color: #525252;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -94,9 +91,9 @@ export const CloseButton = styled.button`
   transition: all 0.25s var(--ease-out-expo);
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(255, 255, 255, 0.15);
+    color: #171717;
+    background: #f5f5f5;
+    border-color: #d4d4d4;
   }
 `;
 
@@ -117,7 +114,7 @@ export const ScoreDisplay = styled.div`
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1;
-  color: #fff;
+  color: #171717;
   display: flex;
   align-items: baseline;
   gap: 2px;
@@ -127,7 +124,7 @@ export const ScoreDisplay = styled.div`
 export const ScorePercent = styled.span`
   font-size: 1.5rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.45);
+  color: #737373;
   letter-spacing: -0.01em;
   margin-left: 3px;
 `;
@@ -144,7 +141,7 @@ export const ProgressBarTrack = styled.div`
   flex: 1;
   height: 6px;
   border-radius: 6px;
-  background: rgba(255, 255, 255, 0.06);
+  background: #e5e5e5;
   overflow: hidden;
 `;
 
@@ -202,8 +199,8 @@ export const TabRow = styled.div`
   display: flex;
   align-items: center;
   padding: 0 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 `;
 
 export const Tab = styled.button<{ $active: boolean; $variant: 'analysis' | 'suggestions' | 'recommendation' }>`
@@ -221,7 +218,7 @@ export const Tab = styled.button<{ $active: boolean; $variant: 'analysis' | 'sug
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: ${({ $active }) => ($active ? 600 : 400)};
-  color: ${({ $active }) => ($active ? '#fff' : 'rgba(255, 255, 255, 0.4)')};
+  color: ${({ $active }) => ($active ? '#171717' : '#737373')};
 
   &::after {
     content: '';
@@ -254,7 +251,7 @@ export const Tab = styled.button<{ $active: boolean; $variant: 'analysis' | 'sug
   }
 
   &:hover {
-    color: rgba(255, 255, 255, 0.7);
+    color: #171717;
     svg { opacity: 0.7; }
     &::after {
       background: ${({ $active, $variant }) => {
@@ -263,7 +260,7 @@ export const Tab = styled.button<{ $active: boolean; $variant: 'analysis' | 'sug
           if ($variant === 'suggestions') return '#f59e0b';
           return 'var(--fox-primary)';
         }
-        return 'rgba(255, 255, 255, 0.06)';
+        return '#e5e5e5';
       }};
     }
   }
@@ -304,7 +301,7 @@ export const AnalysisText = styled.p<{ $warning?: boolean }>`
   font-family: var(--font-body);
   font-size: 0.86rem;
   line-height: 1.7;
-  color: ${({ $warning }) => ($warning ? 'rgba(239, 68, 68, 0.85)' : 'rgba(255, 255, 255, 0.75)')};
+  color: ${({ $warning }) => ($warning ? '#dc2626' : '#525252')};
   margin: 0;
   white-space: pre-wrap;
 `;
@@ -350,7 +347,7 @@ export const SuggestionNumber = styled.span`
 
 export const SuggestionText = styled.p`
   font-size: 0.84rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #404040;
   line-height: 1.55;
   margin: 0;
 `;
@@ -361,7 +358,7 @@ export const SuggestionText = styled.p`
 
 export const Footer = styled.div`
   padding: 14px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -418,9 +415,9 @@ export const BtnOutline = styled.button`
   flex: 1;
   padding: 12px 20px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.84rem;
   font-weight: 500;
@@ -432,9 +429,9 @@ export const BtnOutline = styled.button`
   gap: 8px;
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.14);
+    color: #171717;
+    background: #f5f5f5;
+    border-color: #d4d4d4;
   }
 
   @media (max-width: 640px) {

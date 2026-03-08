@@ -65,7 +65,7 @@ export const LoadingContainer = styled.div`
   align-items: center;
   height: 100vh;
   gap: 36px;
-  background: #08080a;
+  background: #f5f5f5;
   position: relative;
   overflow: hidden;
 
@@ -75,7 +75,7 @@ export const LoadingContainer = styled.div`
     width: 320px;
     height: 320px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(255, 85, 0, 0.04) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(255, 85, 0, 0.06) 0%, transparent 70%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -62%);
@@ -145,7 +145,7 @@ export const LoadingBarTrack = styled.div`
   width: 120px;
   height: 2px;
   border-radius: 2px;
-  background: rgba(255, 255, 255, 0.04);
+  background: #e5e5e5;
   overflow: hidden;
   position: relative;
   animation: ${fadeInUp} 0.8s ease 0.6s both;
@@ -170,7 +170,7 @@ export const LoadingText = styled.div`
   font-family: var(--font-body, 'Satoshi', sans-serif);
   font-size: 0.75rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.22);
+  color: #525252;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   animation: ${fadeInUp} 0.8s ease 0.8s both;
@@ -196,18 +196,19 @@ export const AccessDeniedContainer = styled.div`
   padding: 4rem 2rem;
   min-height: 60vh;
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  background: #f5f5f5;
+  color: #525252;
 
   h2 {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #171717;
     margin-bottom: 12px;
   }
 
   p {
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.45);
+    color: #737373;
     margin-bottom: 8px;
     line-height: 1.6;
 

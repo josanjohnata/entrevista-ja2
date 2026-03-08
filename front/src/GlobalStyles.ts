@@ -225,7 +225,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: var(--font-body);
-    background-color: var(--bg-body);
+    background-color: #f5f5f5;
     color: var(--text-main);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

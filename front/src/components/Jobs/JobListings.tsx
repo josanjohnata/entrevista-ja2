@@ -184,8 +184,8 @@ function formatLocationForApi(info: LocationInfo): string {
    ============================================= */
 
 const AppPanel = styled.div`
-  background: rgba(12, 12, 13, 0.7);
-  border: 1px solid var(--border-light);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -193,15 +193,16 @@ const AppPanel = styled.div`
   animation: fadeUp 0.8s var(--ease-out-expo) 0.3s forwards;
   opacity: 0;
   transform: translateY(20px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 `;
 
 const PanelHeader = styled.div`
   padding: clamp(10px, 1vw + 6px, 14px) clamp(14px, 1.5vw + 8px, 20px);
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+  background: #fafafa;
 `;
 
 const PanelTitleGroup = styled.div`
@@ -214,12 +215,12 @@ const PanelIcon = styled.div`
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: var(--surface-2);
-  border: 1px solid var(--border-light);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-main);
+  color: #171717;
 `;
 
 const PanelTitleText = styled.div`
@@ -227,11 +228,12 @@ const PanelTitleText = styled.div`
     font-family: var(--font-display);
     font-size: 1.05rem;
     font-weight: 600;
+    color: #171717;
   }
 
   p {
     font-size: 0.82rem;
-    color: rgba(255, 255, 255, 0.55);
+    color: #737373;
     margin-top: 2px;
   }
 `;
@@ -240,18 +242,18 @@ const BtnRefresh = styled.button<{ $isLoading?: boolean }>`
   width: 36px;
   height: 36px;
   border-radius: 10px;
-  background: var(--surface-2);
-  border: 1px solid var(--border-light);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
+  color: #525252;
   cursor: pointer;
   transition: var(--transition-fast);
 
   &:hover {
-    color: var(--text-main);
-    background: var(--surface-hover);
+    color: #171717;
+    background: #e5e5e5;
     transform: rotate(180deg);
   }
 
@@ -266,11 +268,11 @@ const PanelFilterRow = styled.div`
   align-items: center;
   gap: 10px;
   font-size: 0.82rem;
-  border-bottom: 1px solid var(--border-light);
+  border-bottom: 1px solid #e5e5e5;
 `;
 
 const FilterLabel = styled.span`
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   font-size: 0.82rem;
   font-weight: 500;
 `;
@@ -279,9 +281,9 @@ const EditableRole = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  color: var(--text-main);
+  color: #171717;
   padding: 6px 12px;
-  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border: 1px dashed #d4d4d4;
   border-radius: 8px;
   cursor: pointer;
   transition: var(--transition-fast);
@@ -292,7 +294,7 @@ const EditableRole = styled.div`
   &:hover {
     border-style: solid;
     border-color: var(--fox-primary);
-    background: var(--fox-surface);
+    background: rgba(255, 85, 0, 0.04);
   }
 `;
 
@@ -304,12 +306,12 @@ const EditableRoleInput = styled.input`
   font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 500;
-  color: var(--text-main);
+  color: #171717;
   background: transparent;
   outline: none;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.2);
+    color: #a3a3a3;
   }
 `;
 
@@ -358,7 +360,7 @@ const AlertTextWrapper = styled.div`
 
   p {
     font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.75);
+    color: #404040;
     font-weight: 600;
     margin: 0;
   }
@@ -366,7 +368,7 @@ const AlertTextWrapper = styled.div`
 
 const AlertSubtext = styled.span`
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: #737373;
   font-weight: 400;
 `;
 
@@ -429,17 +431,17 @@ const Shimmer = styled.div<{ $w?: string; $h?: string; $r?: string; $shrink?: bo
   flex-shrink: ${({ $shrink }) => ($shrink ? 0 : 'initial')};
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, 0.04) 0%,
-    rgba(255, 255, 255, 0.08) 50%,
-    rgba(255, 255, 255, 0.04) 100%
+    #e5e5e5 0%,
+    #f0f0f0 50%,
+    #e5e5e5 100%
   );
   background-size: 200% 100%;
   animation: shimmer 1.6s ease-in-out infinite;
 `;
 
 const SkeletonCard = styled.div<{ $index: number }>`
-  background: rgba(255, 255, 255, 0.01);
-  border: 1px solid var(--border-light);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 14px;
   padding: 18px;
   display: flex;
@@ -490,7 +492,7 @@ const ErrorState = styled.div`
   }
 
   p {
-    color: var(--text-muted);
+    color: #525252;
     margin: 0;
   }
 `;
@@ -590,10 +592,7 @@ const EmptyTitle = styled.h4`
   font-family: var(--font-display);
   font-size: 1.3rem;
   font-weight: 600;
-  background: linear-gradient(180deg, #ffffff 20%, rgba(255, 255, 255, 0.6) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #171717;
   margin: 0 0 10px 0;
   letter-spacing: -0.02em;
   z-index: 1;
@@ -601,7 +600,7 @@ const EmptyTitle = styled.h4`
 
 const EmptyDesc = styled.p`
   font-size: 0.88rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   margin: 0 0 32px 0;
   max-width: 360px;
   line-height: 1.6;
@@ -623,9 +622,9 @@ const EmptyHintBtn = styled.button`
   font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.55);
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #525252;
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   padding: 9px 16px;
   border-radius: 10px;
   letter-spacing: 0.01em;
@@ -635,16 +634,16 @@ const EmptyHintBtn = styled.button`
   svg {
     width: 14px;
     height: 14px;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: all 0.3s var(--ease-out-expo);
   }
 
   &:hover {
-    color: #fff;
+    color: #171717;
     background: rgba(255, 85, 0, 0.08);
     border-color: rgba(255, 85, 0, 0.25);
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 
     svg {
       opacity: 1;
@@ -659,7 +658,7 @@ const Pagination = styled.div`
   align-items: center;
   gap: 16px;
   padding: 12px 20px;
-  border-top: 1px solid var(--border-light);
+  border-top: 1px solid #e5e5e5;
 `;
 
 const PageBtn = styled.button`
@@ -669,9 +668,9 @@ const PageBtn = styled.button`
   padding: 8px 14px;
   min-height: 44px;
   background: transparent;
-  border: 1px solid var(--border-light);
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: inherit;
   font-size: 0.82rem;
   font-weight: 600;
@@ -679,8 +678,8 @@ const PageBtn = styled.button`
   transition: var(--transition-fast);
 
   &:hover:not(:disabled) {
-    background: var(--surface-hover);
-    border-color: rgba(255, 255, 255, 0.2);
+    background: #f5f5f5;
+    border-color: #d4d4d4;
   }
 
   &:disabled {
@@ -691,7 +690,7 @@ const PageBtn = styled.button`
 
 const PageInfo = styled.span`
   font-size: 0.8rem;
-  color: var(--text-muted);
+  color: #525252;
   font-weight: 500;
 `;
 
@@ -984,7 +983,7 @@ export const JobListings: React.FC<JobListingsProps> = ({
         <PanelFilterRow>
           <FilterLabel>{t('recommendedJobs.jobTypeLabel')}</FilterLabel>
           {isEditingRole ? (
-            <EditableRole style={{ borderStyle: 'solid', borderColor: 'var(--fox-primary)', background: 'var(--fox-surface)' }}>
+            <EditableRole style={{ borderStyle: 'solid', borderColor: 'var(--fox-primary)', background: 'rgba(255, 85, 0, 0.04)' }}>
               <EditableRoleInput
                 type="text"
                 value={editedKeywords}

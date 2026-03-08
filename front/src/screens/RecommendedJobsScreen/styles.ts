@@ -6,6 +6,8 @@ export const Wrapper = styled.div`
   min-height: calc(100vh - 80px);
   min-height: calc(100dvh - 80px);
   padding-bottom: clamp(2rem, 3vw, 3rem);
+  background: #f5f5f5;
+  color: #171717;
 `;
 
 export const PageHeader = styled.div`
@@ -26,17 +28,14 @@ export const PageTitle = styled.h1`
   letter-spacing: -0.02em;
   line-height: 1;
   margin-bottom: 14px;
-  background: linear-gradient(180deg, #ffffff 0%, #8a8a93 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #171717;
 `;
 
 export const PageSubtitle = styled.p`
   margin: 0 auto;
   font-size: clamp(0.82rem, 0.78rem + 0.25vw, 0.92rem);
   line-height: 1.4;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
 `;
 
 export const ContentWrapper = styled.div`

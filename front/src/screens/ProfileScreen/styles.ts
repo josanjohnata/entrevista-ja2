@@ -92,22 +92,17 @@ export const LeftColumn = styled.div`
 /* Referral panel — fills remaining left-column height */
 export const ReferralPanel = styled.div`
   flex: 0 1 auto;
-  background: linear-gradient(
-    168deg,
-    rgba(255, 255, 255, 0.018) 0%,
-    rgba(255, 255, 255, 0.008) 100%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 20px;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   animation: ${floatUp} 0.5s var(--ease-out-expo) 0.15s forwards;
   opacity: 0;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   position: relative;
 
-  /* Subtle top accent line */
   &::before {
     content: '';
     position: absolute;
@@ -115,7 +110,7 @@ export const ReferralPanel = styled.div`
     left: 20%;
     right: 20%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 85, 0, 0.15), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 85, 0, 0.2), transparent);
     z-index: 1;
   }
 
@@ -128,8 +123,8 @@ export const ReferralPanel = styled.div`
 export const ReferralTabBar = styled.div`
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  background: rgba(255, 255, 255, 0.01);
+  border-bottom: 1px solid #e5e5e5;
+  background: #fafafa;
   flex-shrink: 0;
   padding: 0 12px;
 `;
@@ -142,7 +137,7 @@ export const ReferralTab = styled.button<{ $active: boolean }>`
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: ${({ $active }) => ($active ? 600 : 400)};
-  color: ${({ $active }) => ($active ? '#fff' : 'rgba(255, 255, 255, 0.35)')};
+  color: ${({ $active }) => ($active ? '#171717' : '#737373')};
   cursor: pointer;
   transition: all 0.3s var(--ease-out-expo);
   display: flex;
@@ -162,21 +157,21 @@ export const ReferralTab = styled.button<{ $active: boolean }>`
     border-radius: 2px 2px 0 0;
     background: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'transparent')};
     transition: all 0.3s var(--ease-out-expo);
-    box-shadow: ${({ $active }) => ($active ? '0 0 8px rgba(255, 85, 0, 0.3)' : 'none')};
+    box-shadow: ${({ $active }) => ($active ? '0 0 8px rgba(255, 85, 0, 0.2)' : 'none')};
   }
 
   svg {
     width: 13px;
     height: 13px;
-    opacity: ${({ $active }) => ($active ? 1 : 0.3)};
+    opacity: ${({ $active }) => ($active ? 1 : 0.5)};
     color: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'inherit')};
     flex-shrink: 0;
     transition: all 0.3s var(--ease-out-expo);
   }
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    svg { opacity: 0.7; }
+    color: #171717;
+    svg { opacity: 0.8; }
   }
 `;
 
@@ -184,12 +179,12 @@ export const ReferralTab = styled.button<{ $active: boolean }>`
 export const ReferralTabContent = styled.div`
   overflow-y: auto;
   scrollbar-width: thin;
-  scrollbar-color: rgba(255, 255, 255, 0.08) transparent;
+  scrollbar-color: #d4d4d4 transparent;
 
   &::-webkit-scrollbar { width: 4px; }
   &::-webkit-scrollbar-track { background: transparent; }
-  &::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.1); border-radius: 2px; }
-  &::-webkit-scrollbar-thumb:hover { background: rgba(255, 85, 0, 0.3); }
+  &::-webkit-scrollbar-thumb { background: #d4d4d4; border-radius: 2px; }
+  &::-webkit-scrollbar-thumb:hover { background: rgba(255, 85, 0, 0.4); }
 `;
 
 /* =============================================
@@ -202,22 +197,16 @@ export const ProfileHero = styled.div`
   align-items: center;
   gap: 10px;
   padding: clamp(16px, 2vw, 24px) clamp(16px, 1.5vw, 20px) clamp(16px, 1.5vw, 20px);
-  background: linear-gradient(
-    168deg,
-    rgba(255, 85, 0, 0.04) 0%,
-    rgba(255, 255, 255, 0.018) 40%,
-    rgba(255, 255, 255, 0.008) 100%
-  );
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 20px;
   transition: border-color 0.4s var(--ease-out-expo), box-shadow 0.4s var(--ease-out-expo);
   animation: ${floatUp} 0.5s var(--ease-out-expo) 0.1s forwards;
   opacity: 0;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   position: relative;
   overflow: hidden;
 
-  /* Subtle top accent line */
   &::before {
     content: '';
     position: absolute;
@@ -225,12 +214,12 @@ export const ProfileHero = styled.div`
     left: 20%;
     right: 20%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 85, 0, 0.2), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 85, 0, 0.25), transparent);
   }
 
   &:hover {
-    border-color: rgba(255, 85, 0, 0.12);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 0 40px rgba(255, 85, 0, 0.03);
+    border-color: rgba(255, 85, 0, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06), 0 0 24px rgba(255, 85, 0, 0.04);
   }
 
   @media (max-width: 1024px) {
@@ -325,7 +314,7 @@ export const AvatarBadge = styled.div`
   height: 18px;
   border-radius: 50%;
   background: #10b981;
-  border: 2px solid #0c0c0d;
+  border: 2px solid #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -361,23 +350,19 @@ export const UserName = styled.h2`
   font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 700;
-  color: #fff;
+  color: #171717;
   letter-spacing: -0.025em;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   max-width: 100%;
-  background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0.78) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 `;
 
 export const UserMeta = styled.p`
   font-family: var(--font-body);
   font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.38);
+  color: #737373;
   margin: 0;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -414,9 +399,9 @@ export const SocialLink = styled.a`
   width: 30px;
   height: 30px;
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  color: rgba(255, 255, 255, 0.35);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
+  color: #525252;
   transition: all 0.3s var(--ease-out-expo);
   text-decoration: none;
 
@@ -439,7 +424,7 @@ export const ProfileHeroActions = styled.div`
   gap: 6px;
   width: 100%;
   padding-top: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #e5e5e5;
 
   @media (max-width: 1024px) {
     flex-direction: row;
@@ -457,10 +442,10 @@ export const ProfileHeroActions = styled.div`
 
 export const ActionBtn = styled.button`
   padding: 8px 14px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 10px;
-  color: rgba(255, 255, 255, 0.55);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 500;
@@ -476,14 +461,14 @@ export const ActionBtn = styled.button`
     width: 14px;
     height: 14px;
     flex-shrink: 0;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: all 0.3s ease;
   }
 
   &:hover:not(:disabled) {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.06);
-    border-color: rgba(255, 255, 255, 0.14);
+    color: #171717;
+    background: #f5f5f5;
+    border-color: #d4d4d4;
     svg { opacity: 1; color: var(--fox-primary); }
   }
 
@@ -494,15 +479,15 @@ export const ActionBtn = styled.button`
 `;
 
 export const CancelActionBtn = styled(ActionBtn)`
-  border-color: rgba(239, 68, 68, 0.12);
-  color: rgba(239, 68, 68, 0.5);
+  border-color: rgba(239, 68, 68, 0.25);
+  color: #dc2626;
 
-  svg { color: rgba(239, 68, 68, 0.4); }
+  svg { color: rgba(239, 68, 68, 0.6); }
 
   &:hover:not(:disabled) {
     color: #ef4444;
     background: rgba(239, 68, 68, 0.06);
-    border-color: rgba(239, 68, 68, 0.25);
+    border-color: rgba(239, 68, 68, 0.35);
     svg { color: #ef4444; opacity: 1; }
   }
 `;
@@ -512,18 +497,17 @@ export const CancelActionBtn = styled(ActionBtn)`
    ============================================= */
 
 export const FormPanel = styled.div`
-  background: rgba(12, 12, 13, 0.6);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 20px;
   overflow: hidden;
   animation: ${floatUp} 0.6s var(--ease-out-expo) 0.18s forwards;
   opacity: 0;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 4px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   position: relative;
 
-  /* Subtle top accent line */
   &::before {
     content: '';
     position: absolute;
@@ -531,18 +515,18 @@ export const FormPanel = styled.div`
     left: 15%;
     right: 15%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(255, 85, 0, 0.12), transparent);
+    background: linear-gradient(90deg, transparent, rgba(255, 85, 0, 0.2), transparent);
     z-index: 1;
   }
 `;
 
 export const FormPanelHeader = styled.div`
   padding: clamp(14px, 1.5vw, 18px) clamp(14px, 2vw, 24px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   gap: 12px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+  background: #fafafa;
   flex-shrink: 0;
 `;
 
@@ -566,14 +550,14 @@ export const FormPanelTitleGroup = styled.div`
     font-family: var(--font-display);
     font-size: 1.08rem;
     font-weight: 650;
-    color: var(--text-main);
+    color: #171717;
     letter-spacing: -0.015em;
   }
 
   p {
     font-family: var(--font-body);
     font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.35);
+    color: #737373;
     margin-top: 2px;
   }
 `;
@@ -587,11 +571,11 @@ export const TabRow = styled.div`
   align-items: center;
   gap: 0;
   padding: 0 clamp(10px, 1.5vw, 16px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #e5e5e5;
   overflow-x: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  background: rgba(255, 255, 255, 0.008);
+  background: #fafafa;
   flex-shrink: 0;
 
   &::-webkit-scrollbar { display: none; }
@@ -611,7 +595,7 @@ export const TabButton = styled.button<{ $active: boolean }>`
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: ${({ $active }) => ($active ? 600 : 400)};
-  color: ${({ $active }) => ($active ? '#fff' : 'rgba(255, 255, 255, 0.35)')};
+  color: ${({ $active }) => ($active ? '#171717' : '#737373')};
   background: transparent;
   cursor: pointer;
   transition: all 0.3s var(--ease-out-expo);
@@ -632,23 +616,23 @@ export const TabButton = styled.button<{ $active: boolean }>`
     border-radius: 2px 2px 0 0;
     background: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'transparent')};
     transition: all 0.3s var(--ease-out-expo);
-    box-shadow: ${({ $active }) => ($active ? '0 0 8px rgba(255, 85, 0, 0.3)' : 'none')};
+    box-shadow: ${({ $active }) => ($active ? '0 0 8px rgba(255, 85, 0, 0.2)' : 'none')};
   }
 
   svg {
     width: 15px;
     height: 15px;
-    opacity: ${({ $active }) => ($active ? 1 : 0.3)};
+    opacity: ${({ $active }) => ($active ? 1 : 0.5)};
     color: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'inherit')};
     transition: all 0.3s var(--ease-out-expo);
     flex-shrink: 0;
   }
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    svg { opacity: 0.75; }
+    color: #171717;
+    svg { opacity: 0.8; }
     &::after {
-      background: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'rgba(255, 255, 255, 0.06)')};
+      background: ${({ $active }) => ($active ? 'var(--fox-primary)' : '#e5e5e5')};
     }
   }
 
@@ -684,7 +668,7 @@ export const FormLabel = styled.label`
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   letter-spacing: 0.01em;
   display: flex;
   align-items: center;
@@ -693,7 +677,7 @@ export const FormLabel = styled.label`
   svg {
     width: 13px;
     height: 13px;
-    opacity: 0.4;
+    opacity: 0.6;
   }
 `;
 
@@ -709,27 +693,27 @@ export const RequiredDot = styled.span`
 export const FormInput = styled.input<{ $error?: boolean }>`
   width: 100%;
   padding: 12px 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid ${({ $error }) => $error ? 'rgba(239, 68, 68, 0.4)' : 'rgba(255, 255, 255, 0.07)'};
+  background: #fafafa;
+  border: 1px solid ${({ $error }) => $error ? 'rgba(239, 68, 68, 0.5)' : '#e5e5e5'};
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: max(16px, clamp(0.82rem, 0.78rem + 0.25vw, 0.86rem));
   outline: none;
   transition: all 0.3s var(--ease-out-expo);
   box-sizing: border-box;
 
-  &::placeholder { color: rgba(255, 255, 255, 0.2); }
+  &::placeholder { color: #a3a3a3; }
 
   &:hover:not(:focus):not(:disabled) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.04);
+    border-color: #d4d4d4;
+    background: #f5f5f5;
   }
 
   &:focus {
-    border-color: rgba(255, 85, 0, 0.35);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.06);
+    border-color: rgba(255, 85, 0, 0.5);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.08);
   }
 
   &:disabled {
@@ -748,10 +732,10 @@ export const FormTextarea = styled.textarea<{ $error?: boolean; $minHeight?: str
   width: 100%;
   padding: 14px 16px;
   padding-right: 22px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid ${({ $error }) => $error ? 'rgba(239, 68, 68, 0.4)' : 'rgba(255, 255, 255, 0.07)'};
+  background: #fafafa;
+  border: 1px solid ${({ $error }) => $error ? 'rgba(239, 68, 68, 0.5)' : '#e5e5e5'};
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: max(16px, clamp(0.82rem, 0.78rem + 0.25vw, 0.86rem));
   line-height: 1.65;
@@ -767,17 +751,17 @@ export const FormTextarea = styled.textarea<{ $error?: boolean; $minHeight?: str
   -ms-overflow-style: none;
   &::-webkit-scrollbar { display: none; }
 
-  &::placeholder { color: rgba(255, 255, 255, 0.2); }
+  &::placeholder { color: #a3a3a3; }
 
   &:hover:not(:focus):not(:disabled) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.04);
+    border-color: #d4d4d4;
+    background: #f5f5f5;
   }
 
   &:focus {
-    border-color: rgba(255, 85, 0, 0.35);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.06);
+    border-color: rgba(255, 85, 0, 0.5);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.08);
   }
 
   &:disabled { opacity: 0.5; cursor: not-allowed; }
@@ -806,22 +790,22 @@ export const ScrollThumb = styled.div<{ $top: number; $height: number }>`
   width: 100%;
   min-height: 24px;
   border-radius: 100px;
-  background: rgba(255, 255, 255, 0.12);
+  background: #d4d4d4;
   transition: background 0.2s ease;
   pointer-events: auto;
   cursor: grab;
 
-  &:hover { background: rgba(255, 255, 255, 0.2); }
-  &:active { background: rgba(255, 255, 255, 0.28); cursor: grabbing; }
+  &:hover { background: #a3a3a3; }
+  &:active { background: #737373; cursor: grabbing; }
 `;
 
 export const FormSelect = styled.select<{ $error?: boolean }>`
   width: 100%;
   padding: 12px 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid ${({ $error }) => $error ? 'rgba(239, 68, 68, 0.4)' : 'rgba(255, 255, 255, 0.07)'};
+  background: #fafafa;
+  border: 1px solid ${({ $error }) => $error ? 'rgba(239, 68, 68, 0.5)' : '#e5e5e5'};
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: max(16px, clamp(0.82rem, 0.78rem + 0.25vw, 0.86rem));
   outline: none;
@@ -829,22 +813,22 @@ export const FormSelect = styled.select<{ $error?: boolean }>`
   box-sizing: border-box;
   cursor: pointer;
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='rgba(255,255,255,0.35)' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23525252' viewBox='0 0 16 16'%3E%3Cpath d='M8 11L3 6h10l-5 5z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
   padding-right: 36px;
 
-  option { background: #1a1a1b; color: var(--text-main); }
+  option { background: #fff; color: #171717; }
 
   &:hover:not(:focus):not(:disabled) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background-color: rgba(255, 255, 255, 0.04);
+    border-color: #d4d4d4;
+    background-color: #f5f5f5;
   }
 
   &:focus {
-    border-color: rgba(255, 85, 0, 0.35);
-    background-color: rgba(255, 255, 255, 0.04);
-    box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.06);
+    border-color: rgba(255, 85, 0, 0.5);
+    background-color: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.08);
   }
 
   &:disabled { opacity: 0.5; cursor: not-allowed; }
@@ -871,8 +855,8 @@ export const ItemsList = styled.div`
 `;
 
 export const ItemCard = styled.div<{ $index?: number }>`
-  background: rgba(255, 255, 255, 0.015);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 16px;
   padding: clamp(14px, 1.5vw, 20px);
   display: flex;
@@ -883,7 +867,7 @@ export const ItemCard = styled.div<{ $index?: number }>`
   animation-delay: ${({ $index }) => (($index ?? 0) * 0.06)}s;
   opacity: 0;
 
-  &:hover { border-color: rgba(255, 255, 255, 0.1); }
+  &:hover { border-color: #d4d4d4; }
 `;
 
 export const ItemHeader = styled.div`
@@ -891,7 +875,7 @@ export const ItemHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid #e5e5e5;
   gap: 12px;
 `;
 
@@ -899,7 +883,7 @@ export const ItemTitle = styled.span`
   font-family: var(--font-display);
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--text-main);
+  color: #171717;
   letter-spacing: -0.01em;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -910,9 +894,9 @@ export const ItemTitle = styled.span`
 export const RemoveButton = styled.button`
   padding: 5px 10px;
   background: transparent;
-  border: 1px solid rgba(239, 68, 68, 0.15);
+  border: 1px solid rgba(239, 68, 68, 0.3);
   border-radius: 8px;
-  color: rgba(239, 68, 68, 0.5);
+  color: #dc2626;
   font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 500;
@@ -926,8 +910,8 @@ export const RemoveButton = styled.button`
   svg { width: 12px; height: 12px; }
 
   &:hover {
-    background: rgba(239, 68, 68, 0.1);
-    border-color: rgba(239, 68, 68, 0.35);
+    background: rgba(239, 68, 68, 0.08);
+    border-color: rgba(239, 68, 68, 0.5);
     color: #ef4444;
   }
 `;
@@ -935,10 +919,10 @@ export const RemoveButton = styled.button`
 export const AddItemButton = styled.button`
   width: 100%;
   padding: 14px;
-  background: rgba(255, 85, 0, 0.03);
-  border: 1px dashed rgba(255, 85, 0, 0.18);
+  background: rgba(255, 85, 0, 0.04);
+  border: 1px dashed rgba(255, 85, 0, 0.3);
   border-radius: 14px;
-  color: rgba(255, 85, 0, 0.65);
+  color: #ea580c;
   font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 500;
@@ -952,8 +936,8 @@ export const AddItemButton = styled.button`
   svg { width: 15px; height: 15px; }
 
   &:hover:not(:disabled) {
-    background: rgba(255, 85, 0, 0.07);
-    border-color: rgba(255, 85, 0, 0.35);
+    background: rgba(255, 85, 0, 0.08);
+    border-color: rgba(255, 85, 0, 0.5);
     color: var(--fox-primary);
     transform: translateY(-1px);
   }
@@ -976,17 +960,16 @@ export const TagItem = styled.div`
   align-items: center;
   gap: 6px;
   padding: 6px 14px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.015) 100%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 10px;
   font-family: var(--font-body);
   font-size: 0.78rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.7);
+  color: #525252;
   letter-spacing: 0.01em;
   transition: all 0.25s var(--ease-out-expo);
   position: relative;
-  backdrop-filter: blur(8px);
 
   &::before {
     content: '';
@@ -998,16 +981,16 @@ export const TagItem = styled.div`
     height: 4px;
     border-radius: 50%;
     background: var(--fox-primary);
-    opacity: 0.5;
+    opacity: 0.6;
     transition: opacity 0.25s ease;
   }
 
   padding-left: 20px;
 
   &:hover {
-    background: linear-gradient(135deg, rgba(255, 85, 0, 0.08) 0%, rgba(255, 85, 0, 0.02) 100%);
-    border-color: rgba(255, 85, 0, 0.18);
-    color: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 85, 0, 0.06);
+    border-color: rgba(255, 85, 0, 0.25);
+    color: #171717;
     &::before { opacity: 1; }
   }
 `;
@@ -1019,16 +1002,16 @@ export const TagRemoveBtn = styled.button`
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.08);
+  background: #e5e5e5;
   border: none;
-  color: rgba(255, 255, 255, 0.4);
+  color: #737373;
   cursor: pointer;
   transition: all 0.2s ease;
   padding: 0;
 
   svg { width: 10px; height: 10px; }
 
-  &:hover { background: rgba(239, 68, 68, 0.3); color: #fff; }
+  &:hover { background: rgba(239, 68, 68, 0.2); color: #fff; }
 `;
 
 export const TagInputRow = styled.div`
@@ -1041,22 +1024,22 @@ export const TagInputRow = styled.div`
 export const TagInput = styled.input`
   flex: 1;
   padding: 9px 16px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 100px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: 0.82rem;
   outline: none;
   transition: all 0.3s var(--ease-out-expo);
   max-width: 280px;
 
-  &::placeholder { color: rgba(255, 255, 255, 0.2); }
+  &::placeholder { color: #a3a3a3; }
 
   &:focus {
-    border-color: rgba(255, 85, 0, 0.3);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.06);
+    border-color: rgba(255, 85, 0, 0.4);
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(255, 85, 0, 0.08);
   }
 
   &:disabled { opacity: 0.4; cursor: not-allowed; }
@@ -1067,7 +1050,7 @@ export const TagAddBtn = styled.button`
   height: 34px;
   border-radius: 50%;
   background: rgba(255, 85, 0, 0.08);
-  border: 1px solid rgba(255, 85, 0, 0.18);
+  border: 1px solid rgba(255, 85, 0, 0.25);
   color: var(--fox-primary);
   cursor: pointer;
   transition: all 0.3s var(--ease-out-expo);
@@ -1080,7 +1063,7 @@ export const TagAddBtn = styled.button`
 
   &:hover:not(:disabled) {
     background: rgba(255, 85, 0, 0.15);
-    border-color: rgba(255, 85, 0, 0.35);
+    border-color: rgba(255, 85, 0, 0.4);
     transform: rotate(90deg) scale(1.05);
   }
 
@@ -1098,7 +1081,7 @@ export const CheckboxRow = styled.label`
   cursor: pointer;
   font-family: var(--font-body);
   font-size: 0.82rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   user-select: none;
   padding: 2px 0;
 
@@ -1124,7 +1107,7 @@ export const SectionDivider = styled.div`
     content: '';
     flex: 1;
     height: 1px;
-    background: rgba(255, 255, 255, 0.05);
+    background: #e5e5e5;
   }
 `;
 
@@ -1132,7 +1115,7 @@ export const SectionLabel = styled.span`
   font-family: var(--font-display);
   font-size: clamp(0.78rem, 0.74rem + 0.2vw, 0.82rem);
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.3);
+  color: #737373;
   white-space: nowrap;
 `;
 
@@ -1142,7 +1125,7 @@ export const SectionLabel = styled.span`
 
 export const FormFooter = styled.div`
   padding: clamp(14px, 1.5vw, 16px) clamp(14px, 2vw, 24px) clamp(16px, 1.5vw, 18px);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-top: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -1210,9 +1193,9 @@ export const BtnOutline = styled.button`
   flex: 1;
   padding: 11px 20px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid #e5e5e5;
   border-radius: 13px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.86rem;
   font-weight: 500;
@@ -1224,9 +1207,9 @@ export const BtnOutline = styled.button`
   gap: 8px;
 
   &:hover:not(:disabled) {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.14);
+    color: #171717;
+    background: #f5f5f5;
+    border-color: #d4d4d4;
   }
 
   &:disabled { opacity: 0.35; cursor: not-allowed; }
@@ -1237,8 +1220,8 @@ export const BtnOutline = styled.button`
 export const Spinner = styled.div`
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  border-top-color: #fff;
+  border: 2px solid #e5e5e5;
+  border-top-color: var(--fox-primary);
   border-radius: 50%;
   animation: spin 0.6s linear infinite;
   @keyframes spin { to { transform: rotate(360deg); } }
@@ -1269,27 +1252,27 @@ export const ModalOverlay = styled.div<{ $closing?: boolean }>`
 export const ModalPanel = styled.div<{ $closing?: boolean }>`
   width: 100%;
   max-width: clamp(320px, 85vw, 500px);
-  background: rgba(12, 12, 13, 0.97);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 22px;
   overflow: hidden;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.5), 0 0 60px rgba(255, 85, 0, 0.04), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.12), 0 0 24px rgba(255, 85, 0, 0.04);
   animation: ${({ $closing }) => ($closing ? 'modalContentOut' : 'modalContentIn')} 0.3s ease forwards;
 `;
 
 export const ModalHeader = styled.div`
   padding: 18px 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.015) 0%, transparent 100%);
+  background: #fafafa;
 
   h3 {
     font-family: var(--font-display);
     font-size: 1.05rem;
     font-weight: 600;
-    color: var(--text-main);
+    color: #171717;
     margin: 0;
   }
 `;
@@ -1298,16 +1281,16 @@ export const ModalCloseButton = styled.button`
   width: 32px;
   height: 32px;
   border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  background: rgba(255, 255, 255, 0.03);
-  color: rgba(255, 255, 255, 0.4);
+  border: 1px solid #e5e5e5;
+  background: #fafafa;
+  color: #525252;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.25s var(--ease-out-expo);
 
-  &:hover { color: #fff; background: rgba(255, 255, 255, 0.07); border-color: rgba(255, 255, 255, 0.15); }
+  &:hover { color: #171717; background: #f5f5f5; border-color: #d4d4d4; }
 `;
 
 export const ModalBody = styled.div`
@@ -1316,7 +1299,7 @@ export const ModalBody = styled.div`
   p {
     font-family: var(--font-body);
     font-size: 0.86rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #525252;
     margin: 0 0 16px 0;
     line-height: 1.5;
   }
@@ -1327,7 +1310,7 @@ export const ModalFooter = styled.div`
   align-items: center;
   gap: 10px;
   padding: 14px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
 `;
 
 /* =============================================
@@ -1375,8 +1358,8 @@ export const AlertCloseBtn = styled.button`
 `;
 
 export const FirstAccessBanner = styled.div`
-  background: linear-gradient(135deg, rgba(255, 85, 0, 0.07) 0%, rgba(255, 85, 0, 0.02) 100%);
-  border: 1px solid rgba(255, 85, 0, 0.12);
+  background: linear-gradient(135deg, rgba(255, 85, 0, 0.08) 0%, rgba(255, 85, 0, 0.03) 100%);
+  border: 1px solid rgba(255, 85, 0, 0.2);
   border-radius: 18px;
   padding: 24px;
   animation: ${tabFadeIn} 0.4s var(--ease-out-expo) forwards;
@@ -1385,7 +1368,7 @@ export const FirstAccessBanner = styled.div`
     font-family: var(--font-display);
     font-size: 1.1rem;
     font-weight: 650;
-    color: var(--text-main);
+    color: #171717;
     margin: 0 0 6px 0;
     display: flex;
     align-items: center;
@@ -1395,7 +1378,7 @@ export const FirstAccessBanner = styled.div`
   p {
     font-family: var(--font-body);
     font-size: 0.84rem;
-    color: rgba(255, 255, 255, 0.45);
+    color: #525252;
     margin: 0;
     line-height: 1.5;
   }
@@ -1408,8 +1391,8 @@ export const FirstAccessActions = styled.div`
 `;
 
 export const AnalysisInfoCard = styled.div`
-  background: rgba(16, 185, 129, 0.04);
-  border: 1px solid rgba(16, 185, 129, 0.1);
+  background: rgba(16, 185, 129, 0.06);
+  border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: 16px;
   padding: 20px;
   position: relative;
@@ -1419,7 +1402,7 @@ export const AnalysisInfoCard = styled.div`
     font-family: var(--font-display);
     font-size: 0.95rem;
     font-weight: 600;
-    color: rgba(16, 185, 129, 0.9);
+    color: #059669;
     margin: 0 0 12px 0;
     display: flex;
     align-items: center;
@@ -1428,26 +1411,27 @@ export const AnalysisInfoCard = styled.div`
 
   .auto-applied {
     padding: 14px;
-    background: rgba(255, 255, 255, 0.02);
+    background: #fafafa;
     border-radius: 12px;
     margin-bottom: 12px;
+    border: 1px solid #e5e5e5;
   }
 
   .keywords {
     margin-bottom: 12px;
-    strong { display: flex; align-items: center; gap: 6px; font-size: 0.84rem; color: rgba(255, 255, 255, 0.55); margin-bottom: 8px; }
+    strong { display: flex; align-items: center; gap: 6px; font-size: 0.84rem; color: #525252; margin-bottom: 8px; }
     .keyword-list { display: flex; flex-wrap: wrap; gap: 6px; }
-    .keyword-tag { padding: 3px 10px; border-radius: 100px; background: rgba(255, 85, 0, 0.06); border: 1px solid rgba(255, 85, 0, 0.12); font-size: 0.78rem; color: rgba(255, 255, 255, 0.65); }
+    .keyword-tag { padding: 3px 10px; border-radius: 100px; background: rgba(255, 85, 0, 0.08); border: 1px solid rgba(255, 85, 0, 0.2); font-size: 0.78rem; color: #525252; }
   }
 
   .suggestions {
-    strong { display: flex; align-items: center; gap: 6px; font-size: 0.84rem; color: rgba(255, 255, 255, 0.55); margin-bottom: 8px; }
-    ul { margin: 0; padding-left: 16px; li { font-size: 0.82rem; color: rgba(255, 255, 255, 0.5); margin-bottom: 4px; line-height: 1.5; } }
+    strong { display: flex; align-items: center; gap: 6px; font-size: 0.84rem; color: #525252; margin-bottom: 8px; }
+    ul { margin: 0; padding-left: 16px; li { font-size: 0.82rem; color: #737373; margin-bottom: 4px; line-height: 1.5; } }
   }
 
   .close-btn {
-    position: absolute; top: 12px; right: 12px; background: none; border: none; color: rgba(255, 255, 255, 0.3); cursor: pointer; padding: 4px; transition: color 0.2s;
-    &:hover { color: rgba(255, 255, 255, 0.6); }
+    position: absolute; top: 12px; right: 12px; background: none; border: none; color: #737373; cursor: pointer; padding: 4px; transition: color 0.2s;
+    &:hover { color: #171717; }
   }
 `;
 
@@ -1516,7 +1500,7 @@ export const EmptyState = styled.div`
   p {
     margin: 0;
     font-size: 0.84rem;
-    color: rgba(255, 255, 255, 0.3);
+    color: #737373;
     letter-spacing: 0.01em;
   }
 `;
@@ -1528,7 +1512,7 @@ export const EmptyState = styled.div`
 export const CenteredMessage = styled.div`
   text-align: center;
   padding: 80px 20px;
-  color: rgba(255, 255, 255, 0.35);
+  color: #737373;
   font-family: var(--font-body);
   font-size: 0.9rem;
 `;

@@ -21,6 +21,8 @@ export const Wrapper = styled.div`
   min-height: calc(100vh - 80px);
   min-height: calc(100dvh - 80px);
   padding-bottom: clamp(2rem, 3vw, 3rem);
+  background: #f5f5f5;
+  color: #171717;
 `;
 
 export const PageHeader = styled.div`
@@ -41,17 +43,14 @@ export const PageTitle = styled.h1`
   letter-spacing: 0.01em;
   line-height: 1.08;
   margin-bottom: 12px;
-  background: linear-gradient(180deg, #ffffff 0%, #8a8a93 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #171717;
 `;
 
 export const PageSubtitle = styled.p`
   margin: 0 auto;
   font-size: clamp(0.82rem, 0.78rem + 0.25vw, 0.92rem);
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   max-width: 460px;
 `;
 
@@ -106,8 +105,8 @@ export const MainColumn = styled.div`
    ============================================= */
 
 export const FormPanel = styled.div`
-  background: rgba(12, 12, 13, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 20px;
   overflow: hidden;
   animation: fadeUp 0.8s var(--ease-out-expo) 0.5s forwards;
@@ -118,15 +117,16 @@ export const FormPanel = styled.div`
   flex-direction: column;
   flex: 1;
   min-height: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 `;
 
 export const FormPanelHeader = styled.div`
   padding: clamp(10px, 1.2vw, 14px) clamp(16px, 2vw, 24px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   gap: clamp(10px, 1.2vw, 14px);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+  background: #fafafa;
 `;
 
 export const FormPanelIcon = styled.div`
@@ -148,13 +148,13 @@ export const FormPanelTitleGroup = styled.div`
     font-family: var(--font-display);
     font-size: 1.05rem;
     font-weight: 600;
-    color: var(--text-main);
+    color: #171717;
     letter-spacing: -0.01em;
   }
 
   p {
     font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: #737373;
     margin-top: 2px;
   }
 `;
@@ -164,10 +164,10 @@ export const LoadProfileBtn = styled.button`
   align-items: center;
   gap: 6px;
   padding: 7px 14px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   border-radius: 9px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.76rem;
   font-weight: 500;
@@ -183,9 +183,9 @@ export const LoadProfileBtn = styled.button`
   }
 
   &:hover:not(:disabled) {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(255, 255, 255, 0.15);
+    color: #171717;
+    background: #e5e5e5;
+    border-color: #d4d4d4;
 
     svg {
       transform: rotate(-180deg);
@@ -239,7 +239,7 @@ export const FormLabel = styled.label`
   font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   letter-spacing: 0.01em;
   display: flex;
   align-items: center;
@@ -264,10 +264,10 @@ export const FormTextarea = styled.textarea`
   width: 100%;
   padding: 14px 16px;
   padding-right: 22px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: 0.86rem;
   line-height: 1.6;
@@ -288,18 +288,18 @@ export const FormTextarea = styled.textarea`
   }
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.32);
+    color: #a3a3a3;
   }
 
   &:hover:not(:focus) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.035);
+    border-color: #d4d4d4;
+    background: #f5f5f5;
   }
 
   &:focus {
-    border-color: rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04);
+    border-color: #0a0a0a;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.06);
   }
 
   &:disabled {
@@ -331,17 +331,17 @@ export const ScrollThumb = styled.div<{ $top: number; $height: number }>`
   width: 100%;
   min-height: 24px;
   border-radius: 100px;
-  background: rgba(255, 255, 255, 0.12);
+  background: rgba(0, 0, 0, 0.15);
   transition: background 0.2s ease;
   pointer-events: auto;
   cursor: grab;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.25);
   }
 
   &:active {
-    background: rgba(255, 255, 255, 0.28);
+    background: rgba(0, 0, 0, 0.35);
     cursor: grabbing;
   }
 `;
@@ -352,14 +352,14 @@ export const ScrollThumb = styled.div<{ $top: number; $height: number }>`
 
 export const AnalysisStatusBar = styled.div`
   padding: 8px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   font-family: var(--font-body);
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
 
   svg {
     width: 14px;
@@ -381,7 +381,7 @@ export const AnalysisStatusHighlight = styled.span`
 
 export const FormFooter = styled.div`
   padding: clamp(10px, 1.2vw, 14px) clamp(16px, 2vw, 24px);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -451,9 +451,9 @@ export const BtnOutline = styled.button`
   flex: 1;
   padding: 13px 24px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.86rem;
   font-weight: 500;
@@ -469,9 +469,9 @@ export const BtnOutline = styled.button`
   }
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.14);
+    color: #171717;
+    background: #f5f5f5;
+    border-color: #d4d4d4;
   }
 
   @media (max-width: 640px) {
@@ -486,8 +486,8 @@ export const BtnOutline = styled.button`
 export const Spinner = styled.div`
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.15);
-  border-top-color: currentColor;
+  border: 2px solid #e5e5e5;
+  border-top-color: var(--fox-primary);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
   flex-shrink: 0;

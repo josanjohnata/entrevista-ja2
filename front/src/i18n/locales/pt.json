@@ -158,7 +158,7 @@
     "filterJobs": "Filtrar Vagas",
     "downloadExtension": "Baixar Extensão",
     "coverLetter": "Carta de Apresentação",
-    "linkedinChampion": "LinkedIn Champion",
+    "linkedinChampion": "LinkedIn Campeão",
     "recommendedJobs": "Vagas Recomendadas",
     "blog": "Blog",
     "logo": "Entrevista Já",
@@ -884,7 +884,7 @@
       "logo": "Entrevista Já",
       "howItWorks": "Como Funciona",
       "features": "Recursos",
-      "linkedinChampion": "LinkedIn Champion",
+      "linkedinChampion": "LinkedIn Campeão",
       "forWho": "Para Quem",
       "testimonials": "Depoimentos",
       "blog": "Blog",
@@ -1003,7 +1003,7 @@
         "description": "Personalizadas em segundos, únicas para cada vaga"
       },
       "feature5": {
-        "title": "LinkedIn Champion",
+        "title": "LinkedIn Campeão",
         "description": "+40% visibilidade, +3x mais conexões com dicas acionáveis"
       },
       "feature6": {
@@ -1187,7 +1187,7 @@
   },
   "linkedinChampion": {
     "hero": {
-      "title": "LinkedIn Champion",
+      "title": "LinkedIn Campeão",
       "subtitle": "Analise seu perfil LinkedIn e receba dicas personalizadas para atrair mais recrutadores e oportunidades de carreira.",
       "feature1": {
         "title": "Aumente sua visibilidade",

@@ -42,6 +42,8 @@ export const Wrapper = styled.div`
   min-height: calc(100vh - 80px);
   min-height: calc(100dvh - 80px);
   padding-bottom: clamp(2rem, 3vw, 3rem);
+  background: #f5f5f5;
+  color: #171717;
 `;
 
 export const PageHeader = styled.div`
@@ -62,17 +64,14 @@ export const PageTitle = styled.h1`
   letter-spacing: 0.01em;
   line-height: 1.08;
   margin-bottom: 12px;
-  background: linear-gradient(180deg, #ffffff 0%, #8a8a93 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #171717;
 `;
 
 export const PageSubtitle = styled.p`
   margin: 0 auto;
   font-size: clamp(0.82rem, 0.78rem + 0.25vw, 0.92rem);
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   max-width: 460px;
 `;
 
@@ -127,8 +126,8 @@ export const MainColumn = styled.div`
    ============================================= */
 
 export const FormPanel = styled.div`
-  background: rgba(12, 12, 13, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 20px;
   overflow: hidden;
   animation: fadeUp 0.8s var(--ease-out-expo) 0.5s forwards;
@@ -138,15 +137,16 @@ export const FormPanel = styled.div`
   display: flex;
   flex-direction: column;
   align-self: stretch;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 `;
 
 export const FormPanelHeader = styled.div`
   padding: clamp(10px, 1.2vw, 14px) clamp(16px, 2vw, 24px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   gap: clamp(10px, 1.2vw, 14px);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+  background: #fafafa;
 `;
 
 export const FormPanelIcon = styled.div`
@@ -169,13 +169,13 @@ export const FormPanelTitleGroup = styled.div`
     font-family: var(--font-display);
     font-size: 1.05rem;
     font-weight: 600;
-    color: var(--text-main);
+    color: #171717;
     letter-spacing: -0.01em;
   }
 
   p {
     font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: #737373;
     margin-top: 2px;
   }
 `;
@@ -189,7 +189,7 @@ export const TabRow = styled.div`
   align-items: center;
   gap: 0;
   padding: 0 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e5e5e5;
 `;
 
 export const TabButton = styled.button<{ $active: boolean }>`
@@ -200,7 +200,7 @@ export const TabButton = styled.button<{ $active: boolean }>`
   font-family: var(--font-body);
   font-size: 0.84rem;
   font-weight: ${({ $active }) => ($active ? 600 : 400)};
-  color: ${({ $active }) => ($active ? '#fff' : 'rgba(255, 255, 255, 0.4)')};
+  color: ${({ $active }) => ($active ? '#171717' : '#737373')};
   background: transparent;
   cursor: pointer;
   transition: all 0.25s var(--ease-out-expo);
@@ -229,14 +229,14 @@ export const TabButton = styled.button<{ $active: boolean }>`
   }
 
   &:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #171717;
 
     svg {
       opacity: 0.7;
     }
 
     &::after {
-      background: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'rgba(255, 255, 255, 0.08)')};
+      background: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'rgba(255, 85, 0, 0.2)')};
     }
   }
 `;
@@ -267,17 +267,17 @@ export const FormLabel = styled.label`
   font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   letter-spacing: 0.01em;
 `;
 
 export const FormInput = styled.input`
   width: 100%;
   padding: 12px 16px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: 0.86rem;
   outline: none;
@@ -285,28 +285,28 @@ export const FormInput = styled.input`
   box-sizing: border-box;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.32);
+    color: #a3a3a3;
   }
 
   &:hover:not(:focus) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.05);
+    border-color: #d4d4d4;
+    background: #f5f5f5;
   }
 
   &:focus {
-    border-color: rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04);
+    border-color: #0a0a0a;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.06);
   }
 `;
 
 export const FormTextarea = styled.textarea`
   width: 100%;
   padding: 14px 16px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: 0.86rem;
   line-height: 1.6;
@@ -319,24 +319,24 @@ export const FormTextarea = styled.textarea`
   min-height: 200px;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.32);
+    color: #a3a3a3;
   }
 
   &:hover:not(:focus) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.05);
+    border-color: #d4d4d4;
+    background: #f5f5f5;
   }
 
   &:focus {
-    border-color: rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04);
+    border-color: #0a0a0a;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.06);
   }
 `;
 
 export const HelpText = styled.p`
   font-size: 0.74rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #737373;
   margin: 0;
 `;
 
@@ -346,7 +346,7 @@ export const HelpText = styled.p`
 
 export const FormFooter = styled.div`
   padding: clamp(10px, 1.2vw, 14px) clamp(16px, 2vw, 24px);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -416,9 +416,9 @@ export const BtnOutline = styled.button`
   flex: 1;
   padding: 13px 24px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.86rem;
   font-weight: 500;
@@ -434,9 +434,9 @@ export const BtnOutline = styled.button`
   }
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.14);
+    color: #171717;
+    background: #f5f5f5;
+    border-color: #d4d4d4;
 
     svg {
       transform: rotate(-180deg);
@@ -472,7 +472,7 @@ export const ScoreDisplay = styled.div`
   font-weight: 700;
   letter-spacing: -0.04em;
   line-height: 1;
-  color: #fff;
+  color: #171717;
   animation: ${scoreGlow} 0.6s var(--ease-out-expo) 0.2s forwards;
   opacity: 0;
 `;
@@ -480,7 +480,7 @@ export const ScoreDisplay = styled.div`
 export const ScoreMax = styled.span`
   font-size: 1.1rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.18);
+  color: #737373;
   letter-spacing: -0.01em;
 `;
 
@@ -496,7 +496,7 @@ export const ProgressBarTrack = styled.div`
   flex: 1;
   height: 4px;
   border-radius: 4px;
-  background: rgba(255, 255, 255, 0.06);
+  background: #e5e5e5;
   overflow: hidden;
 `;
 
@@ -533,7 +533,7 @@ export const AvatarImage = styled.img`
   height: 28px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid #e5e5e5;
   flex-shrink: 0;
 `;
 
@@ -541,12 +541,12 @@ export const AvatarPlaceholder = styled.div`
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.06);
-  border: 2px solid rgba(255, 255, 255, 0.08);
+  background: #f5f5f5;
+  border: 2px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.3);
+  color: #737373;
   flex-shrink: 0;
 `;
 
@@ -554,13 +554,13 @@ export const ProfileName = styled.span`
   font-family: var(--font-display);
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--text-main);
+  color: #171717;
   letter-spacing: -0.01em;
 `;
 
 export const ProfileSubtitle = styled.span`
   font-size: 0.72rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #737373;
 `;
 
 /* --- Result Tabs --- */
@@ -569,8 +569,8 @@ export const ResultTabRow = styled.div`
   display: flex;
   align-items: center;
   padding: 0 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
 `;
 
 export const ResultTab = styled.button<{ $active: boolean; $variant: 'success' | 'warning' | 'tip' }>`
@@ -588,7 +588,7 @@ export const ResultTab = styled.button<{ $active: boolean; $variant: 'success' |
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: ${({ $active }) => ($active ? 600 : 400)};
-  color: ${({ $active }) => ($active ? '#fff' : 'rgba(255, 255, 255, 0.4)')};
+  color: ${({ $active }) => ($active ? '#171717' : '#737373')};
 
   &::after {
     content: '';
@@ -621,7 +621,7 @@ export const ResultTab = styled.button<{ $active: boolean; $variant: 'success' |
   }
 
   &:hover {
-    color: rgba(255, 255, 255, 0.7);
+    color: #171717;
     svg { opacity: 0.7; }
     &::after {
       background: ${({ $active, $variant }) => {
@@ -630,7 +630,7 @@ export const ResultTab = styled.button<{ $active: boolean; $variant: 'success' |
           if ($variant === 'warning') return '#f59e0b';
           return 'var(--fox-primary)';
         }
-        return 'rgba(255, 255, 255, 0.06)';
+        return '#e5e5e5';
       }};
     }
   }
@@ -717,7 +717,7 @@ export const TipIconWrap = styled.div<{ $type: 'positive' | 'improvement' | 'tip
 
 export const TipText = styled.p`
   font-size: 0.84rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #404040;
   line-height: 1.55;
   margin: 0;
 `;
@@ -752,7 +752,7 @@ export const CTABanner = styled.div`
 
 export const EmptyMessage = styled.p`
   font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.3);
+  color: #737373;
   margin: 0;
   padding: 4px 0;
 `;
@@ -764,8 +764,8 @@ export const EmptyMessage = styled.p`
 export const Spinner = styled.div`
   width: 16px;
   height: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.15);
-  border-top-color: currentColor;
+  border: 2px solid #e5e5e5;
+  border-top-color: var(--fox-primary);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
   flex-shrink: 0;

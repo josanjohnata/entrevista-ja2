@@ -27,12 +27,12 @@ const ArrowBtn = styled.div`
   width: 32px;
   height: 32px;
   border-radius: 9px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-muted);
+  color: #525252;
   opacity: 0;
   transform: translate(6px, -6px);
   transition: all 0.35s var(--ease-out-expo);
@@ -91,6 +91,7 @@ const JobTitleRow = styled.div`
     font-family: var(--font-display);
     font-size: clamp(0.95rem, 0.9rem + 0.35vw, 1.08rem);
     font-weight: 600;
+    color: #171717;
     transition: var(--transition-fast);
     white-space: nowrap;
     overflow: hidden;
@@ -101,19 +102,19 @@ const JobTitleRow = styled.div`
 const JobTag = styled.span<{ $highlight?: boolean }>`
   font-size: clamp(0.68rem, 0.64rem + 0.2vw, 0.72rem);
   padding: 5px 10px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-light);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   border-radius: 7px;
-  color: ${({ $highlight }) => ($highlight ? 'var(--text-main)' : 'var(--text-muted)')};
+  color: ${({ $highlight }) => ($highlight ? '#171717' : '#525252')};
   font-weight: 600;
   transition: var(--transition-fast);
   white-space: nowrap;
-  border-color: ${({ $highlight }) => ($highlight ? 'rgba(255, 255, 255, 0.15)' : 'var(--border-light)')};
+  border-color: ${({ $highlight }) => ($highlight ? '#d4d4d4' : '#e5e5e5')};
 `;
 
 const Card = styled.div<{ $index: number; $baseDelay: number }>`
-  background: rgba(255, 255, 255, 0.01);
-  border: 1px solid var(--border-light);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 14px;
   padding: clamp(14px, 1.2vw + 10px, 18px);
   display: flex;
@@ -129,6 +130,7 @@ const Card = styled.div<{ $index: number; $baseDelay: number }>`
   opacity: 0;
   transform: translateY(20px) scale(0.97);
   will-change: transform, opacity;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 
   &::before {
     content: '';
@@ -136,7 +138,7 @@ const Card = styled.div<{ $index: number; $baseDelay: number }>`
     inset: 0;
     background: radial-gradient(
       600px circle at var(--mouse-x, 50%) var(--mouse-y, -20%),
-      rgba(255, 255, 255, 0.05),
+      rgba(255, 85, 0, 0.03),
       transparent 40%
     );
     opacity: 0;
@@ -145,10 +147,10 @@ const Card = styled.div<{ $index: number; $baseDelay: number }>`
   }
 
   &:hover {
-    background-color: var(--surface-hover);
-    border-color: rgba(255, 255, 255, 0.15);
+    background-color: #fafafa;
+    border-color: #d4d4d4;
     transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
 
   &:hover::before {
@@ -172,12 +174,12 @@ const Card = styled.div<{ $index: number; $baseDelay: number }>`
   }
 
   &:hover ${JobTitleRow} h3 {
-    color: #fff;
+    color: #171717;
   }
 
   &:hover ${JobTag} {
-    border-color: rgba(255, 255, 255, 0.1);
-    color: var(--text-main);
+    border-color: #d4d4d4;
+    color: #171717;
   }
 `;
 
@@ -194,15 +196,15 @@ const JobLogoPlaceholder = styled.div`
   height: 44px;
   border-radius: 11px;
   flex-shrink: 0;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.02));
-  border: 1px solid var(--border-light);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-muted);
+  color: #737373;
   text-transform: uppercase;
   user-select: none;
 `;
@@ -213,7 +215,7 @@ const JobLogo = styled.img`
   border-radius: 11px;
   flex-shrink: 0;
   object-fit: cover;
-  border: 1px solid var(--border-light);
+  border: 1px solid #e5e5e5;
 `;
 
 const JobTextGroup = styled.div`
@@ -231,20 +233,20 @@ const PostTime = styled.span<{ $recent: boolean }>`
   white-space: nowrap;
   flex-shrink: 0;
 
-  color: ${({ $recent }) => ($recent ? 'var(--fox-primary)' : 'var(--text-muted)')};
-  background: ${({ $recent }) => ($recent ? 'var(--fox-surface)' : 'rgba(255, 255, 255, 0.05)')};
+  color: ${({ $recent }) => ($recent ? 'var(--fox-primary)' : '#737373')};
+  background: ${({ $recent }) => ($recent ? 'rgba(255, 85, 0, 0.08)' : '#f5f5f5')};
 `;
 
 const JobMeta = styled.p`
   font-size: clamp(0.78rem, 0.74rem + 0.25vw, 0.84rem);
-  color: rgba(255, 255, 255, 0.55);
+  color: #525252;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 `;
 
 const Dot = styled.span`
-  color: var(--border-highlight);
+  color: #d4d4d4;
   margin: 0 4px;
 `;
 

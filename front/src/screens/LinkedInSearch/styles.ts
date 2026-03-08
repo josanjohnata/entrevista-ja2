@@ -26,6 +26,8 @@ export const Wrapper = styled.div`
   min-height: calc(100vh - 80px);
   min-height: calc(100dvh - 80px);
   padding-bottom: clamp(2rem, 3vw, 3rem);
+  background: #f5f5f5;
+  color: #171717;
 `;
 
 export const PageHeader = styled.div`
@@ -46,17 +48,14 @@ export const PageTitle = styled.h1`
   letter-spacing: -0.02em;
   line-height: 1;
   margin-bottom: 12px;
-  background: linear-gradient(180deg, #ffffff 0%, #8a8a93 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #171717;
 `;
 
 export const PageSubtitle = styled.p`
   margin: 0 auto;
   font-size: clamp(0.82rem, 0.78rem + 0.25vw, 0.92rem);
   line-height: 1.5;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   max-width: 460px;
 `;
 
@@ -104,25 +103,24 @@ export const DashboardGrid = styled.div`
    ============================================= */
 
 export const FormPanel = styled.div`
-  background: rgba(12, 12, 13, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 20px;
-  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   overflow: visible;
   animation: fadeUp 0.8s var(--ease-out-expo) 0.5s forwards;
   opacity: 0;
   transform: translateY(20px);
   position: relative;
-
 `;
 
 export const FormPanelHeader = styled.div`
   padding: clamp(10px, 1.2vw, 14px) clamp(16px, 2vw, 24px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   gap: clamp(10px, 1.2vw, 14px);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) 0%, transparent 100%);
+  background: #fafafa;
 `;
 
 export const FormPanelIcon = styled.div`
@@ -144,13 +142,13 @@ export const FormPanelTitleGroup = styled.div`
     font-family: var(--font-display);
     font-size: 1.05rem;
     font-weight: 600;
-    color: var(--text-main);
+    color: #171717;
     letter-spacing: -0.01em;
   }
 
   p {
     font-size: 0.78rem;
-    color: rgba(255, 255, 255, 0.4);
+    color: #737373;
     margin-top: 2px;
   }
 `;
@@ -164,7 +162,7 @@ export const TabRow = styled.div`
   align-items: center;
   gap: 0;
   padding: 0 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e5e5e5;
 `;
 
 export const TabButton = styled.button<{ $active: boolean }>`
@@ -175,7 +173,7 @@ export const TabButton = styled.button<{ $active: boolean }>`
   font-family: var(--font-body);
   font-size: 0.84rem;
   font-weight: ${({ $active }) => ($active ? 600 : 400)};
-  color: ${({ $active }) => ($active ? '#fff' : 'rgba(255, 255, 255, 0.4)')};
+  color: ${({ $active }) => ($active ? '#171717' : '#737373')};
   background: transparent;
   cursor: pointer;
   transition: all 0.25s var(--ease-out-expo);
@@ -204,14 +202,14 @@ export const TabButton = styled.button<{ $active: boolean }>`
   }
 
   &:hover {
-    color: rgba(255, 255, 255, 0.75);
+    color: #171717;
 
     svg {
       opacity: 0.7;
     }
 
     &::after {
-      background: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'rgba(255, 255, 255, 0.08)')};
+      background: ${({ $active }) => ($active ? 'var(--fox-primary)' : 'rgba(255, 85, 0, 0.2)')};
     }
   }
 `;
@@ -241,17 +239,17 @@ export const FormLabel = styled.label`
   font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   letter-spacing: 0.01em;
 `;
 
 export const FormInput = styled.input`
   width: 100%;
   padding: 12px 16px;
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: 0.86rem;
   outline: none;
@@ -259,18 +257,18 @@ export const FormInput = styled.input`
   box-sizing: border-box;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.32);
+    color: #a3a3a3;
   }
 
   &:hover:not(:focus) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.035);
+    border-color: #d4d4d4;
+    background: #f5f5f5;
   }
 
   &:focus {
-    border-color: rgba(255, 255, 255, 0.18);
-    background: rgba(255, 255, 255, 0.04);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04);
+    border-color: #0a0a0a;
+    background: #fff;
+    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.06);
   }
 
   &[type="number"] {
@@ -306,12 +304,10 @@ export const SelectButton = styled.button<{ $isOpen?: boolean }>`
   width: 100%;
   padding: 12px 16px;
   padding-right: 42px;
-  background: ${({ $isOpen }) =>
-    $isOpen ? 'rgba(255, 255, 255, 0.04)' : 'rgba(255, 255, 255, 0.025)'};
-  border: 1px solid ${({ $isOpen }) =>
-    $isOpen ? 'rgba(255, 255, 255, 0.18)' : 'rgba(255, 255, 255, 0.07)'};
+  background: ${({ $isOpen }) => ($isOpen ? '#f5f5f5' : '#fafafa')};
+  border: 1px solid ${({ $isOpen }) => ($isOpen ? '#0a0a0a' : '#e5e5e5')};
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: 0.86rem;
   cursor: pointer;
@@ -322,18 +318,18 @@ export const SelectButton = styled.button<{ $isOpen?: boolean }>`
   align-items: center;
 
   ${({ $isOpen }) => $isOpen && `
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.06);
   `}
 
   &:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04);
+    border-color: #0a0a0a;
+    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.06);
   }
 
   &:hover:not(:focus) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.035);
+    border-color: #d4d4d4;
+    background: #f5f5f5;
   }
 `;
 
@@ -343,7 +339,7 @@ export const SelectIcon = styled.span<{ $isOpen?: boolean }>`
   top: 50%;
   transform: translateY(-50%) ${({ $isOpen }) => ($isOpen ? 'rotate(180deg)' : 'rotate(0)')};
   transition: transform 0.3s var(--ease-out-expo);
-  color: rgba(255, 255, 255, 0.25);
+  color: #737373;
   pointer-events: none;
   display: flex;
   align-items: center;
@@ -354,10 +350,10 @@ export const SelectDropdown = styled.div<{ $isOpen?: boolean }>`
   top: calc(100% + 8px);
   left: 0;
   right: 0;
-  background: rgb(20, 20, 22);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 14px;
-  box-shadow: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   z-index: 1000;
   overflow: hidden;
   max-height: min(300px, 60vh);
@@ -373,10 +369,8 @@ export const SelectOption = styled.button<{ $isSelected?: boolean }>`
   width: 100%;
   padding: 10px 14px;
   border: none;
-  background: ${({ $isSelected }) =>
-    $isSelected ? 'rgba(255, 85, 0, 0.08)' : 'transparent'};
-  color: ${({ $isSelected }) =>
-    $isSelected ? '#fff' : 'rgba(255, 255, 255, 0.6)'};
+  background: ${({ $isSelected }) => ($isSelected ? 'rgba(255, 85, 0, 0.08)' : 'transparent')};
+  color: ${({ $isSelected }) => ($isSelected ? '#171717' : '#525252')};
   font-family: var(--font-body);
   font-size: 0.84rem;
   font-weight: ${({ $isSelected }) => ($isSelected ? 600 : 400)};
@@ -394,8 +388,8 @@ export const SelectOption = styled.button<{ $isSelected?: boolean }>`
   }
 
   &:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
+    background: #f5f5f5;
+    color: #171717;
   }
 `;
 
@@ -407,12 +401,10 @@ export const MultiSelectButton = styled.button<{ $isOpen?: boolean }>`
   width: 100%;
   min-height: 46px;
   padding: 8px 42px 8px 16px;
-  background: ${({ $isOpen }) =>
-    $isOpen ? 'rgba(255, 255, 255, 0.04)' : 'rgba(255, 255, 255, 0.025)'};
-  border: 1px solid ${({ $isOpen }) =>
-    $isOpen ? 'rgba(255, 255, 255, 0.18)' : 'rgba(255, 255, 255, 0.07)'};
+  background: ${({ $isOpen }) => ($isOpen ? '#f5f5f5' : '#fafafa')};
+  border: 1px solid ${({ $isOpen }) => ($isOpen ? '#0a0a0a' : '#e5e5e5')};
   border-radius: 12px;
-  color: var(--text-main);
+  color: #171717;
   font-family: var(--font-body);
   font-size: 0.86rem;
   cursor: pointer;
@@ -422,18 +414,18 @@ export const MultiSelectButton = styled.button<{ $isOpen?: boolean }>`
   position: relative;
 
   ${({ $isOpen }) => $isOpen && `
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04);
+    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.06);
   `}
 
   &:focus {
     outline: none;
-    border-color: rgba(255, 255, 255, 0.18);
-    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.04);
+    border-color: #0a0a0a;
+    box-shadow: 0 0 0 3px rgba(10, 10, 10, 0.06);
   }
 
   &:hover:not(:focus) {
-    border-color: rgba(255, 255, 255, 0.12);
-    background: rgba(255, 255, 255, 0.035);
+    border-color: #d4d4d4;
+    background: #f5f5f5;
   }
 `;
 
@@ -444,7 +436,7 @@ export const MultiSelectContent = styled.div`
 `;
 
 export const MultiSelectPlaceholder = styled.span`
-  color: rgba(255, 255, 255, 0.32);
+  color: #a3a3a3;
 `;
 
 export const TagsContainer = styled.div`
@@ -490,10 +482,8 @@ export const MultiSelectOption = styled.button<{ $isSelected?: boolean }>`
   width: 100%;
   padding: 10px 14px;
   border: none;
-  background: ${({ $isSelected }) =>
-    $isSelected ? 'rgba(255, 85, 0, 0.06)' : 'transparent'};
-  color: ${({ $isSelected }) =>
-    $isSelected ? '#fff' : 'rgba(255, 255, 255, 0.6)'};
+  background: ${({ $isSelected }) => ($isSelected ? 'rgba(255, 85, 0, 0.08)' : 'transparent')};
+  color: ${({ $isSelected }) => ($isSelected ? '#171717' : '#525252')};
   font-family: var(--font-body);
   font-size: 0.84rem;
   text-align: left;
@@ -505,8 +495,8 @@ export const MultiSelectOption = styled.button<{ $isSelected?: boolean }>`
   border-radius: 10px;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
+    background: #f5f5f5;
+    color: #171717;
   }
 `;
 
@@ -516,11 +506,9 @@ export const Checkbox = styled.span<{ $isChecked?: boolean }>`
   justify-content: center;
   width: 18px;
   height: 18px;
-  border: 1.5px solid ${({ $isChecked }) =>
-    $isChecked ? 'var(--fox-primary)' : 'rgba(255, 255, 255, 0.12)'};
+  border: 1.5px solid ${({ $isChecked }) => ($isChecked ? 'var(--fox-primary)' : '#d4d4d4')};
   border-radius: 6px;
-  background: ${({ $isChecked }) =>
-    $isChecked ? 'var(--fox-primary)' : 'transparent'};
+  background: ${({ $isChecked }) => ($isChecked ? 'var(--fox-primary)' : 'transparent')};
   color: #fff;
   transition: all 0.2s var(--ease-out-expo);
   flex-shrink: 0;
@@ -536,7 +524,7 @@ export const Checkbox = styled.span<{ $isChecked?: boolean }>`
 
 export const FormFooter = styled.div`
   padding: clamp(10px, 1.2vw, 14px) clamp(16px, 2vw, 24px);
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -602,9 +590,9 @@ export const BtnOutline = styled.button<{ $disabled?: boolean }>`
   flex: 1;
   padding: 13px 24px;
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.07);
+  border: 1px solid #e5e5e5;
   border-radius: 12px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.86rem;
   font-weight: 500;
@@ -623,9 +611,9 @@ export const BtnOutline = styled.button<{ $disabled?: boolean }>`
   }
 
   &:hover:not(:disabled) {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(255, 255, 255, 0.14);
+    color: #171717;
+    background: #f5f5f5;
+    border-color: #d4d4d4;
 
     svg {
       transform: rotate(-180deg);
@@ -651,7 +639,7 @@ export const KeyboardHints = styled.div`
   justify-content: center;
   gap: 20px;
   padding: 12px 24px;
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-top: 1px solid #e5e5e5;
 
   @media (max-width: 640px) {
     display: none;
@@ -663,7 +651,7 @@ export const KbdHint = styled.span`
   align-items: center;
   gap: 6px;
   font-size: 0.74rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: #737373;
   letter-spacing: 0.02em;
 `;
 
@@ -672,11 +660,11 @@ export const Kbd = styled.kbd`
   font-size: 0.7rem;
   font-weight: 500;
   padding: 3px 8px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   border-radius: 6px;
-  color: rgba(255, 255, 255, 0.45);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  color: #525252;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
 `;
 
 /* =============================================

@@ -34,14 +34,9 @@ export const PremiumHeaderBar = styled.div`
   align-items: center;
   padding: 8px 16px;
   border-radius: 22px;
-  background: rgba(8, 8, 9, 0.88);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 255, 255, 0.07);
-  border-top: 1px solid rgba(255, 255, 255, 0.13);
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.4),
-    0 16px 32px -8px rgba(0, 0, 0, 0.7);
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
   gap: 0;
 `;
 
@@ -64,7 +59,7 @@ export const BrandName = styled.div`
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: #171717;
   letter-spacing: -0.025em;
   line-height: 1;
 
@@ -76,7 +71,7 @@ export const BrandName = styled.div`
 export const Divider = styled.div`
   width: 1px;
   height: 24px;
-  background: rgba(255, 255, 255, 0.08);
+  background: #e5e5e5;
   flex-shrink: 0;
 `;
 
@@ -114,7 +109,7 @@ export const NavLink = styled(Link)<{ $active?: boolean }>`
   align-items: center;
   gap: 6px;
   text-decoration: none;
-  color: ${({ $active }) => ($active ? 'var(--text-main)' : 'rgba(255, 255, 255, 0.55)')};
+  color: ${({ $active }) => ($active ? '#171717' : '#525252')};
   font-size: 0.82rem;
   font-weight: 500;
   padding: 7px 11px;
@@ -122,14 +117,12 @@ export const NavLink = styled(Link)<{ $active?: boolean }>`
   transition: var(--transition-fast);
   white-space: nowrap;
   letter-spacing: 0.01em;
-  background: ${({ $active }) =>
-    $active ? 'rgba(255, 255, 255, 0.06)' : 'transparent'};
-  border: 1px solid ${({ $active }) =>
-    $active ? 'rgba(255, 255, 255, 0.08)' : 'transparent'};
+  background: ${({ $active }) => ($active ? '#f5f5f5' : 'transparent')};
+  border: 1px solid ${({ $active }) => ($active ? '#e5e5e5' : 'transparent')};
 
   &:hover {
-    color: var(--text-main);
-    background: rgba(255, 255, 255, 0.05);
+    color: #171717;
+    background: #f5f5f5;
   }
 `;
 
@@ -153,7 +146,7 @@ export const ActionLink = styled.a`
   display: flex;
   align-items: center;
   gap: 7px;
-  color: var(--text-muted);
+  color: #525252;
   text-decoration: none;
   font-size: 0.82rem;
   font-weight: 400;
@@ -164,8 +157,8 @@ export const ActionLink = styled.a`
   letter-spacing: 0.01em;
 
   &:hover {
-    color: var(--text-main);
-    background: rgba(255, 255, 255, 0.05);
+    color: #171717;
+    background: #f5f5f5;
   }
 
   @media (max-width: 768px) {
@@ -184,18 +177,18 @@ export const MobileMenuButton = styled.button`
   width: 44px;
   height: 44px;
   border-radius: 12px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.6);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
+  color: #525252;
   cursor: pointer;
   transition: var(--transition-fast);
   flex-shrink: 0;
   margin-left: auto;
 
   &:hover {
-    color: var(--text-main);
-    background: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.15);
+    color: #171717;
+    background: #e5e5e5;
+    border-color: #d4d4d4;
   }
 
   @media (max-width: 1024px) {
@@ -249,9 +242,9 @@ export const MobileDrawer = styled.div<{ $isOpen: boolean; $isClosing: boolean }
   bottom: 0;
   width: min(340px, 85vw);
   z-index: 301;
-  background: rgba(12, 12, 14, 0.98);
-  border-left: 1px solid rgba(255, 255, 255, 0.07);
-  box-shadow: -16px 0 48px rgba(0, 0, 0, 0.5);
+  background: #fff;
+  border-left: 1px solid #e5e5e5;
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.08);
   flex-direction: column;
   overflow-y: auto;
 
@@ -266,7 +259,7 @@ export const DrawerHeader = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid #e5e5e5;
 `;
 
 export const DrawerBrand = styled.div`
@@ -279,7 +272,7 @@ export const DrawerBrandName = styled.span`
   font-family: var(--font-display);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: #171717;
   letter-spacing: -0.02em;
 
   span {
@@ -291,19 +284,19 @@ export const DrawerCloseBtn = styled.button`
   width: 44px;
   height: 44px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: rgba(255, 255, 255, 0.35);
+  color: #525252;
   cursor: pointer;
   transition: var(--transition-fast);
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(255, 255, 255, 0.12);
+    color: #171717;
+    background: #e5e5e5;
+    border-color: #d4d4d4;
   }
 `;
 
@@ -320,26 +313,24 @@ export const DrawerNavLink = styled(Link)<{ $active?: boolean }>`
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: ${({ $active }) => ($active ? '#fff' : 'rgba(255, 255, 255, 0.55)')};
+  color: ${({ $active }) => ($active ? '#171717' : '#525252')};
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: ${({ $active }) => ($active ? 600 : 400)};
   padding: 12px 14px;
   border-radius: 12px;
   transition: var(--transition-fast);
-  background: ${({ $active }) =>
-    $active ? 'rgba(255, 85, 0, 0.08)' : 'transparent'};
-  border-left: 3px solid ${({ $active }) =>
-    $active ? 'var(--fox-primary)' : 'transparent'};
+  background: ${({ $active }) => ($active ? 'rgba(255, 85, 0, 0.08)' : 'transparent')};
+  border-left: 3px solid ${({ $active }) => ($active ? 'var(--fox-primary)' : 'transparent')};
 
   svg {
     flex-shrink: 0;
-    opacity: ${({ $active }) => ($active ? 1 : 0.5)};
+    opacity: ${({ $active }) => ($active ? 1 : 0.6)};
   }
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.04);
+    color: #171717;
+    background: #f5f5f5;
   }
 `;
 
@@ -348,7 +339,7 @@ export const DrawerExternalLink = styled.a<{ $active?: boolean }>`
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.55);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 400;
@@ -360,24 +351,24 @@ export const DrawerExternalLink = styled.a<{ $active?: boolean }>`
 
   svg {
     flex-shrink: 0;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.04);
+    color: #171717;
+    background: #f5f5f5;
   }
 `;
 
 export const DrawerDivider = styled.div`
   height: 1px;
-  background: rgba(255, 255, 255, 0.06);
+  background: #e5e5e5;
   margin: 8px 14px;
 `;
 
 export const DrawerFooter = styled.div`
   padding: 16px;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-top: 1px solid #e5e5e5;
 `;
 
 export const DrawerLogoutBtn = styled.button`
@@ -385,7 +376,7 @@ export const DrawerLogoutBtn = styled.button`
   align-items: center;
   gap: 12px;
   width: 100%;
-  color: rgba(255, 255, 255, 0.45);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.88rem;
   font-weight: 400;
@@ -399,7 +390,7 @@ export const DrawerLogoutBtn = styled.button`
 
   svg {
     flex-shrink: 0;
-    opacity: 0.5;
+    opacity: 0.6;
   }
 
   &:hover {
@@ -511,19 +502,10 @@ export const UserMenuDropdown = styled.div<{ $isClosing?: boolean }>`
   top: calc(100% + 10px);
   right: -4px;
   width: 248px;
-  background: linear-gradient(
-    180deg,
-    rgba(22, 20, 18, 0.98) 0%,
-    rgba(14, 14, 16, 0.98) 100%
-  );
-  backdrop-filter: blur(40px) saturate(1.6);
-  -webkit-backdrop-filter: blur(40px) saturate(1.6);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 16px;
-  box-shadow:
-    0 32px 64px -16px rgba(0, 0, 0, 0.8),
-    0 0 0 1px rgba(0, 0, 0, 0.25),
-    0 0 48px -12px rgba(255, 85, 0, 0.06);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   z-index: 210;
   transform-origin: top right;
   animation: ${({ $isClosing }) => ($isClosing ? dropdownHide : dropdownReveal)}
@@ -551,12 +533,7 @@ export const DropdownUserInfo = styled.div`
     left: 16px;
     right: 16px;
     height: 1px;
-    background: linear-gradient(
-      90deg,
-      rgba(255, 85, 0, 0.2),
-      rgba(255, 255, 255, 0.04) 50%,
-      transparent
-    );
+    background: #e5e5e5;
   }
 `;
 
@@ -597,7 +574,7 @@ export const DropdownUserNameText = styled.span`
   font-family: var(--font-display);
   font-size: 0.82rem;
   font-weight: 600;
-  color: #fff;
+  color: #171717;
   letter-spacing: -0.01em;
   white-space: nowrap;
   overflow: hidden;
@@ -608,7 +585,7 @@ export const DropdownUserNameText = styled.span`
 export const DropdownUserEmail = styled.span`
   font-family: var(--font-body);
   font-size: 0.68rem;
-  color: rgba(255, 255, 255, 0.32);
+  color: #737373;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -639,7 +616,7 @@ export const DropdownMenuItems = styled.div`
 
 export const DropdownDivider = styled.div`
   height: 1px;
-  background: rgba(255, 255, 255, 0.04);
+  background: #e5e5e5;
   margin: 2px 10px;
 `;
 
@@ -652,7 +629,7 @@ export const DropdownMenuLink = styled(Link)`
   border: none;
   border-radius: 10px;
   background: transparent;
-  color: rgba(255, 255, 255, 0.5);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 450;
@@ -667,18 +644,17 @@ export const DropdownMenuLink = styled(Link)`
     flex-shrink: 0;
     width: 16px;
     height: 16px;
-    opacity: 0.35;
+    opacity: 0.6;
     transition: all 0.15s ease;
   }
 
   &:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, 0.04);
+    color: #171717;
+    background: #f5f5f5;
 
     svg {
       opacity: 1;
       color: var(--fox-primary);
-      filter: drop-shadow(0 0 4px rgba(255, 85, 0, 0.3));
     }
   }
 `;
@@ -692,7 +668,7 @@ export const DropdownLogoutItem = styled.button`
   border: none;
   border-radius: 10px;
   background: transparent;
-  color: rgba(255, 255, 255, 0.3);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.8rem;
   font-weight: 450;
@@ -706,18 +682,17 @@ export const DropdownLogoutItem = styled.button`
     flex-shrink: 0;
     width: 16px;
     height: 16px;
-    opacity: 0.3;
+    opacity: 0.6;
     transition: all 0.15s ease;
   }
 
   &:hover {
-    color: #f87171;
-    background: rgba(248, 113, 113, 0.04);
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.06);
 
     svg {
       opacity: 1;
-      color: #f87171;
-      filter: drop-shadow(0 0 4px rgba(248, 113, 113, 0.3));
+      color: #ef4444;
     }
   }
 `;

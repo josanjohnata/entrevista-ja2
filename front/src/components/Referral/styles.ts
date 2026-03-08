@@ -45,12 +45,11 @@ export const ReferralContainer = styled.div`
 `;
 
 export const ReferralBlock = styled.div`
-  background: rgba(255, 255, 255, 0.015);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: transparent;
+  border: none;
   border-radius: 18px;
   padding: clamp(0.5rem, 1.5vw, 0.75rem);
   position: relative;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
 
   @media (max-width: 640px) {
     border-radius: 14px;
@@ -75,8 +74,8 @@ export const ReferralGrid = styled.div<{ $columns?: number }>`
    ============================================= */
 
 const cardBase = `
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid rgba(255, 255, 255, 0.05);
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 14px;
   padding: clamp(0.875rem, 2vw, 1.125rem) clamp(0.875rem, 2.5vw, 1.25rem);
   display: flex;
@@ -86,8 +85,8 @@ const cardBase = `
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    border-color: rgba(255, 255, 255, 0.09);
-    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
+    border-color: #d4d4d4;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
   }
 `;
 
@@ -147,7 +146,7 @@ export const CardTitle = styled.h3`
   font-family: var(--font-display);
   font-size: 0.92rem;
   font-weight: 650;
-  color: var(--text-main);
+  color: #171717;
   letter-spacing: -0.01em;
   margin: 0;
 `;
@@ -164,7 +163,7 @@ export const ReferralTitle = styled.h2`
   font-size: 1rem;
   font-weight: 600;
   margin: 0 0 4px 0;
-  color: var(--text-main);
+  color: #171717;
   letter-spacing: -0.01em;
 
   svg {
@@ -174,7 +173,7 @@ export const ReferralTitle = styled.h2`
 
 export const ReferralMessage = styled.p`
   font-family: var(--font-body);
-  color: rgba(255, 255, 255, 0.4);
+  color: #525252;
   font-size: 0.82rem;
   text-align: center;
   margin: 0;
@@ -186,7 +185,7 @@ export const ReferralMessage = styled.p`
    ============================================= */
 
 export const ReferralDescription = styled.p`
-  color: rgba(255, 255, 255, 0.4);
+  color: #525252;
   font-family: var(--font-body);
   font-size: 0.78rem;
   line-height: 1.5;
@@ -202,7 +201,7 @@ export const ReferralLabel = styled.label`
   font-family: var(--font-display);
   font-size: 0.7rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.48);
+  color: #525252;
   margin-bottom: 6px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -212,40 +211,17 @@ export const ReferralCodeContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  background: transparent;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 9px;
   padding: 8px 12px;
-  border: none;
   position: relative;
   overflow: hidden;
-  z-index: 0;
-  box-shadow: inset 0 0 0 1px rgba(255, 85, 0, 0.06);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: radial-gradient(
-      circle,
-      rgba(255, 85, 0, 0.95) 0%,
-      rgba(255, 85, 0, 0.45) 25%,
-      rgba(255, 85, 0, 0.12) 45%,
-      transparent 65%
-    );
-    transform: translate(-50%, -50%);
-    animation: ${travelBorder} 4s linear infinite;
-    z-index: -2;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 1.5px;
-    background: rgba(12, 12, 14, 0.98);
-    border-radius: 7.5px;
-    z-index: -1;
+  &:hover {
+    border-color: rgba(255, 85, 0, 0.25);
+    box-shadow: 0 0 0 1px rgba(255, 85, 0, 0.08);
   }
 `;
 
@@ -253,7 +229,7 @@ export const ReferralCode = styled.span`
   font-family: 'JetBrains Mono', 'Fira Code', monospace;
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--fox-primary);
+  color: #ea580c;
   flex: 1;
   letter-spacing: 1.5px;
 `;
@@ -262,47 +238,23 @@ export const ReferralLinkContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  background: transparent;
+  background: #fafafa;
+  border: 1px solid #e5e5e5;
   border-radius: 9px;
   padding: 8px 12px;
-  border: none;
   position: relative;
   overflow: hidden;
-  z-index: 0;
-  box-shadow: inset 0 0 0 1px rgba(140, 170, 220, 0.06);
+  transition: border-color 0.25s ease;
 
-  &::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: radial-gradient(
-      circle,
-      rgba(140, 170, 220, 0.9) 0%,
-      rgba(140, 170, 220, 0.4) 25%,
-      rgba(140, 170, 220, 0.1) 45%,
-      transparent 65%
-    );
-    transform: translate(-50%, -50%);
-    animation: ${travelBorderReverse} 4s linear infinite;
-    z-index: -2;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 1.5px;
-    background: rgba(12, 12, 14, 0.98);
-    border-radius: 7.5px;
-    z-index: -1;
+  &:hover {
+    border-color: #d4d4d4;
   }
 `;
 
 export const ReferralLink = styled.span`
   font-family: var(--font-body);
   font-size: 0.76rem;
-  color: rgba(255, 255, 255, 0.45);
+  color: #171717;
   flex: 1;
   word-break: break-all;
   line-height: 1.45;
@@ -338,8 +290,8 @@ export const ReferralBalance = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(16, 185, 129, 0.05);
-  border: 1px solid rgba(16, 185, 129, 0.1);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: 9px;
   padding: 8px 12px;
   margin-top: auto;
@@ -351,7 +303,7 @@ export const BalanceIcon = styled.div`
   justify-content: center;
   width: 26px;
   height: 26px;
-  background: rgba(16, 185, 129, 0.12);
+  background: rgba(16, 185, 129, 0.15);
   border-radius: 7px;
   color: #10b981;
   flex-shrink: 0;
@@ -361,7 +313,7 @@ export const BalanceLabel = styled.span`
   font-family: var(--font-body);
   font-size: 0.72rem;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.45);
+  color: #525252;
   flex: 1;
 `;
 
@@ -369,18 +321,18 @@ export const BalanceAmount = styled.span`
   font-family: var(--font-display);
   font-size: 1rem;
   font-weight: 700;
-  color: #10b981;
+  color: #059669;
   letter-spacing: -0.02em;
 `;
 
 export const ReferralInfo = styled.p`
   font-family: var(--font-body);
   font-size: 0.74rem;
-  color: rgba(255, 255, 255, 0.32);
+  color: #737373;
   line-height: 1.55;
   margin: auto 0 0 0;
   padding-top: 10px;
-  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-top: 1px solid #e5e5e5;
   letter-spacing: 0.01em;
 `;
 
@@ -394,7 +346,7 @@ export const MetricsTitle = styled.h3`
   font-family: var(--font-display);
   font-size: 0.88rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
+  color: #171717;
   margin: 0 0 10px 0;
   letter-spacing: -0.01em;
 `;
@@ -407,7 +359,7 @@ export const MetricsGrid = styled.div`
 `;
 
 export const MetricCard = styled.div`
-  background: rgba(255, 255, 255, 0.02);
+  background: #fff;
   border-radius: 10px;
   padding: 14px 10px;
   display: flex;
@@ -415,11 +367,11 @@ export const MetricCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 3px;
-  border: 1px solid rgba(255, 255, 255, 0.04);
+  border: 1px solid #e5e5e5;
   transition: border-color 0.25s ease;
 
   &:hover {
-    border-color: rgba(255, 255, 255, 0.08);
+    border-color: #d4d4d4;
   }
 `;
 
@@ -429,7 +381,7 @@ export const MetricIcon = styled.div`
   justify-content: center;
   width: 24px;
   height: 24px;
-  background: rgba(255, 255, 255, 0.035);
+  background: rgba(255, 85, 0, 0.08);
   border-radius: 7px;
   color: var(--fox-primary);
   flex-shrink: 0;
@@ -440,14 +392,14 @@ export const MetricValue = styled.span`
   font-family: var(--font-display);
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--text-main);
+  color: #171717;
   letter-spacing: -0.02em;
 `;
 
 export const MetricLabel = styled.span`
   font-family: var(--font-body);
   font-size: 0.68rem;
-  color: rgba(255, 255, 255, 0.35);
+  color: #737373;
   text-align: center;
   line-height: 1.35;
 `;
@@ -458,7 +410,7 @@ export const MetricsEmpty = styled.div`
   align-items: center;
   justify-content: center;
   padding: 24px 12px;
-  color: rgba(255, 255, 255, 0.2);
+  color: #737373;
   font-family: var(--font-body);
   font-size: 0.76rem;
   text-align: center;
@@ -466,7 +418,7 @@ export const MetricsEmpty = styled.div`
   flex: 1;
 
   svg {
-    opacity: 0.3;
+    opacity: 0.5;
   }
 `;
 
@@ -480,39 +432,39 @@ export const PixKeyDisplay = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(255, 255, 255, 0.025);
+  background: #fafafa;
   border-radius: 9px;
   padding: 8px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  border: 1px solid #e5e5e5;
 `;
 
 export const PixDivider = styled.div`
   height: 1px;
-  background: rgba(255, 255, 255, 0.05);
+  background: #e5e5e5;
   margin: 2px 0;
 `;
 
 export const PixInput = styled.input`
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid #e5e5e5;
   border-radius: 9px;
   font-family: var(--font-body);
   font-size: 0.76rem;
-  background: rgba(255, 255, 255, 0.035);
-  color: var(--text-main);
+  background: #fafafa;
+  color: #171717;
   outline: none;
   transition: all 0.25s var(--ease-out-expo);
   box-sizing: border-box;
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.22);
+    color: #a3a3a3;
   }
 
   &:focus {
-    border-color: rgba(255, 85, 0, 0.28);
-    background: rgba(255, 255, 255, 0.045);
-    box-shadow: 0 0 0 2px rgba(255, 85, 0, 0.05);
+    border-color: rgba(255, 85, 0, 0.4);
+    background: #fff;
+    box-shadow: 0 0 0 2px rgba(255, 85, 0, 0.08);
   }
 
   &:disabled {
@@ -529,9 +481,9 @@ export const PixButtonRow = styled.div`
 export const PixButton = styled.button`
   width: 100%;
   padding: 8px 12px;
-  background: ${props => props.disabled ? 'rgba(255, 255, 255, 0.035)' : 'linear-gradient(135deg, #FF6A1A 0%, #FF4800 100%)'};
-  color: ${props => props.disabled ? 'rgba(255, 255, 255, 0.25)' : '#fff'};
-  border: ${props => props.disabled ? '1px solid rgba(255, 255, 255, 0.05)' : 'none'};
+  background: ${props => props.disabled ? '#f5f5f5' : 'linear-gradient(135deg, #FF6A1A 0%, #FF4800 100%)'};
+  color: ${props => props.disabled ? '#a3a3a3' : '#fff'};
+  border: ${props => props.disabled ? '1px solid #e5e5e5' : 'none'};
   border-radius: 9px;
   font-family: var(--font-body);
   font-size: 0.76rem;
@@ -556,9 +508,9 @@ export const PixButton = styled.button`
 export const PixCancelButton = styled.button`
   width: 100%;
   padding: 8px 12px;
-  background: rgba(255, 255, 255, 0.04);
-  color: rgba(255, 255, 255, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: #fafafa;
+  color: #525252;
+  border: 1px solid #e5e5e5;
   border-radius: 9px;
   font-family: var(--font-body);
   font-size: 0.76rem;
@@ -567,9 +519,9 @@ export const PixCancelButton = styled.button`
   transition: all 0.25s var(--ease-out-expo);
 
   &:hover:not(:disabled) {
-    background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(255, 255, 255, 0.12);
-    color: rgba(255, 255, 255, 0.7);
+    background: #f5f5f5;
+    border-color: #d4d4d4;
+    color: #171717;
   }
 
   &:disabled {
@@ -581,7 +533,7 @@ export const PixCancelButton = styled.button`
 export const PixInfo = styled.p`
   font-family: var(--font-body);
   font-size: 0.7rem;
-  color: rgba(255, 255, 255, 0.25);
+  color: #737373;
   margin: 0;
   line-height: 1.5;
 `;

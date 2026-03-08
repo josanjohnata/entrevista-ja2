@@ -5,7 +5,7 @@ export const LayoutContainer = styled.div`
   flex-direction: column;
   min-height: 100vh;
   min-height: 100dvh;
-  background-color: #030303;
+  background-color: #f5f5f5;
   overflow-x: hidden;
 `;
 

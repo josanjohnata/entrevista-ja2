@@ -4,19 +4,19 @@ export const FeatureIconLarge = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 10px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--border-light);
+  background: #f5f5f5;
+  border: 1px solid #e5e5e5;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-main);
+  color: #171717;
   transition: var(--transition-med);
   flex-shrink: 0;
 `;
 
 export const FeatureCard = styled.div`
-  background: var(--surface-2);
-  border: 1px solid var(--border-light);
+  background: #fff;
+  border: 1px solid #e5e5e5;
   border-radius: 14px;
   padding: 18px 20px;
   display: flex;
@@ -24,19 +24,20 @@ export const FeatureCard = styled.div`
   gap: 12px;
   transition: var(--transition-med);
   cursor: default;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 
   &:hover {
-    border-color: var(--border-fox);
-    background-color: var(--fox-surface);
+    border-color: rgba(255, 85, 0, 0.4);
+    background-color: rgba(255, 85, 0, 0.04);
     transform: scale(1.02);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
 
   &:hover ${FeatureIconLarge} {
     background-color: var(--fox-primary);
     color: #fff;
     border-color: var(--fox-primary);
-    box-shadow: 0 4px 12px var(--fox-glow);
+    box-shadow: 0 4px 12px rgba(255, 85, 0, 0.2);
     transform: rotate(-8deg);
   }
 
@@ -50,11 +51,12 @@ export const FeatureTitle = styled.h3`
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 2px;
+  color: #171717;
 `;
 
 export const FeatureDescription = styled.p`
   font-size: 0.84rem;
-  color: rgba(255, 255, 255, 0.55);
+  color: #525252;
   line-height: 1.5;
 `;
 
