@@ -12,8 +12,8 @@ export const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navLinks: NavItem[] = [
-    { href: '#funcionamento', label: t('landing.navbar.howItWorks') },
-    { href: ROUTES.PLANOS, label: t('landing.navbar.price') },
+    { href: ROUTES.DIVULGUE_VAGA, label: t('landing.navbar.divulgueVaga') },
+    { href: ROUTES.PLANOS, label: t('landing.navbar.planos') },
   ];
 
   return (

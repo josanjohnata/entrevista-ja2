@@ -14,6 +14,7 @@ export const ROUTES = {
   REEMBOLSO: '/reembolso',
   BLOG: '/blog',
   BLOG_POST: (slug: string) => `/blog/${slug}`,
+  DIVULGUE_VAGA: '/divulgue-vaga',
   INICIO: '/inicio',
   CURRICULO_TURBO: '/curriculo-turbo',
   FILTRAR_VAGAS: '/filtrar-vagas',

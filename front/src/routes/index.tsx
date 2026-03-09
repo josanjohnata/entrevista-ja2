@@ -17,6 +17,7 @@ import { BlogScreen, BlogPostScreen } from '../screens/BlogScreen';
 import ErrorBoundary from '../components/ErrorBoundary';
 import LandingPage from '../screens/landing/App';
 import { PlansScreen } from '../screens/PlansScreen';
+import { DivulgueVagaScreen } from '../screens/DivulgueVagaScreen/DivulgueVagaScreen';
 import { PendingPaymentScreen } from '../screens/PendingPayment';
 import { ReferralDashboardScreen } from '../screens/ReferralDashboardScreen/ReferralDashboardScreen';
 
@@ -74,6 +75,7 @@ export const AppRoutes: React.FC = () => {
       <Route path={ROUTES.PCD} element={<PCDLandingScreen />} />
       <Route path={ROUTES.LOGIN} element={<LoginScreen />} />
       <Route path={ROUTES.PLANOS} element={<PlansScreen />} />
+      <Route path={ROUTES.DIVULGUE_VAGA} element={<DivulgueVagaScreen />} />
       <Route path={ROUTES.PAGAMENTO} element={<CheckoutScreen />} />
       <Route path={ROUTES.PAGAMENTO_PCD} element={<CheckoutPCDScreen />} />
       <Route path={ROUTES.PAGAMENTO_PENDENTE} element={<PendingPaymentScreen />} />

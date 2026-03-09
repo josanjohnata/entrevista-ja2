@@ -17,6 +17,8 @@
     "navbar": {
       "howItWorks": "Funcionamento",
       "price": "Preço",
+      "divulgueVaga": "Divulgue uma Vaga",
+      "planos": "Planos",
       "contact": "Contato",
       "signUp": "Cadastre-se",
       "login": "Login"
@@ -45,6 +47,31 @@
       "step3": "Ativar modo automático",
       "step4": "Acompanhar resultados"
     }
+  },
+  "divulgueVaga": {
+    "title": "Divulgue uma Vaga",
+    "subtitle": "Preencha os dados da empresa e os detalhes da vaga. Entraremos em contato em breve.",
+    "companySection": "Dados da empresa",
+    "jobSection": "Detalhes da vaga",
+    "companyName": "Nome da empresa",
+    "companyNamePlaceholder": "Ex.: Tech Solutions Ltda",
+    "contactName": "Nome do responsável",
+    "contactNamePlaceholder": "Seu nome completo",
+    "email": "E-mail",
+    "emailPlaceholder": "contato@empresa.com",
+    "phone": "Telefone / WhatsApp",
+    "phonePlaceholder": "(00) 00000-0000",
+    "jobTitle": "Título da vaga",
+    "jobTitlePlaceholder": "Ex.: Desenvolvedor(a) Front-end",
+    "jobDescription": "Descrição da vaga",
+    "jobDescriptionPlaceholder": "Descreva as atividades, requisitos e benefícios...",
+    "location": "Localização",
+    "locationPlaceholder": "Ex.: Remoto, São Paulo - SP",
+    "submit": "Enviar",
+    "submitting": "Enviando...",
+    "success": "Obrigado! Seus dados foram enviados. Entraremos em contato em breve.",
+    "backToHome": "Voltar ao início",
+    "required": "Campo obrigatório"
   },
   "common": {
     "back": "Voltar",
